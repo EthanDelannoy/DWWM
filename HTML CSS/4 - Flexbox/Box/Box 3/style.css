@@ -1,0 +1,98 @@
+body{
+    background-color: aqua;
+    border: 50px solid #ffffff;
+    margin: 100px 600px 100px 600px;
+    padding: 30px;
+}
+
+#header{
+    display: flex;
+    justify-content: space-around;
+    height: 150px;
+    margin-bottom: 25px;
+}
+
+#orange{
+    color: orange;
+    background-color: orange;
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+#grisss{
+    color: gray;
+    background-color: gray;
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+#jaune{
+    color: yellow;
+    background-color: yellow;
+    height: 100px;
+    margin-bottom: 50px;
+}
+
+#quatre{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+
+}
+
+#carré1{
+color:blueviolet;
+background-color: blueviolet;
+width: 135px;
+height: 75px;
+margin-right: 10px;
+
+}
+#carré2{
+    color:blueviolet;
+    background-color: blueviolet;
+    width: 135px;
+    height: 75px;
+    margin-right: 10px;
+
+}
+#carré3{
+    color:blueviolet;
+    background-color: blueviolet;
+    width: 135px;
+    height: 75px;
+    margin-right: 10px;
+}
+#carré4{
+    color:blueviolet;
+    background-color: blueviolet;
+    width: 135px;
+
+}
+#deux{
+    display: flex;
+    justify-content: space-around;
+    height: 150px;
+    margin-bottom: 25px;
+
+}
+#marron{
+    color: brown;
+    background-color: brown;
+    flex-grow: 1;
+    margin-right: 10px;
+}
+#rose{
+    color: pink;
+    background-color: pink;
+    flex-grow: 1;
+    margin-left: 10px;
+}
+footer{
+    color: green;
+    background-color: green;
+    display: flex;
+    height: 150px;
+
+}
+

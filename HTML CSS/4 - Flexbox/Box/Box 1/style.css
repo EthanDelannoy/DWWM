@@ -1,0 +1,49 @@
+body{
+    background-color: aqua;
+    border: 50px solid #ffffff;
+    margin: 100px 600px 100px 600px;
+    padding: 30px;
+}
+
+header{
+    color: orange;
+    background-color: orange;
+    display: flex;
+    height: 200px;
+    margin: 30px;
+}
+
+div{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    height: 300px;
+    margin-bottom: 100px;
+}
+
+
+#gris{
+    color: gray;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    width: 150px;
+}
+
+#jaune{
+    color: yellow;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+#footer{
+    color: green;
+    background-color: green;
+    display: flex;
+    height: 140px;
+    margin: 30px;
+}

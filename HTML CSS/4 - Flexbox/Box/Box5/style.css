@@ -1,0 +1,63 @@
+body{
+    background-color: bisque;
+    border: 10px solid blue;
+    margin: 100px 600px 100px 600px;
+    padding: 30px;
+}
+
+header{
+    color: aquamarine;
+    background-color: aquamarine;
+    height: 50px;
+    margin-bottom: 20px;
+}
+section{
+ display: flex;
+ flex-direction: row;
+}
+
+#vert{
+    color: green;
+    background-color: green;
+    width: 200px;
+    height: 350px;
+    margin-right: 20px;
+}
+#tout{
+    background-color: orange;
+    width: 500px;
+    height: 350px;
+    margin-bottom: 20px;
+}
+
+#jaunetout{
+    margin: 230px 15px 10px 15px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+#jaune1{
+    color: yellow;
+    background-color: yellow;
+    height: 100px;
+    width: 120px;
+
+}
+#jaune2{
+    color: yellow;
+    background-color: yellow;
+    width: 120px;
+
+}
+#jaune3{
+    color: yellow;
+    background-color: yellow;
+    width: 120px;
+
+}
+footer{
+    color: aquamarine;
+    background-color: aquamarine;
+    height: 50px;
+}

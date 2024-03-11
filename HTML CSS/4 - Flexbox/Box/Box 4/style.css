@@ -1,0 +1,84 @@
+body{
+border: 10px solid blue;
+margin: 100px 600px 100px 600px;
+padding: 30px;
+}
+
+
+header{
+    display: flex;
+    border: 10px solid red;
+    height: 150px;
+    margin-bottom: 50px;
+
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+}
+
+#carré-cinq{
+display: flex;
+flex-direction: column;
+margin-right: 70px;
+margin-bottom: 50px;
+}
+#carré-trois{
+    display: flex;
+    flex-direction: column;
+}
+
+#carré1{
+    border: 10px solid cyan;
+    height: 50px;
+    width: 150px;
+    margin-bottom: 10px;
+}
+#carré2{
+    border: 10px solid cyan;
+    height: 50px;
+    width: 150px;
+    margin-bottom: 10px;
+}
+#carré3{
+    border: 10px solid cyan;
+    height: 50px;
+    width: 150px;
+    margin-bottom: 10px;
+}
+#carré4{
+    border: 10px solid cyan;
+    height: 50px;
+    width: 150px;
+    margin-bottom: 10px;
+}
+#carré5{
+    border: 10px solid cyan;
+    height: 50px;
+    width: 150px;
+    margin-bottom: 10px;
+}
+#carré6{
+    border: 10px solid blue;
+    height: 95px;
+    width: 350px;
+    margin-bottom: 10px;
+}
+#carré7{
+    border: 10px solid blue;
+    height: 95px;
+    width: 350px;
+    margin-bottom: 10px;
+}
+#carré8{
+    border: 10px solid blue;
+    height: 95px;
+    width: 350px;
+}
+footer{
+
+    display: flex;
+    border: 10px solid green;
+    height: 150px;
+}
