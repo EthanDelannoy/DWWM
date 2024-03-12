@@ -1,0 +1,66 @@
+body{
+    background-color: aqua;
+    border: 50px solid #ffffff;
+    margin: 100px 600px 100px 600px;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+#bleu{
+    display: flex;
+    color: blue;
+    background-color: blue;
+    margin-left: 20px;
+    width: 250px;
+    height: 630px;
+}
+
+#vert{
+    color: green;
+    background-color: green;
+    width: 500px;
+    height: 250px;
+    margin-bottom: 10px;
+}
+
+#trois{
+    display: flex;
+    flex-direction: rox;
+    margin-bottom: 10px;
+}
+
+#deux{
+    display: flex;
+    flex-direction: column;
+}
+
+#rose{
+    color: pink;
+    background-color: pink;
+    width: 250px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+#clair{
+    color: aquamarine;
+    background-color: aquamarine;
+    width: 250px;
+    height: 100px;
+}
+
+#gris{
+    color: gray;
+    background-color: gray;
+    width: 240px;
+    margin-left: 10px;
+}
+
+#orange{
+    color: orange;
+    background-color: orange;
+    width: 500px;
+    height: 150px;
+
+}

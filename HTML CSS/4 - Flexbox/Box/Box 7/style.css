@@ -1,0 +1,49 @@
+body{
+    background-color: aqua;
+    border: 50px solid #ffffff;
+    margin: 100px 600px 100px 600px;
+    padding: 30px;
+}
+
+header{
+    color: blue;
+    background-color: blue;
+    display: flex;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+#rouge{
+    color: red;
+    background-color: red;
+    display: flex;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+#deux{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+#vert{
+    color: green;
+    background-color: green;
+    width: 500px;
+    height: 600px;
+}
+
+#violet{
+    color: purple;
+    background-color: purple;
+    width: 300px;
+    height: 600px;
+    margin-left: 10px;
+}
+
+footer{
+    color: gray;
+    background-color: gray;
+    height: 50px;
+}

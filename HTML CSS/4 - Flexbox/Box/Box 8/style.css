@@ -1,0 +1,76 @@
+body{
+    background-color: aqua;
+    border: 50px solid #ffffff;
+    margin: 100px 600px 100px 600px;
+    
+}
+
+#header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    margin-top: 29px;
+
+}
+
+#carré1{
+    color: green;
+    background-color: green;
+    width: 150px;
+    height: 150px;
+}
+#carré2{
+    color: blue;
+    background-color: blue;
+    width: 150px;
+    height: 150px;
+}
+#carré3{
+    color: purple;
+    background-color: purple;
+    width: 150px;
+    height: 150px;
+}
+#carré4{
+    color: orange;
+    background-color: orange;
+    width: 150px;
+    height: 150px;
+}
+#rouge{
+    color: red;
+    background-color: red;
+    height: 150px;
+    margin: 10px 29px;
+}
+#footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 29px;
+}
+#carré5{
+    color: green;
+    background-color: green;
+    width: 150px;
+    height: 150px;
+}
+#carré6{
+    color: blue;
+    background-color: blue;
+    width: 150px;
+    height: 150px;
+}
+#carré7{
+    color: purple;
+    background-color: purple;
+    width: 150px;
+    height: 150px;
+}
+#carré8{
+    color: orange;
+    background-color: orange;
+    width: 150px;
+    height: 150px;
+}
