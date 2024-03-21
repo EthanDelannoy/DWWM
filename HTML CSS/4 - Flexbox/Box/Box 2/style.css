@@ -23,7 +23,8 @@ div {
 display: flex;
 flex-direction: column;
 margin-left: 10px;
-width: 320px;
+flex-grow: 1;
+margin-right: 30px;
 }
 
 
