@@ -16,6 +16,10 @@ nav{
     word-spacing: 150px;
 }
 
+div{
+    color: #393939;
+}
+
 header{
     background-image: url("./Image/header-bg\ 1.png");
     background-repeat: no-repeat;
@@ -49,6 +53,7 @@ hr{
 .debut{
     background-color: #ECEFD8;
     text-align: center;
+    height: 440px;
 }
 
 
@@ -68,7 +73,7 @@ h2{
     font-size: 20px;
     line-height: 35.28px;
     letter-spacing: 0.5%;
-    padding: 0 380px 60px 380px;
+    padding: 0 380px 50px 380px;
 }
 
 .plus{
@@ -80,11 +85,12 @@ h2{
     position: relative;
     left: 600px;
     border: 1px solid #ffffff;
-    box-shadow: 1px 1px 10px  #131212;
+    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .moment{
     background-color: #393939;
+    height: 650px;
 }
 
 h3{
@@ -147,36 +153,760 @@ h3{
     font-size: 20px;
     line-height: 23.44px;  
     text-align: center;
+    padding-top: 15%;
 }
 
 .pphoto{
+    color: white;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 16.41px;
     display: inline-block;
     text-align: center;
-
+    padding: 10% 19% 0% 19%;
 }
 
 .un{
     background-color: #849561;
     width: 255px;
     height: 237px;
+    padding-bottom: 5%;
 }
 
 .deux{
     background-color: #849561;
     width: 255px;
     height: 237px;
+    padding-bottom: 5%;
 }
 .trois{
     background-color: #849561;
     width: 255px;
     height: 237px;
+    padding-bottom: 5%;
 }
 .quatre{
     background-color: #849561;
     width: 255px;
     height: 237px;
+    padding-bottom: 5%;
+}
+
+.boutton{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-basis: 15px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18.43px;
+    letter-spacing: 5%;
+}
+
+.boutton1{
+    background-color: #393939;
+    border: 1px solid #9AB464;
+    width: 145px;
+    height: 42px;
+    position: relative;
+    bottom: 20px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boutton2{
+    background-color: #393939;
+    border: 1px solid #9AB464;
+    width: 145px;
+    height: 42px;
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+    right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boutton3{
+    background-color: #393939;
+    border: 1px solid #9AB464;
+    width: 145px;
+    height: 42px;
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.boutton4{
+    background-color: #393939;
+    border: 1px solid #9AB464;
+    width: 145px;
+    height: 42px;
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+    left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fondnympheas{
+    background-image: url("./Image/modern-industrial\ 1.png");
+    width: 1440px;
+    height: 375px;
+    position: relative;
+}
+
+.cloche{
+    position: absolute;
+    left: 700px;
+    top: 30px;
+    border: 1px solid white;
+    padding: 15px 25px 15px 25px;
+}
+
+h4{
+    color: white;
+    position: absolute;
+    left: 600px;
+    top: 130px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 4.4px;
+}
+
+.pnympheas{
+    margin: 0;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28.78px;
+    letter-spacing: 1.5%;
+    text-align: center;
+    position: relative;
+    top: 210px;
+    padding: 0px 250px 0px 250px;
+}
+
+
+.fondateur{
+    background-color: #393939;
+}
+
+h5{
+    margin: 0;
+    color: #849561;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 25.78px;
+    letter-spacing: 23%;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.presentation{
+    width: 1440px;
+    height: 808px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    padding-left: 180px;
+}
+
+.bradley{
+    background-color: #849561;
+    color: white;
+    width: 462px;
+    height: 450px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.bradley2{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23.44px;
+    letter-spacing: 5px;
+    padding: 130px 35px 20px 0px;
+}
+
+.bradley3{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.76px;
+    letter-spacing: 3px;
+    padding: 0 0 20px 0px;
+}
+
+.laura{
+    background-color: #849561;
+    color: white;
+    width: 462px;
+    height: 450px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.laura2{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23.44px;
+    letter-spacing: 5px;
+    padding: 130px 35px 20px 0px;
+}
+
+.laura3{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.76px;
+    letter-spacing: 3px;
+    padding: 0 0 20px 0;
+}
+
+.fin{
+    position: relative;
+    top: 120px;
+    width: 460px;
+}
+
+.imgbradley{
+    position: relative;
+    background-image: url("./Image/Mask\ group.svg");
+    bottom: 450px;
+    left: 120px;
+    width: 205px;
+    height: 203px;
+}
+
+.imglaura{
+    position: relative;
+    background-image: url("./Image/Mask\ group\ laura.svg");
+    bottom: 450px;
+    left: 120px;
+    width: 205px;
+    height: 203px;
+}
+
+.carre{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+
+}
+
+.carre1{
+    color: #393939;
+    background-color: #393939;
+    width: 49px;
+    height: 48px;
+}
+
+.google{
+    background-image: url("./Image/Google+.svg");
+    background-repeat: no-repeat;
+    width: 22px;
+    height: 15px;
+    position: relative;
+    top: 15px;
+    left: 15px;
+}
+.carre2{
+    color: #393939;
+    background-color: #393939;
+    width: 49px;
+    height: 48px;
+}
+
+.twitter{
+    background-image: url("./Image/Twitter.svg");
+    background-repeat: no-repeat;
+    width: 22px;
+    height: 16px;
+    position: relative;
+    top: 17px;
+    left: 14px;
+}
+
+.carre3{
+    color: #393939;
+    background-color: #393939;
+    width: 49px;
+    height: 48px;
+}
+
+.facebook{
+    background-image: url("./Image/Facebook.svg");
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 18px;
+    position: relative;
+    top: 15px;
+    left: 19px;
+}
+
+/* -------------------------------------------------------------------------MEDIA QUERY--------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width:768px) {
+
+    body{
+        width: 768px;
+    }
+    
+    nav{
+        background-color: #ECEFD8;
+        height: 102px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 23.44px;
+        letter-spacing: 2px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        word-spacing: 60px;
+    }
+    
+    div{
+        color: #393939;
+    }
+    
+    header{
+        background-image: url("./Image/SECTION\ HEADER.png");
+        background-repeat: no-repeat;
+        height: 560px;
+        width: 768px;
+        position: relative;
+    }
+    
+    .debut{
+        background-color: #ECEFD8;
+        text-align: center;
+        height: 480px;
+    }
+    
+    h2{
+        margin: 0;
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 35.16px;
+        padding-top: 50px;
+    }
+    
+    .premier{
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 35.28px;
+        letter-spacing: 0.5%;
+        padding: 0 130px 30px 130px;
+    }
+    
+    .plus{
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: #849561;
+        color: #EED690;
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 28.22px;
+        letter-spacing: 0.5%;
+        width: 191px;
+        position: relative;
+        left: 280px;
+        border: 1px solid #ffffff;
+        box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    
+    .moment{
+        background-color: #393939;
+        height: 1259px;
+    }
+    
+    h3{
+        margin: 0;
+        padding-top: 30px;
+        text-align: center;
+        color: #849561;
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26.11px;
+        letter-spacing: 15.5%;
+        padding-bottom: 30px;
+    }
+    
+    .partie1{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+    
+    .photo1{
+        background-image: url("./Image/ishibashi\.png");
+        background-repeat: no-repeat;
+        height: 181px;
+        width: 316px;
+    
+    }
+    .photo2{
+        background-image: url("./Image/The\ Age\ of\ Anxiety.png");
+        background-repeat: no-repeat;
+        height: 181px;
+        width: 316px;
+    }
+    .photo3{
+        background-image: url("./Image/Apollinaire.png");
+        background-repeat: no-repeat;
+        height: 181px;
+        width: 316px;
+    }
+    .photo4{
+        background-image: url("./Image/Femmes\ Photographes.png");
+        background-repeat: no-repeat;
+        height: 181px;
+        width: 316px;
+    }
+    
+    
+    .partie2{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .titre{
+        color: #ffffff;
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 23.44px;  
+        text-align: center;
+        padding-top: 15%;
+    }
+    
+    .pphoto{
+        color: white;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16.41px;
+        display: inline-block;
+        text-align: center;
+        padding: 10% 19% 0% 19%;
+    }
+    
+    .un{
+        background-color: #849561;
+        width: 255px;
+        height: 237px;
+        padding-bottom: 5%;
+    }
+    
+    .deux{
+        background-color: #849561;
+        width: 255px;
+        height: 237px;
+        padding-bottom: 5%;
+    }
+    .trois{
+        background-color: #849561;
+        width: 255px;
+        height: 237px;
+        padding-bottom: 5%;
+    }
+    .quatre{
+        background-color: #849561;
+        width: 255px;
+        height: 237px;
+        padding-bottom: 5%;
+    }
+    
+    .boutton{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-basis: 15px;
+        color: white;
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18.43px;
+        letter-spacing: 5%;
+    }
+    
+    .boutton1{
+        background-color: #393939;
+        border: 1px solid #9AB464;
+        width: 145px;
+        height: 42px;
+        position: relative;
+        bottom: 20px;
+        right: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .boutton2{
+        background-color: #393939;
+        border: 1px solid #9AB464;
+        width: 145px;
+        height: 42px;
+        text-align: center;
+        position: relative;
+        bottom: 20px;
+        right: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .boutton3{
+        background-color: #393939;
+        border: 1px solid #9AB464;
+        width: 145px;
+        height: 42px;
+        text-align: center;
+        position: relative;
+        bottom: 20px;
+        left: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    .boutton4{
+        background-color: #393939;
+        border: 1px solid #9AB464;
+        width: 145px;
+        height: 42px;
+        text-align: center;
+        position: relative;
+        bottom: 20px;
+        left: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .fondnympheas{
+        background-image: url("./Image/modern-industrial\ 1.png");
+        width: 1440px;
+        height: 375px;
+        position: relative;
+    }
+    
+    .cloche{
+        position: absolute;
+        left: 700px;
+        top: 30px;
+        border: 1px solid white;
+        padding: 15px 25px 15px 25px;
+    }
+    
+    h4{
+        color: white;
+        position: absolute;
+        left: 600px;
+        top: 130px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 4.4px;
+    }
+    
+    .pnympheas{
+        margin: 0;
+        color: white;
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 28.78px;
+        letter-spacing: 1.5%;
+        text-align: center;
+        position: relative;
+        top: 210px;
+        padding: 0px 250px 0px 250px;
+    }
+    
+    
+    .fondateur{
+        background-color: #393939;
+    }
+    
+    h5{
+        margin: 0;
+        color: #849561;
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 25.78px;
+        letter-spacing: 23%;
+        text-align: center;
+        padding-top: 50px;
+    }
+    
+    .presentation{
+        width: 1440px;
+        height: 808px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+        padding-left: 180px;
+    }
+    
+    .bradley{
+        background-color: #849561;
+        color: white;
+        width: 462px;
+        height: 450px;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    
+    .bradley2{
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 23.44px;
+        letter-spacing: 5px;
+        padding: 130px 35px 20px 0px;
+    }
+    
+    .bradley3{
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16.76px;
+        letter-spacing: 3px;
+        padding: 0 0 20px 0px;
+    }
+    
+    .laura{
+        background-color: #849561;
+        color: white;
+        width: 462px;
+        height: 450px;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    
+    .laura2{
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 23.44px;
+        letter-spacing: 5px;
+        padding: 130px 35px 20px 0px;
+    }
+    
+    .laura3{
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16.76px;
+        letter-spacing: 3px;
+        padding: 0 0 20px 0;
+    }
+    
+    .fin{
+        position: relative;
+        top: 120px;
+        width: 460px;
+    }
+    
+    .imgbradley{
+        position: relative;
+        background-image: url("./Image/Mask\ group.svg");
+        bottom: 450px;
+        left: 120px;
+        width: 205px;
+        height: 203px;
+    }
+    
+    .imglaura{
+        position: relative;
+        background-image: url("./Image/Mask\ group\ laura.svg");
+        bottom: 450px;
+        left: 120px;
+        width: 205px;
+        height: 203px;
+    }
+    
+    .carre{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    
+    }
+    
+    .carre1{
+        color: #393939;
+        background-color: #393939;
+        width: 49px;
+        height: 48px;
+    }
+    
+    .google{
+        background-image: url("./Image/Google+.svg");
+        background-repeat: no-repeat;
+        width: 22px;
+        height: 15px;
+        position: relative;
+        top: 15px;
+        left: 15px;
+    }
+    .carre2{
+        color: #393939;
+        background-color: #393939;
+        width: 49px;
+        height: 48px;
+    }
+    
+    .twitter{
+        background-image: url("./Image/Twitter.svg");
+        background-repeat: no-repeat;
+        width: 22px;
+        height: 16px;
+        position: relative;
+        top: 17px;
+        left: 14px;
+    }
+    
+    .carre3{
+        color: #393939;
+        background-color: #393939;
+        width: 49px;
+        height: 48px;
+    }
+    
+    .facebook{
+        background-image: url("./Image/Facebook.svg");
+        background-repeat: no-repeat;
+        width: 10px;
+        height: 18px;
+        position: relative;
+        top: 15px;
+        left: 19px;
+    }
 }
