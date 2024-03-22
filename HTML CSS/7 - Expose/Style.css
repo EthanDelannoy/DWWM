@@ -1,0 +1,182 @@
+body{
+    width: 1440px;
+}
+
+nav{
+    background-color: #ECEFD8;
+    height: 60px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 18.75px;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    word-spacing: 150px;
+}
+
+header{
+    background-image: url("./Image/header-bg\ 1.png");
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 1440px;
+    position: relative;
+}
+
+.logo{
+    position: absolute;
+    top: 150px;
+    left: 500px;
+}
+
+h1{
+    font-family: "Roboto", sans-serif;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28.13px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding-top:280px;
+    margin: 0;
+}
+
+hr{
+    width: 390px;
+}
+
+.debut{
+    background-color: #ECEFD8;
+    text-align: center;
+}
+
+
+h2{
+    margin: 0;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35.16px;
+    padding-top: 50px;
+}
+
+.premier{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 35.28px;
+    letter-spacing: 0.5%;
+    padding: 0 380px 60px 380px;
+}
+
+.plus{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: #849561;
+    color: #EED690;
+    width: 211px;
+    position: relative;
+    left: 600px;
+    border: 1px solid #ffffff;
+    box-shadow: 1px 1px 10px  #131212;
+}
+
+.moment{
+    background-color: #393939;
+}
+
+h3{
+    margin: 0;
+    padding-top: 30px;
+    text-align: center;
+    color: #849561;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26.11px;
+    letter-spacing: 15.5%;
+    padding-bottom: 30px;
+}
+
+.partie1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.photo1{
+    background-image: url("./Image/ishibashi\ 1.png");
+    background-repeat: no-repeat;
+    height: 145px;
+    width: 255px;
+
+}
+.photo2{
+    background-image: url("./Image/the-age\ 1.png");
+    background-repeat: no-repeat;
+    height: 145px;
+    width: 255px;
+}
+.photo3{
+    background-image: url("./Image/automne-vlaminck\ 1.png");
+    background-repeat: no-repeat;
+    height: 145px;
+    width: 255px;
+}
+.photo4{
+    background-image: url("./Image/photographe\ 1.png");
+    background-repeat: no-repeat;
+    height: 145px;
+    width: 255px;
+}
+
+
+.partie2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.titre{
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23.44px;  
+    text-align: center;
+}
+
+.pphoto{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.41px;
+    display: inline-block;
+    text-align: center;
+
+}
+
+.un{
+    background-color: #849561;
+    width: 255px;
+    height: 237px;
+}
+
+.deux{
+    background-color: #849561;
+    width: 255px;
+    height: 237px;
+}
+.trois{
+    background-color: #849561;
+    width: 255px;
+    height: 237px;
+}
+.quatre{
+    background-color: #849561;
+    width: 255px;
+    height: 237px;
+}
