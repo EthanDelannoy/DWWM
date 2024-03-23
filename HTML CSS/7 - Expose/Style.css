@@ -2,6 +2,7 @@ body{
     width: 1440px;
 }
 
+/* Barre de naviguation */
 nav{
     background-color: #ECEFD8;
     height: 60px;
@@ -16,10 +17,12 @@ nav{
     word-spacing: 150px;
 }
 
-div{
+/* Bouton Accueil */
+.accueil{
     color: #393939;
 }
 
+/* Logo expose avec fond et Collection - Exposition - Diffusion  */
 header{
     background-image: url("./Image/header-bg\ 1.png");
     background-repeat: no-repeat;
@@ -28,12 +31,14 @@ header{
     position: relative;
 }
 
+/* Logo expose */
 .logo{
     position: absolute;
     top: 150px;
     left: 500px;
 }
 
+/* Titre Collection - Exposition - Diffusion */
 h1{
     font-family: "Roboto", sans-serif;
     color: #ffffff;
@@ -46,17 +51,19 @@ h1{
     margin: 0;
 }
 
-hr{
+/* Barre horizontaux */
+.barre{
     width: 390px;
 }
 
+/* Section bienvenue */
 .debut{
     background-color: #ECEFD8;
     text-align: center;
     height: 440px;
 }
 
-
+/* Titre section bienvenue */
 h2{
     margin: 0;
     text-align: center;
@@ -67,6 +74,7 @@ h2{
     padding-top: 50px;
 }
 
+/* Paragraphe section bienvenue */
 .premier{
     font-family: "Roboto", sans-serif;
     font-weight: 300;
@@ -76,6 +84,7 @@ h2{
     padding: 0 380px 50px 380px;
 }
 
+/* Bouton en savoir plus */
 .plus{
     padding-top: 25px;
     padding-bottom: 25px;
@@ -88,11 +97,13 @@ h2{
     box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+/* Section en ce moment */
 .moment{
     background-color: #393939;
     height: 650px;
 }
 
+/* Titre de la section en ce moment */
 h3{
     margin: 0;
     padding-top: 30px;
@@ -102,16 +113,18 @@ h3{
     font-weight: 700;
     font-size: 22px;
     line-height: 26.11px;
-    letter-spacing: 15.5%;
+    letter-spacing: 2px;
     padding-bottom: 30px;
 }
 
+/* Touts les photos */
 .partie1{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 
+/* Photo Ishibasi */
 .photo1{
     background-image: url("./Image/ishibashi\ 1.png");
     background-repeat: no-repeat;
@@ -119,18 +132,24 @@ h3{
     width: 255px;
 
 }
+
+/* Photo Anxiety */
 .photo2{
     background-image: url("./Image/the-age\ 1.png");
     background-repeat: no-repeat;
     height: 145px;
     width: 255px;
 }
+
+/* Photo Apollinaire */
 .photo3{
     background-image: url("./Image/automne-vlaminck\ 1.png");
     background-repeat: no-repeat;
     height: 145px;
     width: 255px;
 }
+
+/* Photo photographe */
 .photo4{
     background-image: url("./Image/photographe\ 1.png");
     background-repeat: no-repeat;
@@ -138,7 +157,7 @@ h3{
     width: 255px;
 }
 
-
+/* Touts les titres et paragraphes */
 .partie2{
     display: flex;
     flex-direction: row;
@@ -146,6 +165,7 @@ h3{
     align-items: center;
 }
 
+/* Touts les titres */
 .titre{
     color: #ffffff;
     font-family: "Roboto", sans-serif;
@@ -156,6 +176,7 @@ h3{
     padding-top: 15%;
 }
 
+/* Toutes les paragraphes */
 .pphoto{
     color: white;
     font-family: "Roboto", sans-serif;
@@ -167,6 +188,7 @@ h3{
     padding: 10% 19% 0% 19%;
 }
 
+/* Titre et paragraphe Ishibashi */
 .un{
     background-color: #849561;
     width: 255px;
@@ -174,18 +196,23 @@ h3{
     padding-bottom: 5%;
 }
 
+/* Titre et paragraphe Anxiety */
 .deux{
     background-color: #849561;
     width: 255px;
     height: 237px;
     padding-bottom: 5%;
 }
+
+/* Titre et paragraphe Appolinaire */
 .trois{
     background-color: #849561;
     width: 255px;
     height: 237px;
     padding-bottom: 5%;
 }
+
+/* Titre et paragraphe photographe */
 .quatre{
     background-color: #849561;
     width: 255px;
@@ -193,6 +220,7 @@ h3{
     padding-bottom: 5%;
 }
 
+/* Les 4 boutons */
 .boutton{
     display: flex;
     flex-direction: row;
@@ -203,9 +231,10 @@ h3{
     font-weight: 700;
     font-size: 16px;
     line-height: 18.43px;
-    letter-spacing: 5%;
+    letter-spacing: 1.5px;
 }
 
+/* Bouton découvrir de Ishibashi */
 .boutton1{
     background-color: #393939;
     border: 1px solid #9AB464;
@@ -218,6 +247,8 @@ h3{
     align-items: center;
     justify-content: center;
 }
+
+/* Bouton découvrir de Apollinaire */
 .boutton2{
     background-color: #393939;
     border: 1px solid #9AB464;
@@ -231,6 +262,8 @@ h3{
     align-items: center;
     justify-content: center;
 }
+
+/* Bouton découvrir de Anxiety */
 .boutton3{
     background-color: #393939;
     border: 1px solid #9AB464;
@@ -245,6 +278,8 @@ h3{
     justify-content: center;
 
 }
+
+/* Bouton découvrir de photographe */
 .boutton4{
     background-color: #393939;
     border: 1px solid #9AB464;
@@ -259,6 +294,7 @@ h3{
     justify-content: center;
 }
 
+/* Section nympheas */
 .fondnympheas{
     background-image: url("./Image/modern-industrial\ 1.png");
     width: 1440px;
@@ -266,6 +302,7 @@ h3{
     position: relative;
 }
 
+/* image de la cloche */
 .cloche{
     position: absolute;
     left: 700px;
@@ -274,6 +311,7 @@ h3{
     padding: 15px 25px 15px 25px;
 }
 
+/* Titre nympheas */
 h4{
     color: white;
     position: absolute;
@@ -285,6 +323,7 @@ h4{
     line-height: 4.4px;
 }
 
+/* paragprahe nympheas */
 .pnympheas{
     margin: 0;
     color: white;
@@ -292,18 +331,19 @@ h4{
     font-weight: 300;
     font-size: 16px;
     line-height: 28.78px;
-    letter-spacing: 1.5%;
+    letter-spacing: 0.7px;
     text-align: center;
     position: relative;
-    top: 210px;
+    top: 190px;
     padding: 0px 250px 0px 250px;
 }
 
-
+/* Section fondateur */
 .fondateur{
     background-color: #393939;
 }
 
+/* Titre fondateur */
 h5{
     margin: 0;
     color: #849561;
@@ -311,11 +351,12 @@ h5{
     font-weight: 700;
     font-size: 22px;
     line-height: 25.78px;
-    letter-spacing: 23%;
+    letter-spacing: 4px;
     text-align: center;
     padding-top: 50px;
 }
 
+/* Tout de Bradley et Laura */
 .presentation{
     width: 1440px;
     height: 808px;
@@ -326,6 +367,7 @@ h5{
     padding-left: 180px;
 }
 
+/* Tout Bradley */
 .bradley{
     background-color: #849561;
     color: white;
@@ -335,6 +377,7 @@ h5{
     padding-right: 35px;
 }
 
+/* Titre de Bradley */
 .bradley2{
     font-family: "Roboto", sans-serif;
     font-weight: 700;
@@ -344,6 +387,7 @@ h5{
     padding: 130px 35px 20px 0px;
 }
 
+/* Paragraphe de Bradley */
 .bradley3{
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -353,6 +397,7 @@ h5{
     padding: 0 0 20px 0px;
 }
 
+/* Tout Laura */
 .laura{
     background-color: #849561;
     color: white;
@@ -362,6 +407,7 @@ h5{
     padding-right: 35px;
 }
 
+/* Titre de Laura */
 .laura2{
     font-family: "Roboto", sans-serif;
     font-weight: 700;
@@ -371,6 +417,7 @@ h5{
     padding: 130px 35px 20px 0px;
 }
 
+/* Paragraphe de Laura */
 .laura3{
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -380,30 +427,34 @@ h5{
     padding: 0 0 20px 0;
 }
 
+/* Barre horizontal */
 .fin{
     position: relative;
     top: 120px;
     width: 460px;
 }
 
+/* Image de Bradley */
 .imgbradley{
     position: relative;
     background-image: url("./Image/Mask\ group.svg");
-    bottom: 450px;
+    bottom: 480px;
     left: 120px;
     width: 205px;
     height: 203px;
 }
 
+/* Image de laura */
 .imglaura{
     position: relative;
     background-image: url("./Image/Mask\ group\ laura.svg");
-    bottom: 450px;
-    left: 120px;
+    bottom: 430px;
+    right: 60px;
     width: 205px;
     height: 203px;
 }
 
+/* Les 3 carrés */
 .carre{
     display: flex;
     flex-direction: row;
@@ -411,6 +462,7 @@ h5{
 
 }
 
+/* Carré du logo google */
 .carre1{
     color: #393939;
     background-color: #393939;
@@ -418,6 +470,7 @@ h5{
     height: 48px;
 }
 
+/* Logo google */
 .google{
     background-image: url("./Image/Google+.svg");
     background-repeat: no-repeat;
@@ -427,6 +480,8 @@ h5{
     top: 15px;
     left: 15px;
 }
+
+/* Carré du logo twitter */
 .carre2{
     color: #393939;
     background-color: #393939;
@@ -434,6 +489,7 @@ h5{
     height: 48px;
 }
 
+/* Logo twitter */
 .twitter{
     background-image: url("./Image/Twitter.svg");
     background-repeat: no-repeat;
@@ -444,6 +500,7 @@ h5{
     left: 14px;
 }
 
+/* Carré du logo facebook */
 .carre3{
     color: #393939;
     background-color: #393939;
@@ -451,6 +508,7 @@ h5{
     height: 48px;
 }
 
+/* Logo facebook */
 .facebook{
     background-image: url("./Image/Facebook.svg");
     background-repeat: no-repeat;
@@ -465,10 +523,18 @@ h5{
 
 @media screen and (max-width:768px) {
 
+    html{
+        *{box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    }
     body{
         width: 768px;
     }
     
+    /* Barre de naviguation */
     nav{
         background-color: #ECEFD8;
         height: 102px;
@@ -482,11 +548,13 @@ h5{
         align-items: center;
         word-spacing: 60px;
     }
-    
-    div{
+
+    /* Bouton Accueil */
+    .accueil{
         color: #393939;
     }
     
+    /* Logo expose et Collection - Exposition - Diffusion  */
     header{
         background-image: url("./Image/SECTION\ HEADER.png");
         background-repeat: no-repeat;
@@ -494,13 +562,30 @@ h5{
         width: 768px;
         position: relative;
     }
+
+    /* Titre de la version pc que je supprime */
+    h1{
+        display: none;
+    }
+
+    /* Barre horizontaux de la version pc que je supprime */
+    .barre{
+        display: none;
+    }
+
+    /* Logo expose de la version pc que je supprime */
+    .logo{
+        display: none;
+    }
     
+    /* Section bienvenue */
     .debut{
         background-color: #ECEFD8;
         text-align: center;
         height: 480px;
     }
     
+    /* Titre section bienvenue */
     h2{
         margin: 0;
         text-align: center;
@@ -511,6 +596,7 @@ h5{
         padding-top: 50px;
     }
     
+    /* Paragraphe section bienvenue */
     .premier{
         font-family: "Roboto", sans-serif;
         font-weight: 300;
@@ -520,6 +606,7 @@ h5{
         padding: 0 130px 30px 130px;
     }
     
+    /* Bouton en savoir plus */
     .plus{
         padding-top: 15px;
         padding-bottom: 15px;
@@ -537,11 +624,13 @@ h5{
         box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
     }
     
+    /* Section en ce moment */
     .moment{
         background-color: #393939;
-        height: 1259px;
+        height: 1350px;
     }
     
+    /* Titre de la section en ce moment */
     h3{
         margin: 0;
         padding-top: 30px;
@@ -551,16 +640,18 @@ h5{
         font-weight: 700;
         font-size: 22px;
         line-height: 26.11px;
-        letter-spacing: 15.5%;
+        letter-spacing: 2px;
         padding-bottom: 30px;
     }
     
+    /* Touts les photos */
     .partie1{
         display: flex;
         flex-wrap: wrap;
         gap: 50px;
     }
     
+    /* Photo Ishibasi */
     .photo1{
         background-image: url("./Image/ishibashi\.png");
         background-repeat: no-repeat;
@@ -568,222 +659,247 @@ h5{
         width: 316px;
     
     }
+
+    /* Photo Anxiety */
     .photo2{
         background-image: url("./Image/The\ Age\ of\ Anxiety.png");
         background-repeat: no-repeat;
         height: 181px;
         width: 316px;
     }
+
+    /* Photo Apollinaire */
     .photo3{
         background-image: url("./Image/Apollinaire.png");
         background-repeat: no-repeat;
         height: 181px;
         width: 316px;
+        position: relative;
+        top: 385px;
     }
+
+    /* Photo photographe */
     .photo4{
         background-image: url("./Image/Femmes\ Photographes.png");
         background-repeat: no-repeat;
         height: 181px;
         width: 316px;
+        position: relative;
+        top: 385px;
     }
     
-    
+    /* Touts les titres et paragraphes */
     .partie2{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
         align-items: center;
+        gap: 50px;
     }
     
+    /* Touts les titres */
     .titre{
         color: #ffffff;
         font-family: "Roboto", sans-serif;
         font-weight: 700;
-        font-size: 20px;
-        line-height: 23.44px;  
+        font-size: 24px;
+        line-height: 28.13px;  
         text-align: center;
         padding-top: 15%;
     }
-    
+
+    /* Toutes les paragraphes */
     .pphoto{
         color: white;
         font-family: "Roboto", sans-serif;
         font-weight: 400;
-        font-size: 14px;
-        line-height: 16.41px;
+        font-size: 22px;
+        line-height: 25.78px;
         display: inline-block;
         text-align: center;
-        padding: 10% 19% 0% 19%;
+        padding: 10px 10px 0px 10px;
     }
     
+    /* Titre et paragraphe Ishibashi */
     .un{
         background-color: #849561;
-        width: 255px;
-        height: 237px;
-        padding-bottom: 5%;
+        width: 316px;
+        height: 360px;
+        position: relative;
+        bottom: 231px;
     }
     
+    /* Titre et paragraphe Anxiety */
     .deux{
         background-color: #849561;
-        width: 255px;
-        height: 237px;
-        padding-bottom: 5%;
+        width: 316px;
+        height: 360px;
+        position: relative;
+        bottom: 232px;
     }
+
+    /* Titre et paragraphe Appolinaire */
     .trois{
         background-color: #849561;
-        width: 255px;
-        height: 237px;
-        padding-bottom: 5%;
+        width: 316px;
+        height: 360px;
+        position: relative;
+        bottom: 25px;
     }
+
+    /* Titre et paragraphe photographe */
     .quatre{
         background-color: #849561;
-        width: 255px;
-        height: 237px;
-        padding-bottom: 5%;
+        width: 316px;
+        height: 360px;
+        position: relative;
+        bottom: 25px;
     }
     
+    /* Les 4 boutons */
     .boutton{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        flex-basis: 15px;
-        color: white;
         font-family: "Roboto", sans-serif;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 18.43px;
-        letter-spacing: 5%;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 23.04px;
+        letter-spacing: 1.5px;
     }
     
+    /* Bouton découvrir de Ishibashi */
     .boutton1{
         background-color: #393939;
         border: 1px solid #9AB464;
-        width: 145px;
-        height: 42px;
+        width: 155px;
+        height: 50px;
         position: relative;
-        bottom: 20px;
-        right: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        bottom: 665px;
+        left: 100px;
     }
+
+    /* Bouton découvrir de Apollinaire */
     .boutton2{
         background-color: #393939;
         border: 1px solid #9AB464;
-        width: 145px;
-        height: 42px;
+        width: 155px;
+        height: 50px;
         text-align: center;
         position: relative;
-        bottom: 20px;
-        right: 12px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        bottom: 47px;
+        right: 55px;
     }
+
+    /* Bouton découvrir de Anxiety */
     .boutton3{
         background-color: #393939;
         border: 1px solid #9AB464;
-        width: 145px;
-        height: 42px;
+        width: 155px;
+        height: 50px;
         text-align: center;
         position: relative;
-        bottom: 20px;
-        left: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    
+        bottom: 665px;
+        left: 190px;
     }
+
+    /* Bouton découvrir de photographe */
     .boutton4{
         background-color: #393939;
         border: 1px solid #9AB464;
-        width: 145px;
-        height: 42px;
+        width: 155px;
+        height: 50px;
         text-align: center;
         position: relative;
-        bottom: 20px;
-        left: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        bottom: 47px;
+        margin-right: 140px;
     }
-    
+
+    /* Section nympheas */
     .fondnympheas{
-        background-image: url("./Image/modern-industrial\ 1.png");
-        width: 1440px;
-        height: 375px;
-        position: relative;
+        background-image: none;
+        background-color: #1D1B1B;
+        width: 768px;
+        height: 750px;
     }
     
+    /* image de la cloche */
     .cloche{
         position: absolute;
-        left: 700px;
-        top: 30px;
+        left: 330px;
+        top: 80px;
         border: 1px solid white;
         padding: 15px 25px 15px 25px;
     }
     
+    /* Titre nympheas */
     h4{
         color: white;
         position: absolute;
-        left: 600px;
-        top: 130px;
+        left: 210px;
+        top: 230px;
         font-family: "Roboto", sans-serif;
         font-weight: 700;
-        font-size: 22px;
-        line-height: 4.4px;
+        font-size: 27px;
+        line-height: 5.4px;
     }
     
+    /* paragprahe nympheas */
     .pnympheas{
         margin: 0;
         color: white;
         font-family: "Roboto", sans-serif;
         font-weight: 300;
-        font-size: 16px;
-        line-height: 28.78px;
-        letter-spacing: 1.5%;
+        font-size: 22px;
+        line-height: 39.58px;
+        letter-spacing: 0.7px;
         text-align: center;
         position: relative;
-        top: 210px;
-        padding: 0px 250px 0px 250px;
+        top: 300px;
+        padding: 0 50px 0 50px;
     }
     
-    
+    /* Section fondateur */
     .fondateur{
         background-color: #393939;
     }
     
+    /* Titre fondateur */
     h5{
         margin: 0;
+        width: 768px;
         color: #849561;
         font-family: "Roboto", sans-serif;
         font-weight: 700;
-        font-size: 22px;
-        line-height: 25.78px;
-        letter-spacing: 23%;
+        font-size: 28px;
+        line-height: 32.81px;
+        letter-spacing: 4px;
         text-align: center;
         padding-top: 50px;
+        padding-bottom: 50px;
     }
     
+    /* Tout de Bradley et Laura */
     .presentation{
-        width: 1440px;
-        height: 808px;
+        width: 768px;
+        height: 750px;
         display: flex;
         flex-direction: row;
         align-items: center;
+        justify-content: center;
         gap: 30px;
-        padding-left: 180px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
     
+    /* Tout Bradley */
     .bradley{
         background-color: #849561;
         color: white;
-        width: 462px;
-        height: 450px;
+        width: 336px;
+        height: 570px;
         padding-left: 35px;
         padding-right: 35px;
     }
     
+    /* Titre de Bradley */
     .bradley2{
         font-family: "Roboto", sans-serif;
         font-weight: 700;
@@ -793,24 +909,27 @@ h5{
         padding: 130px 35px 20px 0px;
     }
     
+    /* Paragraphe de Bradley */
     .bradley3{
         font-family: "Roboto", sans-serif;
         font-weight: 400;
-        font-size: 14px;
-        line-height: 16.76px;
+        font-size: 16px;
+        line-height: 19.15px;
         letter-spacing: 3px;
         padding: 0 0 20px 0px;
     }
     
+    /* Tout Laura */
     .laura{
         background-color: #849561;
         color: white;
-        width: 462px;
-        height: 450px;
+        width: 336px;
+        height: 570px;
         padding-left: 35px;
         padding-right: 35px;
     }
     
+    /* Titre de Laura */
     .laura2{
         font-family: "Roboto", sans-serif;
         font-weight: 700;
@@ -820,39 +939,47 @@ h5{
         padding: 130px 35px 20px 0px;
     }
     
+    /* Paragraphe de Laura */
     .laura3{
         font-family: "Roboto", sans-serif;
         font-weight: 400;
-        font-size: 14px;
-        line-height: 16.76px;
+        font-size: 16px;
+        line-height: 19.15px;
         letter-spacing: 3px;
         padding: 0 0 20px 0;
     }
     
+    /* Barre horizontal */
     .fin{
         position: relative;
         top: 120px;
-        width: 460px;
+        width: 250px;
     }
     
+    /* Image de Bradley */
     .imgbradley{
         position: relative;
-        background-image: url("./Image/Mask\ group.svg");
-        bottom: 450px;
-        left: 120px;
-        width: 205px;
-        height: 203px;
+        background-image: url("./Image/mec-mobile.svg");
+        background-repeat: no-repeat;
+        bottom: 600px;
+        left: 70px;
+        width: 170px;
+        height: 152px;
     }
     
+    /* Image de laura */
     .imglaura{
         position: relative;
-        background-image: url("./Image/Mask\ group\ laura.svg");
-        bottom: 450px;
-        left: 120px;
-        width: 205px;
-        height: 203px;
+        background-image: url("./Image/meuf-mobile.svg");
+        background-repeat: no-repeat;
+        bottom: 550px;
+        right: 120px;
+        width: 170px;
+        height: 152px;
+        padding-left: 140px;
     }
     
+    /* Les 3 carrés */
     .carre{
         display: flex;
         flex-direction: row;
@@ -860,6 +987,7 @@ h5{
     
     }
     
+    /* Carré du logo google */
     .carre1{
         color: #393939;
         background-color: #393939;
@@ -867,32 +995,37 @@ h5{
         height: 48px;
     }
     
+    /* Logo google */
     .google{
         background-image: url("./Image/Google+.svg");
         background-repeat: no-repeat;
-        width: 22px;
+        width: 50px;
         height: 15px;
         position: relative;
         top: 15px;
         left: 15px;
     }
+
+    /* Carré du logo twitter */
     .carre2{
         color: #393939;
         background-color: #393939;
         width: 49px;
         height: 48px;
     }
-    
+
+    /* Logo twitter */
     .twitter{
         background-image: url("./Image/Twitter.svg");
         background-repeat: no-repeat;
-        width: 22px;
+        width: 50px;
         height: 16px;
         position: relative;
         top: 17px;
         left: 14px;
     }
     
+    /* Carré du logo facebook */
     .carre3{
         color: #393939;
         background-color: #393939;
@@ -900,13 +1033,15 @@ h5{
         height: 48px;
     }
     
+    /* Logo facebook */
     .facebook{
         background-image: url("./Image/Facebook.svg");
         background-repeat: no-repeat;
-        width: 10px;
+        width: 50px;
         height: 18px;
         position: relative;
         top: 15px;
         left: 19px;
     }
+    
 }
