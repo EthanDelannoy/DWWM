@@ -1,0 +1,40 @@
+body{
+        background-color: blue;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        
+}
+
+.rond{
+    border: dashed 10px white;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    border-radius: 100%;
+    animation-name: turn;
+    animation: turn 1.5s 0s alternate infinite ease-in;
+}
+
+.rond2{
+    border: dashed 10px cyan;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 650px;
+    border-radius: 100%;
+    animation-name: turn;
+    animation: turn 1.5s 0s alternate infinite ease-in;
+}
+
+@keyframes turn {
+    from{
+        opacity: 1;
+        transform: rotate(180deg);
+    }
+    to{
+        opacity: 1;
+    }
+}
