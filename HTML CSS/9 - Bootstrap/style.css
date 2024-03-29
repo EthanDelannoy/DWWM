@@ -5,3 +5,16 @@
 video{
     object-fit: cover;
 }
+.paralaxe{
+    height: 250px;
+}
+
+.paralaxe{
+    margin-top: 20px;
+    background-image: url("./img/parallax.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+}
