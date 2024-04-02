@@ -63,13 +63,8 @@ let personne = {
         titulaire: 'John Doe',
         };
     
+     personne2.solde = personne2.solde + 500
+
     console.log(personne2);
-
-    let solde = 1000
-    let addsolde = 500;
-
-    let newsolde = solde + addsolde
-
-    console.log(personne2 + newsolde);
 
 
