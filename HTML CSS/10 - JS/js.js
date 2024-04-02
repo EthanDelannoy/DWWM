@@ -66,7 +66,7 @@ let personne = {
     console.log(personne2);
 
     let solde = 1000
-    let addsolde = 500
+    let addsolde = 500;
 
     let newsolde = solde + addsolde
 
