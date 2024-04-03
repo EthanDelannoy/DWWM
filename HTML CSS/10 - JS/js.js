@@ -68,3 +68,86 @@ let personne = {
     console.log(personne2);
 
 
+    function saluer(Alice) {
+        return "Bonjour," + " Alice "
+    }
+
+    console.log(saluer("Alice"));
+
+
+    let Multiplication;
+
+    function multipli() {
+        const a = 7;
+        const b = 8;
+
+        Multiplication = 7 * 8;
+    }
+    multipli();
+
+     console.log(Multiplication);
+
+
+
+
+
+    function determineage(age){
+     if (age >= 18) { 
+        console.log("majeur");
+     }
+
+     else { 
+        console.log("mineur");
+     }
+    }
+    determineage(18)
+
+     for (let i = 2; i <= 20; i += 2) {
+        console.log(i);
+     }
+
+
+    //  const randomNumber = Math.floor((Math.random() * 100) +1)
+     let tentative = prompt ("Entrez un nombre aléatoire entre 1 et 100")
+
+     while (tentative !== '72') {
+        console.log("Mauvaise réponse, essaie encore");
+        tentative = prompt ("Perdu. Entrez un nombre aléatoire entre 1 et 100")
+     }
+
+     console.log("Bravo, tu as gagné... Rien");
+
+
+
+     function nombreJoursDansMois(mois, annee) {
+        
+        const bissextile = (annee % 4 === 0 && annee % 100 !== 0) || (annee % 400 === 0);
+    
+        const joursParMois = [
+            31, // janvier
+            bissextile ? 29 : 28, // février
+            31, // mars
+            30, // avril
+            31, // mai
+            30, // juin
+            31, // juillet
+            31, // août
+            30, // septembre
+            31, // octobre
+            30, // novembre
+            31  // décembre
+        ];
+    
+        
+        if (mois < 1 || mois > 12) {
+            return "Mois invalide";
+        }
+    
+        // Retourne le nombre de jours dans le mois spécifié
+        return joursParMois[mois - 1];
+    }
+    
+    
+    const mois = 2; 
+    const annee = 2024;
+    console.log(nombreJoursDansMois(mois, annee));
