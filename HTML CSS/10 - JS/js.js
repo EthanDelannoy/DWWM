@@ -108,14 +108,14 @@ let personne = {
 
 
     //  const randomNumber = Math.floor((Math.random() * 100) +1)
-     let tentative = prompt ("Entrez un nombre aléatoire entre 1 et 100")
+    //  let tentative = prompt ("Entrez un nombre aléatoire entre 1 et 100")
 
-     while (tentative !== '72') {
-        console.log("Mauvaise réponse, essaie encore");
-        tentative = prompt ("Perdu. Entrez un nombre aléatoire entre 1 et 100")
-     }
+    //  while (tentative !== '72') {
+    //     console.log("Mauvaise réponse, essaie encore");
+    //     tentative = prompt ("Perdu. Entrez un nombre aléatoire entre 1 et 100")
+    //  }
 
-     console.log("Bravo, tu as gagné... Rien");
+    //  console.log("Bravo, tu as gagné... Rien");
 
 
 
@@ -143,11 +143,111 @@ let personne = {
             return "Mois invalide";
         }
     
-        // Retourne le nombre de jours dans le mois spécifié
         return joursParMois[mois - 1];
     }
     
     
-    const mois = 2; 
+    const mois =  3; 
     const annee = 2024;
     console.log(nombreJoursDansMois(mois, annee));
+
+
+
+    function nombreDeJours(num){
+        let nombreDeJours;
+        let annee = new Date().getFullYear();
+    switch (num) {
+        case 1:
+            nombreDeJours = 31;
+            break;
+        case 2:
+            if (annee % 4 == 0) {
+                nombreDeJours = 29;
+            }
+            else {
+            nombreDeJours = 28;
+            }
+            break;
+        case 3:
+            nombreDeJours = 31;
+            break;
+        case 4:
+            nombreDeJours = 30;
+            break;
+        case 5:
+            nombreDeJours = 31;
+            break;
+        case 6:
+            nombreDeJours = 30;
+            break;
+        case 7:
+            nombreDeJours = 31;
+            break;
+        case 8:
+            nombreDeJours = 31;
+            break;
+        case 9:
+            nombreDeJours = 30;
+            break;
+        case 10:
+            nombreDeJours = 31;
+            break;
+        case 11:
+            nombreDeJours = 30;
+            break;
+        case 12:
+            nombreDeJours = 31;
+            break;
+        default:
+            nombreDeJours = "mois invalide";
+    }
+    
+    console.log("nombre de jour : " + nombreDeJours);
+    }
+
+    nombreDeJours(2);
+
+    const button = document.getElementById('mybutton');
+    button.addEventListener('click', function(){
+
+    const p = document.getElementById('paragraphe');
+    p.textContent = "Hello world !";
+    
+    });
+    
+
+    const button2 = document.getElementById('mybutton2');
+    button2.addEventListener('click', function(){
+
+    const p2 = document.getElementById('paragraphecolor');
+    p2.style.color = "red";
+    
+    });
+
+    const button3 = document.getElementById('mybutton3');
+    const ul = document.getElementById('liste');
+
+    button3.addEventListener('click', function(){
+    
+    let li = document.createElement("li");
+    li.textContent = "Nouvel élément";
+    liste.appendChild(li);
+    });
+
+
+    const button4 = document.getElementById('mybutton4');
+    button4.addEventListener('click', function(){
+
+    const element = document.getElementById("liste4");
+    element.removeChild(element.children[0]);
+
+    });
+    
+    
+    let buttons = document.querySelectorAll("button");
+  
+    buttons.forEach(function(button) {
+        button.addEventListener("click", function() {
+            console.log("Bouton cliqué :", button.id);
+        });
+    });
