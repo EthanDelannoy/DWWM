@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Julith</title>
+</head>
+
+<body>
+    <main>
+
+        <section id="accueil">
+            <div class="opacite">
+                <img class="logo" src="./image/Logo-removebg-preview.png" alt="Logo">
+            </div>
+            <div class="button-debut">
+                <button id="jouer">Jouer</button>
+                <button id="tutoriel">Tutoriel</button>
+            </div>
+
+            <dialog id="ouvertureModal">
+                <p>Le jeu commence une fois vos personnages et pseudo choisi.<br>
+                    Vous commencez chacun d'un bout à l'autre de la carte.<br>
+                    Votres but est d'utilisé vos points d'attaque et vos points de mouvement pour avancer et attaquer
+                    votre adversaire.<br>
+                    Chaque personne bénéficie de statistique différente, de sort différents et de stratégie d'attaque et
+                    de defense diffrérente.<br>
+                    Prenez le personne qui vous correspond le mieux et jeté vous dans la bataille !<br>
+                    Le premier personne qui descend à 0 points de vie a perdu et le combat s'arrête.<br>
+                    <span>Saurez-vous être à la hauteur de la bataille qui vous attend ?</span><br>
+                </p>
+                <button id="modalEnd">Close dialog</button>
+            </dialog>
+
+        </section>
+
+
+        <section id="personnage">
+
+            <div class="fondPersonnage">
+                <h2>Sélectionnez vos personnages</h2>
+
+                <div class="joueur">
+                    <input type="text" class="pseudo1" placeholder="Joueur 1, Entrez votre pseudo">
+                    <input type="text" class="pseudo2" placeholder="Joueur 2, Entrez votre pseudo">
+                </div>
+                <div class="carouselDeux">
+                    <div class="carousel">
+                        <div class="carousel-container">
+                            <div class="slide"><img src="./image/iop 1.svg" alt="Slide 1"></div>
+                            <div class="slide"><img src="./image/eni (2).png" alt="Slide 2"></div>
+                            <div class="slide"><img src="./image/huppeer 1.svg" alt="Slide 3"></div>
+                            <div class="slide"><img src="./image/cra 1.svg" alt="Slide 4"></div>
+
+                        </div>
+                        <div class="flech">
+                            <button class="prev" onclick="moveSlide1(-1)">&#10094;</button>
+                            <button class="next" onclick="moveSlide1(1)">&#10095;</button>
+                        </div>
+                    </div>
+
+                    <div class="carousel2">
+                        <div class="carousel-container2">
+                            <div class="slide2"><img src="./image/iop 1.svg" alt="Slide 1"></div>
+                            <div class="slide2"><img src="./image/eni (2).png" alt="Slide 2"></div>
+                            <div class="slide2"><img src="./image/huppeer 1.svg" alt="Slide 3"></div>
+                            <div class="slide2"><img src="./image/cra 1.svg" alt="Slide 4"></div>
+
+                        </div>
+
+                        <div class="flech2">
+                            <button class="prev2" onclick="moveSlide2(-1)">&#10094;</button>
+                            <button class="next2" onclick="moveSlide2(1)">&#10095;</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+    <script src="js.js"></script>
+</body>
+
+</html>

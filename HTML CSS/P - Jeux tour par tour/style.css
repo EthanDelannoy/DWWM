@@ -1,0 +1,269 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ------------------------------------------------------ECRAN DE DEBUT--------------------------------------------------------------- */
+/* Opacité du fond */
+.opacite::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+
+}
+
+/* Fond */
+#accueil {
+    display: block;
+    background-image: url("./image/fond-accueil.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 100vh;
+}
+
+/* Logo */
+.logo {
+    position: relative;
+    bottom: 1rem;
+    left: 40rem;
+}
+
+.button-debut {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+#jouer {
+    background: linear-gradient(to right, #996B31, #E7D88A);
+    width: 200px;
+    height: 50px;
+    font-size: 24px;
+    border-radius: 10px;
+}
+
+#tutoriel {
+    background: linear-gradient(to right, #996B31, #E7D88A);
+    width: 200px;
+    height: 50px;
+    font-size: 24px;
+    border-radius: 10px;
+}
+
+#ouvertureModal{
+    display: none
+}
+
+#ouvertureModal{
+    position: relative;
+    /* left: 600px; */
+    width: auto;
+    padding: 20px;
+    margin: 30px 100px 10px 100px;
+    background: linear-gradient(to right, #996B31, #E7D88A);
+    color: #300E4C;
+    font-size: 24px;
+    line-height: 50px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#modalEnd{
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #300E4C;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+}
+
+span{
+    font-weight: 600;
+}
+
+#personnage{
+    display: none;
+}
+
+/* ---------------------------------------------------SECTION PERSONNAGES------------------------------------------------------------ */
+.fondPersonnage::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1; 
+}
+
+
+.fondPersonnage{
+    display: block;
+    background-image: url("./image/fond-personnage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: auto;
+    height: 100vh;
+}
+
+h2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+    color: white;
+    font-size: 60px;
+    padding-top: 50px;
+}
+
+.joueur{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 750px;
+    font-size: 40px;
+    padding-top: 60px;
+}
+
+.pseudo1{
+    height: 20px;
+    width: 200px;
+  }
+
+  .pseudo2{
+    height: 20px;
+    width: 200px;
+    position: relative;
+    left: 130px;
+  }
+
+.joueur1{
+    position: relative;
+    z-index: 2;
+    color: #996B31;
+}
+
+.joueur2{
+    position: relative;
+    z-index: 2;
+    color: purple;
+}
+
+/* -----------------------------------------------------------CARROUSEL----------------------------------------------------------- */
+.carouselDeux{
+    display: flex;
+    justify-content: center;
+}
+
+
+.carousel {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .carousel-container {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .slide {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    right: 0px;
+  }
+  
+  .flech{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .prev {
+    position: relative;
+    left: 200px;
+    width: 20px;
+    height: 30px;
+    cursor: pointer;
+  }
+  
+  .next {
+    position: relative;
+    left: 630px;
+    width: 20px;
+    height: 30px;
+    cursor: pointer;
+  }
+
+  /* ----------------------------------------------------------------Carrousel 2-------------------------------------------------  */
+
+  .carousel2 {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .carousel-container2 {
+    display: flex;
+    transition: transform 0.5s ease;
+
+    
+  }
+  
+  .slide2 {
+    flex: 0 0 100%;   
+     display: flex;
+    justify-content: center;
+    position: relative;
+    left: 120px;
+  }
+  
+  .flech2 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .prev2 {
+    position: relative;
+    left: 320px;
+    width: 20px;
+    height: 30px;
+    cursor: pointer;
+  }
+  
+  .next2 {
+    position: relative;
+    left: 740px;
+    width: 20px;
+    height: 30px;
+    cursor: pointer;
+  }
