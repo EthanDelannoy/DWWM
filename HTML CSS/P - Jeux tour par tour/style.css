@@ -122,6 +122,7 @@ span{
 
 h2{
     position: relative;
+    left: 65px;
     display: flex;
     justify-content: center;
     z-index: 2;
@@ -136,22 +137,53 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 750px;
     font-size: 40px;
     padding-top: 60px;
 }
 
-.pseudo1{
-    height: 20px;
+.inputlabel1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #E7D88A;
+  position: relative ;
+  right: 270px;
+}
+
+.inputlabel2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: purple;
+  position: relative ;
+  left: 380px;
+}
+
+#pseudo1{
+    height: 30px;
     width: 200px;
   }
 
-  .pseudo2{
-    height: 20px;
+  #pseudo2{
+    height: 30px;
     width: 200px;
-    position: relative;
-    left: 130px;
   }
+
+.valider1{
+  background-color: #E7D88A;
+  height: 25px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.valider2{
+  background-color: purple;
+  height: 25px;
+  width: 50px;
+  cursor: pointer;
+}
 
 .joueur1{
     position: relative;
@@ -164,6 +196,90 @@ h2{
     z-index: 2;
     color: purple;
 }
+
+.doublvalid{
+  display: flex;
+  justify-content: center;
+  gap: 720px;
+}
+
+#validPerso1{
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  z-index: 2;
+  background-color: #E7D88A;
+  width: 250px;
+  height: 50px;
+  cursor: pointer;
+}
+
+#validPerso2{
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  z-index: 2;
+  left: 130px;
+  background-color: purple;
+  width: 250px;
+  height: 50px;
+  cursor: pointer;
+}
+
+#croco {
+  display: none;
+  position: relative;
+  z-index: 2;
+  bottom: 490px;
+  left: -200px; 
+  height: 150px;
+  animation: crocoArrival 1.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes crocoArrival {
+  0% {
+    left: -200px; 
+    transform: rotate(-90deg); 
+  }
+  100% {
+    left: 880px; 
+    transform: rotate(0); 
+  }
+}
+
+#shushu {
+  display: none;
+  position: relative;
+  z-index: 2;
+  height: 200px;
+  bottom: 460px;
+  left: -200px; 
+  animation: shushuArrival 1.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes shushuArrival {
+  0% {
+    right: -200px; 
+    transform: rotate(-90deg); 
+  }
+  100% {
+    left: 740px; 
+    transform: rotate(0); 
+  }
+}
+
+#game {
+  display: none;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  z-index: 2;
+  bottom: 430px;
+  left: 515px;
+  width: 220px;
+  height: 30px;
+  background: linear-gradient(to right, #E7D88A, hwb(300 17% 42%));
+  font-size: 18px;
+  cursor: pointer;
+}
+
 
 /* -----------------------------------------------------------CARROUSEL----------------------------------------------------------- */
 .carouselDeux{
@@ -204,7 +320,7 @@ h2{
   
   .prev {
     position: relative;
-    left: 200px;
+    left: 170px;
     width: 20px;
     height: 30px;
     cursor: pointer;
@@ -212,7 +328,7 @@ h2{
   
   .next {
     position: relative;
-    left: 630px;
+    left: 690px;
     width: 20px;
     height: 30px;
     cursor: pointer;
@@ -254,7 +370,7 @@ h2{
   
   .prev2 {
     position: relative;
-    left: 320px;
+    left: 300px;
     width: 20px;
     height: 30px;
     cursor: pointer;
@@ -262,8 +378,31 @@ h2{
   
   .next2 {
     position: relative;
-    left: 740px;
+    left: 790px;
     width: 20px;
     height: 30px;
     cursor: pointer;
   }
+
+/* -----------------------------------------------------------SECTION COMBAT ----------------------------------------------------- */
+#combat::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1; 
+}
+
+#combat{
+  display: none;
+  background-image: url("./image/fond-combat.jpg");
+  background-repeat: no-repeat;
+  width: auto;
+  height: 100vh;
+}
+
+
+

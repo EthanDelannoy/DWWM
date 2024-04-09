@@ -4,6 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Julith</title>
 </head>
@@ -43,8 +49,16 @@
                 <h2>Sélectionnez vos personnages</h2>
 
                 <div class="joueur">
-                    <input type="text" class="pseudo1" placeholder="Joueur 1, Entrez votre pseudo">
-                    <input type="text" class="pseudo2" placeholder="Joueur 2, Entrez votre pseudo">
+                    <div class="inputlabel1">
+                        <label for="pseudo1">Joueur 1 :</label>
+                        <input type="text" id="pseudo1" placeholder="Entrez votre pseudo">
+                        <button class="valider1">Valider</button>
+                    </div>
+                    <div class="inputlabel2">
+                        <label for="pseudo2">Joueur 2 :</label>
+                        <input type="text" id="pseudo2" placeholder="Entrez votre pseudo">
+                        <button class="valider2">Valider</button>
+                    </div>
                 </div>
                 <div class="carouselDeux">
                     <div class="carousel">
@@ -78,8 +92,25 @@
 
                 </div>
 
+                <div class="doublvalid">
+                    <button id="validPerso1">Selectionner ce personnage</button>
+                    <button id="validPerso2">Selectionner ce personnage</button>
+                </div>
+
+
+                
+                    <img id="croco" src="./image/croco.png" alt="crocobur">
+                    <img id="shushu" src="./image/suko.png" alt="shushu">
+              
+                    <button id="game">Lancez la partie</button>
+
             </div>
 
+        </section>
+
+        <section id="combat">
+
+            <h2>Battez-vous pour la gloire de Bonta et de Brakmar !</h2>
 
         </section>
 

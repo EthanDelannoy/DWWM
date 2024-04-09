@@ -22,6 +22,9 @@ jouer.addEventListener('click', () => {
     const accueil = document.getElementById('accueil')
     accueil.style.display = 'none';
 
+    const combat = document.getElementById('combat')
+    combat.style.display = 'none'
+
     const personnage = document.getElementById('personnage')
     personnage.style.display = 'block'
 })
@@ -30,17 +33,44 @@ jouer.addEventListener('click', () => {
 
 let slideIndex = 0;
 
+let persochoisij1;
+
 function moveSlide1(n) {
   const slides = document.querySelectorAll('.slide');
   const totalSlides = slides.length;
   slideIndex = (slideIndex + n + totalSlides) % totalSlides;
   const offset = -slideIndex * 100;
   document.querySelector('.carousel-container').style.transform = `translateX(${offset}%)`;
+
+  persochoisij1 = slideIndex
+
+switch (persochoisij1) {
+  case 0:
+    tab[0]
+    console.log(tab[0]);
+    break;
+  case 1:
+    tab[1]
+    console.log(tab[1]);
+    break;
+  case 2:
+    tab[2]
+    console.log(tab[2]);
+    break;
+  case 3:
+    tab[3]
+    console.log(tab[3]);
+    break;
 }
+
+}
+
+
 
 // ---------------------------------------------------------------CARROUSEL 2------------------------------------------------------
 
 let slidesIndex = 0;
+let persochoisij2;
 
 function moveSlide2(n) {
   const slides = document.querySelectorAll('.slide2');
@@ -48,9 +78,117 @@ function moveSlide2(n) {
   slidesIndex = (slidesIndex + n + totalSlides) % totalSlides;
   const offset = -slidesIndex * 100;
   document.querySelector('.carousel-container2').style.transform = `translateX(${offset}%)`;
+  persochoisij2 = slideIndex
+
+  persochoisij2 = slidesIndex
+
+  switch (persochoisij2) {
+    case 0:
+      clonedTab2[0]
+      console.log(clonedTab2[0]);
+      break;
+    case 1:
+      clonedTab2[1]
+      console.log(clonedTab2[1]);
+      break;
+    case 2:
+      clonedTab2[2]
+      console.log(clonedTab2[2]);
+      break;
+    case 3:
+      clonedTab2[3]
+      console.log(clonedTab2[3]);
+      break;
+  }
+  
 }
 
+// -----------------------------------------------------BOUTON SELECT PERSO JOUEUR 1 --------------------------------------------------
+
+const selec = document.getElementById("validPerso1")
+
+selec.addEventListener('click', () => {
+    const croco = document.getElementById('croco')
+    croco.style.display = 'inline';
+    checkDisplay();
+});
+
+// -----------------------------------------------------BOUTON SELECT PERSO JOUEUR 2 --------------------------------------------------
 
 
+const select = document.getElementById("validPerso2")
+
+select.addEventListener('click', () => {
+    const shushu = document.getElementById('shushu')
+    shushu.style.display = 'inline';
+    checkDisplay();
+});
+
+// -----------------------------------------------------BOUTON COMMENCEZ LA PARTIE --------------------------------------------------
 
 
+function checkDisplay() {
+    const croco = document.getElementById('croco');
+    const shushu = document.getElementById('shushu');
+    const game = document.getElementById('game');
+
+    if (croco.style.display === 'inline' && shushu.style.display === 'inline') {
+      setTimeout(function() {
+        game.style.display = 'inline';
+    }, 1500); // 
+}
+}
+
+// ------------------------------------------------------TABLEAU DES PERSONNAGES---------------------------------------------------
+
+const tab = [
+  
+  {
+    nom: "Iop",
+    pdv: 5000,
+    pa: 10,
+    atk: 600,
+    dfs: 200
+},
+{
+  nom: "Eniripsa",
+  pdv: 4500,
+  pa: 11,
+  atk: 300,
+  pvr: 500,
+},
+{
+  nom: "Huppermage",
+  pdv: 4000,
+  pa: 12,
+  atk: 400,
+  pvr: 400,
+},
+{
+  nom: "Cra",
+  pdv: 3000,
+  pa: 10,
+  atk: 800,
+  esquive : 1
+}
+];
+
+const clonedTab1 = Array.from(tab);
+
+const clonedTab2 = [...tab];
+
+// ---------------------------------------------------------------SECTION COMBAT---------------------------------------------------
+
+const game = document.getElementById("game")
+
+
+game.addEventListener('click', () => {
+    const personnage = document.getElementById('personnage')
+    personnage.style.display = 'none';
+
+    const accueil = document.getElementById('accueil')
+    accueil.style.display = 'none';
+
+    const combat = document.getElementById('combat')
+    combat.style.display = 'block'
+})
