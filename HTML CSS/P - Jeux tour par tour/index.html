@@ -5,11 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Julith</title>
 </head>
@@ -98,11 +102,11 @@
                 </div>
 
 
-                
-                    <img id="croco" src="./image/croco.png" alt="crocobur">
-                    <img id="shushu" src="./image/suko.png" alt="shushu">
-              
-                    <button id="game">Lancez la partie</button>
+
+                <img id="croco" src="./image/croco.png" alt="crocobur">
+                <img id="shushu" src="./image/suko.png" alt="shushu">
+
+                <button id="game">Lancez la partie</button>
 
             </div>
 
@@ -111,6 +115,32 @@
         <section id="combat">
 
             <h2>Battez-vous pour la gloire de Bonta et de Brakmar !</h2>
+
+            <div class="combatjouer">
+
+                <div id="joueur1">
+                    <span class="j1pseudo">Joueur 1</span>
+                    <div id="barreHp">5000/5000</div>
+                    <div id="imgjoueur1"></div>
+                <div class="bouton1">
+                    <button id="btnSoin">Défense</button>
+                    <button id="btnAtk">Attaque</button>
+                </div>
+                </div>
+
+
+                <div id="joueur2">
+                    <span class="j2pseudo">Joueur 2</span>
+                    <div id="barreHp2">5000/5000</div>
+                    <div id="imgjoueur2"></div>
+                    <div class="bouton2">
+                        <button id="btnAtk2">Attaque</button>
+                        <button id="btnSoin2">Défense</button>
+                    </div>
+                </div>
+
+
+            </div>
 
         </section>
 

@@ -29,8 +29,7 @@ jouer.addEventListener('click', () => {
     personnage.style.display = 'block'
 })
 
-// ---------------------------------------------------------------CARROUSEL----------------------------------------------------------
-
+// ------------------------------------------------------CARROUSEL AVEC PERSO J1-------------------------------------------------------
 let slideIndex = 0;
 
 let persochoisij1;
@@ -63,11 +62,26 @@ switch (persochoisij1) {
     break;
 }
 
+let iop = tab[0]
+let eniripsa = tab[1]
+let huppermage = tab[2]
+let cra = tab[3]
+
+let imgjoueur1 = document.getElementById('imgjoueur1');
+
+if (persochoisij1 === tab[0]) {
+  imgjoueur1.style.backgroundImage = "url('./image/iop 1.svg')";
+} else if (persochoisij1 === tab[1]) {
+  imgjoueur1.style.backgroundImage = "url('./image/eni (2).png')";
+} else if (persochoisij1 === tab[2]) {
+  imgjoueur1.style.backgroundImage = "url('./image/huppeer 1.svg')";
+} else if (persochoisij1 === tab[3]) {
+  imgjoueur1.style.backgroundImage = "url('./image/cra 1.svg')";
 }
 
+}
 
-
-// ---------------------------------------------------------------CARROUSEL 2------------------------------------------------------
+// --------------------------------------------------------CARROUSEL AVEC PERSO J2------------------------------------------------------
 
 let slidesIndex = 0;
 let persochoisij2;
@@ -102,6 +116,7 @@ function moveSlide2(n) {
   }
   
 }
+
 
 // -----------------------------------------------------BOUTON SELECT PERSO JOUEUR 1 --------------------------------------------------
 
@@ -191,4 +206,18 @@ game.addEventListener('click', () => {
 
     const combat = document.getElementById('combat')
     combat.style.display = 'block'
+});
+
+const boutonatk = document.getElementById('btnAtk')
+
+boutonatk.addEventListener('click', () => {
+  persochoisij2.pdv = persochoisij2.pdv - persochoisij1.atk
+  console.log(persochoisij2.pdv);
+})
+
+const boutonatk2 = document.getElementById('btnAtk2')
+
+boutonatk2.addEventListener('click', () => {
+  persochoisij1.pdv = persochoisij1.pdv - persochoisij2.atk
+  console.log(persochoisij1.pdv);
 })

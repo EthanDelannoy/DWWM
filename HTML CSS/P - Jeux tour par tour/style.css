@@ -404,5 +404,122 @@ h2{
   height: 100vh;
 }
 
+.combatjouer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  gap: 650px;
+}
+
+span{
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.j1pseudo{
+  font-family: "Poppins", sans-serif;
+  color: #E7D88A;
+  font-size: 40px;
+}
+
+.j2pseudo{
+  font-family: "Poppins", sans-serif;
+  color: purple;
+  font-size: 40px;
+}
+
+#barreHp{
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: red;
+  height: 30px;
+  margin-top: 10px;
+}
+
+#barreHp2{
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: red;
+  height: 30px;
+  margin-top: 10px;
+}
 
 
+
+
+#imgjoueur1{
+  position: relative;
+  z-index: 2;
+  background-image: url("./image/iop 1.svg");
+  background-repeat: no-repeat;
+  height: 60vh;
+  width: 350px;
+  margin-top: 10px;
+}
+
+.bouton1{
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  
+}
+
+.bouton2{
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+#btnAtk{
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  background-color: #E7D88A;
+}
+
+#btnSoin{
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  background-color: #E7D88A;
+}
+
+#btnAtk2{
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  background-color: purple;
+}
+
+#btnSoin2{
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  background-color: purple;
+}
+
+
+#imgjoueur2{
+  position: relative;
+  z-index: 2;
+  background-image: url("./image/iop 1.svg");
+  background-repeat: no-repeat;
+  height: 60vh;
+  width: 350px;
+  margin-top: 10px;
+}
