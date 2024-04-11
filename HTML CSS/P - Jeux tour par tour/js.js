@@ -32,7 +32,14 @@ jouer.addEventListener('click', () => {
 // ------------------------------------------------------CARROUSEL AVEC PERSO J1-------------------------------------------------------
 let slideIndex = 0;
 
-let persochoisij1;
+
+let persochoisij1 = slideIndex
+
+let imgjoueur1 = document.getElementById('imgjoueur1');
+let barrehp = document.getElementById('barreHp');
+let btnSoin = document.getElementById('btnSoin');
+let selectPlayer1;
+let selectPlayer2;
 
 function moveSlide1(n) {
   const slides = document.querySelectorAll('.slide');
@@ -43,48 +50,76 @@ function moveSlide1(n) {
 
   persochoisij1 = slideIndex
 
-switch (persochoisij1) {
-  case 0:
-    tab[0]
-    console.log(tab[0]);
-    break;
-  case 1:
-    tab[1]
-    console.log(tab[1]);
-    break;
-  case 2:
-    tab[2]
-    console.log(tab[2]);
-    break;
-  case 3:
-    tab[3]
-    console.log(tab[3]);
-    break;
+  
+  switch (persochoisij1) {
+    case 0:
+      selectPlayer1  = Object.assign({}, tab[0])
+      imgjoueur1.style.backgroundImage = "url('./image/iop 1.svg')";
+      barrehp.textContent = selectPlayer1.pdv + "/5000";
+      btnSoin.textContent = "Défense"
+      break;
+    case 1:
+      selectPlayer1 = Object.assign({}, tab[1])
+      imgjoueur1.style.backgroundImage = "url('./image/eni (2).png')";
+      barrehp.textContent = selectPlayer1.pdv + "/4500";
+      btnSoin.textContent = "Soins"
+      break;
+    case 2:
+      selectPlayer1 = Object.assign({}, tab[2])
+      imgjoueur1.style.backgroundImage = "url('./image/huppeer 1.svg')";
+      barrehp.textContent = selectPlayer1.pdv +"/4000";
+      btnSoin.textContent = "Soins"
+      break;
+    case 3:
+      selectPlayer1 = Object.assign({}, tab[3])
+      imgjoueur1.style.backgroundImage = "url('./image/cra 1.svg')";
+      barrehp.textContent =  selectPlayer1.pdv + "/3000";
+      btnSoin.textContent = "Esquive"
+      break;
+  }
 }
 
-let iop = tab[0]
-let eniripsa = tab[1]
-let huppermage = tab[2]
-let cra = tab[3]
-
-let imgjoueur1 = document.getElementById('imgjoueur1');
-
-if (persochoisij1 === tab[0]) {
-  imgjoueur1.style.backgroundImage = "url('./image/iop 1.svg')";
-} else if (persochoisij1 === tab[1]) {
-  imgjoueur1.style.backgroundImage = "url('./image/eni (2).png')";
-} else if (persochoisij1 === tab[2]) {
-  imgjoueur1.style.backgroundImage = "url('./image/huppeer 1.svg')";
-} else if (persochoisij1 === tab[3]) {
-  imgjoueur1.style.backgroundImage = "url('./image/cra 1.svg')";
+const tab = [
+  
+  {
+    nom: "Iop",
+    pdv: 5000,
+    pa: 10,
+    atk: 600,
+    dfs: 200,
+},
+{
+  nom: "Eniripsa",
+  pdv: 4500,
+  pa: 11,
+  atk: 300,
+  pvr: 500,
+},
+{
+  nom: "Huppermage",
+  pdv: 4000,
+  pa: 12,
+  atk: 400,
+  pvr: 400,
+},
+{
+  nom: "Cra",
+  pdv: 3000,
+  pa: 10,
+  atk: 800,
+  esquive : 1
 }
+];
 
-}
+
+const boutonatk = document.getElementById('btnAtk')
+let barrehp2 = document.getElementById('barreHp2');
+
 
 // --------------------------------------------------------CARROUSEL AVEC PERSO J2------------------------------------------------------
 
 let slidesIndex = 0;
-let persochoisij2;
+let persochoisij2 = slidesIndex
 
 function moveSlide2(n) {
   const slides = document.querySelectorAll('.slide2');
@@ -92,31 +127,84 @@ function moveSlide2(n) {
   slidesIndex = (slidesIndex + n + totalSlides) % totalSlides;
   const offset = -slidesIndex * 100;
   document.querySelector('.carousel-container2').style.transform = `translateX(${offset}%)`;
-  persochoisij2 = slideIndex
+
 
   persochoisij2 = slidesIndex
 
+  let imgjoueur2 = document.getElementById('imgjoueur2');
+  let barrehp2 = document.getElementById('barreHp2');
+  let btnSoin2 = document.getElementById('btnSoin2');
+  
   switch (persochoisij2) {
     case 0:
-      clonedTab2[0]
-      console.log(clonedTab2[0]);
+    selectPlayer2 = Object.assign({}, tab[0])
+      imgjoueur2.style.backgroundImage = "url('./image/iop 1.svg')";
+      barrehp2.textContent =  selectPlayer2.pdv + "/5000";
+      btnSoin2.textContent = "Défense"
       break;
     case 1:
-      clonedTab2[1]
-      console.log(clonedTab2[1]);
+      selectPlayer2  = Object.assign({}, tab[1])
+      imgjoueur2.style.backgroundImage = "url('./image/eni (2).png')";
+      barrehp2.textContent = selectPlayer2.pdv +"/4500";
+      btnSoin2.textContent = "Soins"
       break;
     case 2:
-      clonedTab2[2]
-      console.log(clonedTab2[2]);
+      selectPlayer2  = Object.assign({}, tab[2])
+      imgjoueur2.style.backgroundImage = "url('./image/huppeer 1.svg')";
+      barrehp2.textContent = selectPlayer2.pdv + "/4000";
+      btnSoin2.textContent = "Soins"
       break;
     case 3:
-      clonedTab2[3]
-      console.log(clonedTab2[3]);
+      selectPlayer2  = Object.assign({}, tab[3])
+      imgjoueur2.style.backgroundImage = "url('./image/cra 1.svg')";
+      barrehp2.textContent = selectPlayer2.pdv +"/3000";
+      btnSoin2.textContent = "Esquive"
       break;
   }
-  
 }
 
+const boutonatk2 = document.getElementById('btnAtk2')
+let barreHp = document.getElementById('barreHp');
+
+
+function updateDisplay() {
+  if (tourJoueur1) {
+    boutonatk.style.display = 'block';
+    btnSoin.style.display = 'block';
+    boutonatk2.style.display = 'none';
+    btnSoin2.style.display = 'none';
+  } else {
+    boutonatk.style.display = 'none';
+    btnSoin.style.display = 'none';
+    boutonatk2.style.display = 'block';
+    btnSoin2.style.display = 'block';
+  }
+}
+
+let modalFin = document.getElementById('ouvertureModalFin')
+let pModalFin = document.getElementById('pModalFin')
+
+boutonatk.addEventListener('click', () => {
+  selectPlayer2.pdv = selectPlayer2.pdv - selectPlayer1.atk;
+  barrehp2.textContent = selectPlayer2.pdv;
+  if (selectPlayer2.pdv <= 0) {
+    modalFin.style.display ='block'
+    // pModalFin.textContent = 'Le joueur 1 à gagner !<br> Bravo à toi jeune gerrier. Tu fais honneur à Bonta. Remettras-tu ton titre et ton honneur en jeux ? Brakmar saura te faire plier !'
+  }
+  tourJoueur1 = false;
+  updateDisplay();
+});
+
+boutonatk2.addEventListener('click', () => {
+  selectPlayer1.pdv = selectPlayer1.pdv - selectPlayer2.atk;
+  barreHp.textContent = selectPlayer1.pdv;
+  if (selectPlayer1.pdv <= 0) {
+    modalFin.style.display ='block'
+    // pModalFin.textContent = 'Le joueur 2 à gagner !Bravo à toi jeune gerrier. Tu fais honneur à Brakmar. Remettras-tu ton titre et ton honneur en jeux ? Bonta saura te faire plier ! '
+  }
+  tourJoueur1 = true;
+  updateDisplay();
+});
 
 // -----------------------------------------------------BOUTON SELECT PERSO JOUEUR 1 --------------------------------------------------
 
@@ -153,45 +241,6 @@ function checkDisplay() {
     }, 1500); // 
 }
 }
-
-// ------------------------------------------------------TABLEAU DES PERSONNAGES---------------------------------------------------
-
-const tab = [
-  
-  {
-    nom: "Iop",
-    pdv: 5000,
-    pa: 10,
-    atk: 600,
-    dfs: 200
-},
-{
-  nom: "Eniripsa",
-  pdv: 4500,
-  pa: 11,
-  atk: 300,
-  pvr: 500,
-},
-{
-  nom: "Huppermage",
-  pdv: 4000,
-  pa: 12,
-  atk: 400,
-  pvr: 400,
-},
-{
-  nom: "Cra",
-  pdv: 3000,
-  pa: 10,
-  atk: 800,
-  esquive : 1
-}
-];
-
-const clonedTab1 = Array.from(tab);
-
-const clonedTab2 = [...tab];
-
 // ---------------------------------------------------------------SECTION COMBAT---------------------------------------------------
 
 const game = document.getElementById("game")
@@ -208,16 +257,77 @@ game.addEventListener('click', () => {
     combat.style.display = 'block'
 });
 
-const boutonatk = document.getElementById('btnAtk')
+// -------------------------------------------------------------MODAL DE FIN-----------------------------------------------------------
 
-boutonatk.addEventListener('click', () => {
-  persochoisij2.pdv = persochoisij2.pdv - persochoisij1.atk
-  console.log(persochoisij2.pdv);
-})
+const modalFinAccueil = document.getElementById("modalFinAccueil")
 
-const boutonatk2 = document.getElementById('btnAtk2')
 
-boutonatk2.addEventListener('click', () => {
-  persochoisij1.pdv = persochoisij1.pdv - persochoisij2.atk
-  console.log(persochoisij1.pdv);
-})
+modalFinAccueil.addEventListener('click', () => {
+    const personnage = document.getElementById('personnage')
+    personnage.style.display = 'none';
+    modalFin.style.display = 'none';
+
+    const accueil = document.getElementById('accueil')
+    accueil.style.display = 'block';
+    modalFin.style.display = 'none';
+
+    const combat = document.getElementById('combat')
+    combat.style.display = 'none'
+    modalFin.style.display = 'none';
+  });
+
+  const modalFinPersonnage = document.getElementById("modalFinPersonnage")
+
+
+  modalFinPersonnage.addEventListener('click', () => {
+    const personnage = document.getElementById('personnage')
+    personnage.style.display = 'block';
+    modalFin.style.display = 'none';
+    persochoisij1 = 0;
+    persochoisij2 = 0;
+
+    const accueil = document.getElementById('accueil')
+    accueil.style.display = 'none';
+    modalFin.style.display = 'none';
+
+    const combat = document.getElementById('combat')
+    combat.style.display = 'none'
+    modalFin.style.display = 'none';
+  });
+
+  const modalFinRecommencer = document.getElementById("modalFinRecommencer")
+
+
+  modalFinRecommencer.addEventListener('click', () => {
+    const personnage = document.getElementById('personnage')
+    personnage.style.display = 'none';
+    modalFin.style.display = 'none';
+
+    const accueil = document.getElementById('accueil')
+    accueil.style.display = 'none';
+    modalFin.style.display = 'none';
+
+    const combat = document.getElementById('combat')
+    combat.style.display = 'block'
+    modalFin.style.display = 'none';
+  });
+
+  // ------------------------------------------------------------------PSEUDO--------------------------------------------------------
+
+  let inputPseudo1 = document.getElementById('pseudo1');
+  let buttonValider1 = document.querySelector('.valider1');
+  let j1pseudo = document.querySelector('.j1pseudo')
+  
+    buttonValider1.addEventListener('click', () => {
+      let pseudoJoueur1 = inputPseudo1.value;
+      j1pseudo.textContent = pseudoJoueur1
+  });
+
+  let inputPseudo2 = document.getElementById('pseudo2');
+  let buttonValider2 = document.querySelector('.valider2');
+  let j2pseudo = document.querySelector('.j2pseudo')
+  
+    buttonValider1.addEventListener('click', () => {
+      let pseudoJoueur2 = inputPseudo2.value;
+      j2pseudo.textContent = pseudoJoueur2
+  });

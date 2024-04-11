@@ -464,7 +464,7 @@ span{
   background-image: url("./image/iop 1.svg");
   background-repeat: no-repeat;
   height: 60vh;
-  width: 350px;
+  width: 450px;
   margin-top: 10px;
 }
 
@@ -520,6 +520,87 @@ span{
   background-image: url("./image/iop 1.svg");
   background-repeat: no-repeat;
   height: 60vh;
-  width: 350px;
+  width: 450px;
   margin-top: 10px;
+}
+/* ------------------------------------------------------MODAL DE FIN -------------------------------------------------------------- */
+#ouvertureModalFin{
+  display: none;
+}
+
+#ouvertureModalFin{
+  position: relative;
+  z-index: 2;
+  bottom: 900px;
+  width: auto;
+  height: 92vh;
+  padding: 20px;
+  margin: 30px 100px 10px 100px;
+  background: linear-gradient(to right, #996B31, #E7D88A);
+  color: #300E4C;
+  font-size: 24px;
+  line-height: 50px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.titreModalFin{
+  padding-top: 100px;
+  margin-bottom: 100px;
+  font-size: 80px
+}
+
+#pModalFin{
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.boutonModalFin{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#modalFinAccueil{
+  margin-top: 200px;
+  padding: 5px 10px;
+  background-color: #300E4C;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 500px;
+  height: 70px;
+  font-size: 16px;
+
+}
+
+#modalFinPersonnage{
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #300E4C;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 500px;
+  height: 70px;
+  font-size: 16px;
+
+}
+
+#modalFinRecommencer{
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #300E4C;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 500px;
+  height: 70px;
+  font-size: 16px;
+
 }
