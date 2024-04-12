@@ -438,9 +438,10 @@ span{
   justify-content: center;
   align-items: center;
   color: white;
-  background-color: red;
+  background-color: transparent;
   height: 30px;
   margin-top: 10px;
+  border: 1px solid white;
 }
 
 #barreHp2{
@@ -450,17 +451,40 @@ span{
   justify-content: center;
   align-items: center;
   color: white;
+  background-color: transparent;
+  height: 30px;
+  margin-top: 10px;
+  border: 1px solid white;
+}
+
+#hptransparent{
+  position: relative;
+  z-index: 1;
+  bottom: 40px;
+  justify-content: center;
+  align-items: center;
+  color: white;
   background-color: red;
   height: 30px;
   margin-top: 10px;
 }
 
-
-
+#hptransparent2{
+  position: relative;
+  z-index: 1;
+  bottom: 40px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: red;
+  height: 30px;
+  margin-top: 10px;
+}
 
 #imgjoueur1{
   position: relative;
   z-index: 2;
+  bottom: 30px;
   background-image: url("./image/iop 1.svg");
   background-repeat: no-repeat;
   height: 60vh;
@@ -486,6 +510,8 @@ span{
 }
 
 #btnAtk{
+  position: relative;
+  bottom: 20px;
   width: 200px;
   height: 50px;
   font-size: 20px;
@@ -493,6 +519,8 @@ span{
 }
 
 #btnSoin{
+  position: relative;
+  bottom: 20px;
   width: 200px;
   height: 50px;
   font-size: 20px;
@@ -500,6 +528,8 @@ span{
 }
 
 #btnAtk2{
+  position: relative;
+  bottom: 20px;
   width: 200px;
   height: 50px;
   font-size: 20px;
@@ -507,6 +537,8 @@ span{
 }
 
 #btnSoin2{
+  position: relative;
+  bottom: 20px;
   width: 200px;
   height: 50px;
   font-size: 20px;
@@ -517,6 +549,7 @@ span{
 #imgjoueur2{
   position: relative;
   z-index: 2;
+  bottom: 30px;
   background-image: url("./image/iop 1.svg");
   background-repeat: no-repeat;
   height: 60vh;

@@ -84,13 +84,15 @@ const tab = [
   {
     nom: "Iop",
     pdv: 5000,
+    pdvmax : 5000,
     pa: 10,
     atk: 600,
-    dfs: 200,
+    pvr: 100,
 },
 {
   nom: "Eniripsa",
   pdv: 4500,
+  pdvmax : 4500,
   pa: 11,
   atk: 300,
   pvr: 500,
@@ -98,6 +100,7 @@ const tab = [
 {
   nom: "Huppermage",
   pdv: 4000,
+  pdvmax : 4000,
   pa: 12,
   atk: 400,
   pvr: 400,
@@ -105,16 +108,16 @@ const tab = [
 {
   nom: "Cra",
   pdv: 3000,
+  pdvmax : 3000,
   pa: 10,
   atk: 800,
-  esquive : 1
+  pvr : 100
 }
 ];
 
 
 const boutonatk = document.getElementById('btnAtk')
 let barrehp2 = document.getElementById('barreHp2');
-
 
 // --------------------------------------------------------CARROUSEL AVEC PERSO J2------------------------------------------------------
 
@@ -183,13 +186,19 @@ function updateDisplay() {
 
 let modalFin = document.getElementById('ouvertureModalFin')
 let pModalFin = document.getElementById('pModalFin')
+let hptransparent2 = document.getElementById('hptransparent2')
+let hptransparent = document.getElementById('hptransparent')
 
 boutonatk.addEventListener('click', () => {
   selectPlayer2.pdv = selectPlayer2.pdv - selectPlayer1.atk;
   barrehp2.textContent = selectPlayer2.pdv;
+  hptransparent2.style.width = (selectPlayer2.pdv / selectPlayer2.pdvmax * 100) + '%';
+  console.log(hptransparent2);
   if (selectPlayer2.pdv <= 0) {
+    setTimeout(function() {
     modalFin.style.display ='block'
-    // pModalFin.textContent = 'Le joueur 1 à gagner !<br> Bravo à toi jeune gerrier. Tu fais honneur à Bonta. Remettras-tu ton titre et ton honneur en jeux ? Brakmar saura te faire plier !'
+  }, 300); 
+  pModalFin.innerHTML = 'Le joueur 1 à gagner !<br> Bravo à toi jeune gerrier. Tu fais honneur à Bonta. Remettras-tu ton titre et ton honneur en jeux ? Brakmar saura te faire plier !';
   }
   tourJoueur1 = false;
   updateDisplay();
@@ -198,13 +207,35 @@ boutonatk.addEventListener('click', () => {
 boutonatk2.addEventListener('click', () => {
   selectPlayer1.pdv = selectPlayer1.pdv - selectPlayer2.atk;
   barreHp.textContent = selectPlayer1.pdv;
+  hptransparent.style.width = (selectPlayer1.pdv / selectPlayer1.pdvmax * 100) + '%';
   if (selectPlayer1.pdv <= 0) {
+    setTimeout(function() {
     modalFin.style.display ='block'
-    // pModalFin.textContent = 'Le joueur 2 à gagner !Bravo à toi jeune gerrier. Tu fais honneur à Brakmar. Remettras-tu ton titre et ton honneur en jeux ? Bonta saura te faire plier ! '
+  }, 300); 
+    pModalFin.innerHTML = 'Le joueur 2 à gagner !Bravo à toi jeune gerrier. Tu fais honneur à Brakmar. Remettras-tu ton titre et ton honneur en jeux ? Bonta saura te faire plier ! '
   }
   tourJoueur1 = true;
   updateDisplay();
 });
+
+let btnSoins = document.getElementById('btnSoin')
+let btnSoins2 = document.getElementById('btnSoin2')
+
+btnSoins.addEventListener('click', () => {
+  selectPlayer1.pdv = selectPlayer1.pdv + selectPlayer1.pvr;
+  barrehp.textContent = selectPlayer1.pdv;
+  hptransparent.style.width = (selectPlayer1.pdv / selectPlayer1.pdvmax * 100) + '%';
+  tourJoueur1 = false;
+  updateDisplay();
+})
+
+btnSoins2.addEventListener('click', () => {
+  selectPlayer2.pdv = selectPlayer2.pdv + selectPlayer2.pvr;
+  barrehp2.textContent = selectPlayer2.pdv;
+  hptransparent2.style.width = (selectPlayer2.pdv / selectPlayer2.pdvmax * 100) + '%';
+  tourJoueur1 = true;
+  updateDisplay();
+})
 
 // -----------------------------------------------------BOUTON SELECT PERSO JOUEUR 1 --------------------------------------------------
 
@@ -258,7 +289,6 @@ game.addEventListener('click', () => {
 });
 
 // -------------------------------------------------------------MODAL DE FIN-----------------------------------------------------------
-
 const modalFinAccueil = document.getElementById("modalFinAccueil")
 
 
@@ -266,14 +296,23 @@ modalFinAccueil.addEventListener('click', () => {
     const personnage = document.getElementById('personnage')
     personnage.style.display = 'none';
     modalFin.style.display = 'none';
+    selectPlayer1 = ''
+    selectPlayer2 = ''
+
 
     const accueil = document.getElementById('accueil')
     accueil.style.display = 'block';
     modalFin.style.display = 'none';
+    selectPlayer1 = ''
+    selectPlayer2 = ''
 
     const combat = document.getElementById('combat')
     combat.style.display = 'none'
     modalFin.style.display = 'none';
+    selectPlayer1 = ''
+    selectPlayer2 = ''
+
+
   });
 
   const modalFinPersonnage = document.getElementById("modalFinPersonnage")
@@ -283,16 +322,21 @@ modalFinAccueil.addEventListener('click', () => {
     const personnage = document.getElementById('personnage')
     personnage.style.display = 'block';
     modalFin.style.display = 'none';
-    persochoisij1 = 0;
-    persochoisij2 = 0;
+    selectPlayer1 = ''
+    selectPlayer2 = ''
 
     const accueil = document.getElementById('accueil')
     accueil.style.display = 'none';
     modalFin.style.display = 'none';
+    selectPlayer1 = ''
+    selectPlayer2 = ''
+
 
     const combat = document.getElementById('combat')
     combat.style.display = 'none'
     modalFin.style.display = 'none';
+    selectPlayer1 = ''
+    selectPlayer2 = ''
   });
 
   const modalFinRecommencer = document.getElementById("modalFinRecommencer")
@@ -302,14 +346,22 @@ modalFinAccueil.addEventListener('click', () => {
     const personnage = document.getElementById('personnage')
     personnage.style.display = 'none';
     modalFin.style.display = 'none';
+    selectPlayer1 = ''
+    selectPlayer2 = ''
+
 
     const accueil = document.getElementById('accueil')
     accueil.style.display = 'none';
     modalFin.style.display = 'none';
+    selectPlayer1 = ''
+    selectPlayer2 = ''
+
 
     const combat = document.getElementById('combat')
     combat.style.display = 'block'
     modalFin.style.display = 'none';
+    selectPlayer1 = ''
+    selectPlayer2 = ''
   });
 
   // ------------------------------------------------------------------PSEUDO--------------------------------------------------------
@@ -331,3 +383,6 @@ modalFinAccueil.addEventListener('click', () => {
       let pseudoJoueur2 = inputPseudo2.value;
       j2pseudo.textContent = pseudoJoueur2
   });
+
+  // -------------------------------------------------------------BARRE DE VIE ----------------------------------------------------
+
