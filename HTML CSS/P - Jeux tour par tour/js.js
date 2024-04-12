@@ -56,7 +56,7 @@ function moveSlide1(n) {
       selectPlayer1  = Object.assign({}, tab[0])
       imgjoueur1.style.backgroundImage = "url('./image/iop 1.svg')";
       barrehp.textContent = selectPlayer1.pdv + "/5000";
-      btnSoin.textContent = "Défense"
+      btnSoin.textContent = "Soins"
       break;
     case 1:
       selectPlayer1 = Object.assign({}, tab[1])
@@ -74,7 +74,7 @@ function moveSlide1(n) {
       selectPlayer1 = Object.assign({}, tab[3])
       imgjoueur1.style.backgroundImage = "url('./image/cra 1.svg')";
       barrehp.textContent =  selectPlayer1.pdv + "/3000";
-      btnSoin.textContent = "Esquive"
+      btnSoin.textContent = "Soins"
       break;
   }
 }
@@ -143,7 +143,7 @@ function moveSlide2(n) {
     selectPlayer2 = Object.assign({}, tab[0])
       imgjoueur2.style.backgroundImage = "url('./image/iop 1.svg')";
       barrehp2.textContent =  selectPlayer2.pdv + "/5000";
-      btnSoin2.textContent = "Défense"
+      btnSoin2.textContent = "Soins"
       break;
     case 1:
       selectPlayer2  = Object.assign({}, tab[1])
@@ -161,7 +161,7 @@ function moveSlide2(n) {
       selectPlayer2  = Object.assign({}, tab[3])
       imgjoueur2.style.backgroundImage = "url('./image/cra 1.svg')";
       barrehp2.textContent = selectPlayer2.pdv +"/3000";
-      btnSoin2.textContent = "Esquive"
+      btnSoin2.textContent = "Soins"
       break;
   }
 }
@@ -379,7 +379,7 @@ modalFinAccueil.addEventListener('click', () => {
   let buttonValider2 = document.querySelector('.valider2');
   let j2pseudo = document.querySelector('.j2pseudo')
   
-    buttonValider1.addEventListener('click', () => {
+    buttonValider2.addEventListener('click', () => {
       let pseudoJoueur2 = inputPseudo2.value;
       j2pseudo.textContent = pseudoJoueur2
   });
