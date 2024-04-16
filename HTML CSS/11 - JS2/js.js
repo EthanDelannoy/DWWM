@@ -99,3 +99,46 @@ carre.addEventListener('mousemove', function(event) {
         }
     });
 });
+
+// ----------------------------------------------------------------TIME OUT--------------------------------------------------------
+
+let RectangleRouge;
+let rectabngleBleu;
+
+let rectangleTimeOut = document.getElementById('rectangleTimeOut')
+
+
+rectangleTimeOut.addEventListener('click', function(){
+    RectangleRouge = document.createElement("div")
+    RectangleRouge.id = "RectangleRouge"
+    document.body.appendChild(RectangleRouge);
+
+    RectangleRouge.addEventListener('click', function(){
+        supp(RectangleRouge)
+    });
+
+
+    setTimeout(function() {
+        rectabngleBleu = document.createElement("div")
+        rectabngleBleu.id = "rectabngleBleu"
+        document.body.appendChild(rectabngleBleu);
+
+        rectabngleBleu.addEventListener('click', function(){
+            supp(rectabngleBleu)
+        });
+    }, 3000); 
+
+
+})
+
+
+
+function supp (div) {
+    let body = document.querySelector('body')
+    body.removeChild(div)
+}
+
+
+
+
+

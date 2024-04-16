@@ -24,13 +24,11 @@
 }
 
 #carre{
-    position: relative;
-    left: 550px;
-    top: 150px;
     width: 500px;
     height: 500px;
     background-color: purple;
-    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 #creationDiv{
@@ -38,6 +36,7 @@
     width: 150px;
     height: 20px;
     cursor: pointer;
+    margin-bottom: 50px;
 }
 
 #boutondiv{
@@ -47,4 +46,32 @@
     position: absolute;
     border-radius: 50%;
     display: none;
+}
+
+.curseurSuiveur{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+#rectangleTimeOut{
+    background-color: brown;
+    width: 150px;
+    height: 20px;
+    cursor: pointer;
+    margin-bottom: 50px;
+
+}
+
+#RectangleRouge{
+    width: 250px;
+    height: 200px;
+    background-color: red;
+}
+
+#rectabngleBleu{
+    width: 250px;
+    height: 200px;
+    background-color: blue;
 }
