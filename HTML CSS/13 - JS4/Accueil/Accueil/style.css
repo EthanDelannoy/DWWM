@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.imgFond{
+    position: absolute;
+    background-image: url("../img/fond-accueil.jpeg");
+    width: 100vw;
+    height: 100vh;
+}
+
+.bouton{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    top: 40vh;
+    z-index: 2;
+}
+
+#bouton1{
+
+    display: flex;
+    width: 20vw;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #8BB4BD;
+}
+#bouton2{
+    display: flex;
+    width: 20vw;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #8BB4BD;
+
+}
+#bouton3{
+    display: flex;
+    width: 20vw;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #8BB4BD;
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 36px;
+}
+
+
+

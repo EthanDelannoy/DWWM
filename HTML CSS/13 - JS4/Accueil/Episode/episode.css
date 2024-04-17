@@ -1,0 +1,37 @@
+nav {
+    background-color: #333;
+
+}
+
+ul {
+
+    text-align: center;
+}
+
+li {
+    display: inline;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #555;
+}
+
+.characters-table {
+    width: 100%;
+}
+
+.characters-table th, .characters-table td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+}
+
+.characters-table th {
+    background-color: #f2f2f2;
+}
