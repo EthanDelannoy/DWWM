@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+form{
+    background-color: grey;
+    color: white;
+    font-size: 26px;
+    line-height: 60px;
+    padding-left: 1vw;
+}
+
+.msg{
+    display: flex;
+    align-items: center;
+}
+
+#envoie{
+    width: 10vw;
+    height: 3vh;
+    background-color: white;
+    color: grey;
+
+}
+
