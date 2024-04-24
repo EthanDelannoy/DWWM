@@ -10,7 +10,7 @@
     background-image: url("./image/Fond-accueil.png");
     background-size: cover; 
     background-repeat: no-repeat;
-    width: auto;
+    width: 100vw;
     height: 100vh;
 }
 
@@ -23,6 +23,7 @@ nav{
     font-family: "Roboto", sans-serif;
     padding-top: 5vh;
     word-spacing: 2vw;
+    position: relative;
 }
 
 .accueil{
@@ -30,7 +31,18 @@ nav{
     justify-content: space-around;
     align-items: center;
     position: relative;
-    top: 30vh;
+    top: 20vh;
+}
+
+.bienvenu::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7); 
+    z-index: 0; 
 }
 
 h2{
@@ -48,7 +60,7 @@ h2{
 .details{
     font-family: "Montserrat", sans-serif;
     color: white;
-    width: 45vw;
+    width: 40vw;
     font-size: 30px;
     font-weight: 300;
     color: rgb(214, 213, 213);
@@ -88,12 +100,181 @@ h2{
     align-items: center;
     justify-content: space-between;
     height: 10vh;
+    width: 100vw;
     background-color: #062F3A;
 }
 
 .paraBanier {
     align-items: center;
     color: white;
-    font-size: 40px;
+    font-size: 30px;
 
+}
+
+.Apropos{
+    background-color: #030304;
+    width: 100vw;
+    height: 100vh;
+}
+
+.photoDos{
+    width: 40vw;
+    height: 60vh;
+}
+
+.titreApropos{
+    font-family: "Montserrat", sans-serif;
+    color: #9DE0F3;
+    font-size: 80px;
+    position: relative;
+    top: 10vh;
+    padding-left: 10vw;
+}
+
+.info{
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+    height: 86vh;
+}
+
+.detailApropos{
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: 20px;
+    width: 30vw;
+}
+
+.github{
+    width: 3vw;
+    height: 6vh;
+    margin-right: 2vw;
+}
+
+.linkedin{
+    width: 3vw;
+    height: 6vh;
+}
+
+.Apropos2{
+    width: 100vw;
+    height: 100vh;
+    background-color: #062F3A;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.experienceCompetence{
+    display: flex;
+    gap: 10vw;
+    color: white;
+}
+
+.experience{
+    display: flex;
+    flex-direction: column;
+    gap: 7vh;
+} 
+
+.titreExperience{
+    font-family: "Roboto", sans-serif;
+    color: #9DE0F3;
+    font-size: 60px;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 2px black;
+}
+
+.englobe1{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    border: 2px solid black;
+    padding: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 35vw;
+    height: 25vh;
+}
+
+.parcours{
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    font-size: 26px;
+}
+
+.englobe2{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    border: 2px solid black;
+    padding: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 35vw;
+    height: 25vh;
+}
+
+.experience4{
+    width: 25vw;
+}
+
+.annee4{
+    width: 5vw;
+}
+
+.experience3{
+    width: 25vw;
+}
+
+.annee3{
+    width: 5vw;
+}
+
+.experience2{
+    width: 25vw;
+}
+
+.annee2{
+    width: 5vw;
+}
+
+.experience1{
+    width: 25vw;
+}
+
+.annee1{
+    width: 5vw;
+}
+
+
+.competence{
+    display: flex;
+    flex-direction: column;
+    gap: 7vh;
+}
+
+.titreCompetence{
+    font-family: "Roboto", sans-serif;
+    color: #9DE0F3;
+    font-size: 60px;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 2px black;
+}
+
+.logo{
+    border: 2px solid black;
+    width: 30vw;
+    height: 57vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vw;
+    padding: 3%;
+}
+
+.logoIn{
+    width: 8vw;
+    height: 15vh;
 }
