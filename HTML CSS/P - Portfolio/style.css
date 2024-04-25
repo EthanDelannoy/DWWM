@@ -48,20 +48,20 @@ nav{
 h2{
     font-family: "Roboto", sans-serif;
     color: white;
-    font-size: 80px;
+    font-size: 4vw;
 }
 
 .dev{
     font-family: "Roboto", sans-serif;
     color: white;
-    font-size: 50px;
+    font-size: 2.3vw;
 }
 
 .details{
     font-family: "Montserrat", sans-serif;
     color: white;
-    width: 40vw;
-    font-size: 30px;
+    width: 30vw;
+    font-size: 1.5vw;
     font-weight: 300;
     color: rgb(214, 213, 213);
 }
@@ -141,7 +141,7 @@ h2{
 .detailApropos{
     font-family: "Roboto", sans-serif;
     color: white;
-    font-size: 20px;
+    font-size: 1.3vw;
     width: 30vw;
 }
 
@@ -202,7 +202,7 @@ h2{
     font-family: "Montserrat", sans-serif;
     display: flex;
     justify-content: space-between;
-    font-size: 26px;
+    font-size: 1.6vw;
 }
 
 .englobe2{
@@ -329,4 +329,72 @@ h2{
 .imgprojet2{
     width: 40vw;
     border: 1px solid #9DE0F3;
+}
+
+.contact{
+    background-color: #062F3A;
+    color: white;
+    height: 60vh;
+}
+
+.titreContact{
+    font-family: "Roboto", sans-serif;
+    font-size: 50px;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+}
+
+.infopersonnel{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.numero{
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+}
+
+.email{
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+}
+
+.adresse{
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+}
+
+.logofin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+
+.logoEmail{
+    width: 3vw;
+}
+.logoTelephone{
+    width: 3vw;
+}
+.logoLinkedin{
+    width: 3vw;
+}
+
+footer{
+    background-color: #030304;
+    color: white;
+    height: 10vh;
+}
+
+.pfooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
 }
