@@ -271,10 +271,62 @@ h2{
     display: flex;
     flex-wrap: wrap;
     gap: 1vw;
-    padding: 3%;
+    padding: 6%;
 }
 
 .logoIn{
     width: 8vw;
     height: 15vh;
+}
+
+.projets{
+   background-color: #030304; 
+   color: white;
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+
+}
+
+.titreProjets{
+    font-family: "Roboto", sans-serif;
+    color: #9DE0F3;
+    font-size: 70px;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+}
+
+.paraprojets{
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 25vh;
+    width: 30vw;
+    position: relative;
+    left: 35vw;
+}
+
+.photoprojet{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.imgprojet1{
+    width: 40vw;
+    border: 1px solid #9DE0F3;
+}
+.imgprojet2{
+    width: 40vw;
+    border: 1px solid #9DE0F3;
 }
