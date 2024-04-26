@@ -124,8 +124,8 @@ h2{
 
 .titreApropos{
     font-family: "Montserrat", sans-serif;
-    color: #9DE0F3;
-    font-size: 80px;
+    color: #9de0f3;
+    font-size: 4vw;
     position: relative;
     top: 10vh;
     padding-left: 10vw;
@@ -181,7 +181,7 @@ h2{
 .titreExperience{
     font-family: "Roboto", sans-serif;
     color: #9DE0F3;
-    font-size: 60px;
+    font-size: 3.2vw;
     letter-spacing: 4px;
     text-shadow: 2px 2px 2px black;
 }
@@ -259,7 +259,7 @@ h2{
 .titreCompetence{
     font-family: "Roboto", sans-serif;
     color: #9DE0F3;
-    font-size: 60px;
+    font-size: 3.2vw;
     letter-spacing: 4px;
     text-shadow: 2px 2px 2px black;
 }
@@ -276,7 +276,7 @@ h2{
 
 .logoIn{
     width: 8vw;
-    height: 15vh;
+    height: 7vw;
 }
 
 .projets{
@@ -292,7 +292,7 @@ h2{
 .titreProjets{
     font-family: "Roboto", sans-serif;
     color: #9DE0F3;
-    font-size: 70px;
+    font-size: 4vw;
     letter-spacing: 1px;
     display: flex;
     justify-content: center;
@@ -302,7 +302,7 @@ h2{
 
 .paraprojets{
     font-family: "Montserrat", sans-serif;
-    font-size: 20px;
+    font-size: 1.1vw;
     display: flex;
     align-items: center;
     text-align: center;
@@ -335,6 +335,7 @@ h2{
     background-color: #062F3A;
     color: white;
     height: 60vh;
+    width: 100vw;
 }
 
 .titreContact{
@@ -387,6 +388,7 @@ h2{
 }
 
 footer{
+    width: 100vw;
     background-color: #030304;
     color: white;
     height: 10vh;
@@ -398,3 +400,370 @@ footer{
     align-items: center;
     height: 10vh;
 }
+
+    /* ------------------------------------------------MEDIA QUERY TABLETTE PORTRAIT-------------------------------------------------- */
+
+
+    @media screen and (max-width:768px) {
+
+        .accueil{
+            display: flex;
+            flex-direction: column-reverse;
+            top: 5%;
+            gap: 5vh;
+    }
+
+
+        h2{
+            font-family: "Roboto", sans-serif;
+            color: white;
+            font-size: 7vw;
+    }
+        
+        .dev{
+            font-family: "Roboto", sans-serif;
+            color: white;
+            font-size: 4vw;
+    }
+        
+        .details{
+            font-family: "Montserrat", sans-serif;
+            color: white;
+            width: 50vw;
+            font-size: 2.5vw;
+            font-weight: 300;
+            color: rgb(214, 213, 213);
+    }
+
+        
+        .btnAccueil{
+         padding-top: 5%;
+    }
+
+        .btnAccueil1{
+         width: 12vw;
+         height: 3vh;
+         border-radius: 50px;
+         background-color: transparent;
+         color: white;
+         border: 1px solid #87D8F5;
+         font-size: 2vw;
+    }
+        .btnAccueil2{
+         width: 12vw;
+         height: 3vh;
+         border-radius: 50px;
+         background-color: #87D8F5 ;
+         color: black;
+         border: 1px solid #87D8F5;
+         font-size: 2vw;
+    }
+
+    .baniere{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 10vh;
+        width: 100vw;
+        background-color: #062F3A;
+    }
+    
+    .paraBanier {
+        align-items: center;
+        color: white;
+        font-size: 3vw;
+    
+    }
+
+    .Apropos{
+        background-color: #030304;
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    .photoDos{
+        width: 55vw;
+        height: 50vh;
+    }
+    
+    .titreApropos{
+        font-family: "Montserrat", sans-serif;
+        color: #9de0f3;
+        font-size: 6vw;
+        position: relative;
+        top: 15vh;
+        padding-left: 7vw;
+    }
+    
+    .info{
+        justify-content: space-evenly;
+        display: flex;
+        align-items: center;
+        height: 86vh;
+    }
+    
+    .detailApropos{
+        font-family: "Roboto", sans-serif;
+        color: white;
+        font-size: 2vw;
+        width: 30vw;
+    }
+    
+    .github{
+        width: 5vw;
+        height: 6vh;
+        margin-right: 2vw;
+    }
+    
+    .linkedin{
+        width: 5vw;
+        height: 6vh;
+    }
+    
+    .Apropos2{
+        width: 100vw;
+        height: 100vh;
+        background-color: #062F3A;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    
+    .experienceCompetence{
+        display: flex;
+        gap: 10vw;
+        color: white;
+    }
+    
+    .experience{
+        display: flex;
+        flex-direction: column;
+        gap: 7vh;
+    } 
+    
+    .titreExperience{
+        font-family: "Roboto", sans-serif;
+        color: #9DE0F3;
+        font-size: 5vw;
+        letter-spacing: 4px;
+        text-shadow: 2px 2px 2px black;
+    }
+    
+    .englobe1{
+        display: flex;
+        flex-direction: column;
+        gap: 5vh;
+        border: 2px solid black;
+        padding: 2%;
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 40vw;
+        height: 25vh;
+    }
+    
+    .parcours{
+        font-family: "Montserrat", sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 2.5vw;
+    }
+    
+    .englobe2{
+        display: flex;
+        flex-direction: column;
+        gap: 5vh;
+        border: 2px solid black;
+        padding: 2%;
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 40vw;
+        height: 25vh;
+    }
+    
+    .experience4{
+        width: 25vw;
+    }
+    
+    .annee4{
+        width: 5vw;
+    }
+    
+    .experience3{
+        width: 25vw;
+    }
+    
+    .annee3{
+        width: 5vw;
+    }
+    
+    .experience2{
+        width: 25vw;
+    }
+    
+    .annee2{
+        width: 5vw;
+    }
+    
+    .experience1{
+        width: 25vw;
+    }
+    
+    .annee1{
+        width: 5vw;
+    }
+    
+    
+    .competence{
+        display: flex;
+        flex-direction: column;
+        gap: 7vh;
+    }
+    
+    .titreCompetence{
+        font-family: "Roboto", sans-serif;
+        color: #9DE0F3;
+        font-size: 5vw;
+        letter-spacing: 4px;
+        text-shadow: 2px 2px 2px black;
+    }
+    
+    .logo{
+        border: 2px solid black;
+        width: 40vw;
+        height: 57vh;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1vw;
+        padding: 6%;
+    }
+    
+    .logoIn{
+        width: 10vw;
+        height: 10vw;
+    }
+    
+    .projets{
+       background-color: #030304; 
+       color: white;
+       width: 100vw;
+       height: 100vh;
+       display: flex;
+       flex-direction: column;
+    
+    }
+    
+    .titreProjets{
+        font-family: "Roboto", sans-serif;
+        color: #9DE0F3;
+        font-size: 4vw;
+        letter-spacing: 1px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 25vh;
+    }
+    
+    .paraprojets{
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.1vw;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        height: 25vh;
+        width: 30vw;
+        position: relative;
+        left: 35vw;
+    }
+    
+    .photoprojet{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    
+    }
+    
+    .imgprojet1{
+        width: 40vw;
+        border: 1px solid #9DE0F3;
+    }
+    .imgprojet2{
+        width: 40vw;
+        border: 1px solid #9DE0F3;
+    }
+    
+    .contact{
+        background-color: #062F3A;
+        color: white;
+        height: 60vh;
+        width: 100vw;
+    }
+    
+    .titreContact{
+        font-family: "Roboto", sans-serif;
+        font-size: 50px;
+        letter-spacing: 1px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 25vh;
+    }
+    
+    .infopersonnel{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 2vh;
+    }
+    
+    .numero{
+        font-family: "Montserrat", sans-serif;
+        font-size: 30px;
+    }
+    
+    .email{
+        font-family: "Montserrat", sans-serif;
+        font-size: 30px;
+    }
+    
+    .adresse{
+        font-family: "Montserrat", sans-serif;
+        font-size: 22px;
+    }
+    
+    .logofin{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1vw;
+    }
+    
+    .logoEmail{
+        width: 3vw;
+    }
+    .logoTelephone{
+        width: 3vw;
+    }
+    .logoLinkedin{
+        width: 3vw;
+    }
+    
+    footer{
+        width: 100vw;
+        background-color: #030304;
+        color: white;
+        height: 10vh;
+    }
+    
+    .pfooter{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10vh;
+    }
+}
+
