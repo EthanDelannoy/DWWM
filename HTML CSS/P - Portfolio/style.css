@@ -26,6 +26,92 @@ nav{
     position: relative;
 }
 
+#burgerContainer {
+    display: none;
+    justify-content: flex-end;
+    flex-direction: column;
+    visibility: visible;
+    margin-top: 3%;
+}
+
+#burgerContainer .flex-container {
+    align-self: flex-end;
+    z-index: 100;
+    position: fixed;
+    top: 20px;
+}
+
+#burgerContainer .container {
+    cursor: pointer;
+    z-index: 5;
+}
+
+#burgerContainer .bar1,
+#burgerContainer .bar2,
+#burgerContainer .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+    color: whitesmoke;
+}
+
+/* Rotate first bar */
+#burgerContainer .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+/* Fade out the second bar */
+#burgerContainer .change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+#burgerContainer .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+#menu {
+    visibility: hidden;
+    background-color: #212121;
+    width: 40vw;
+    height: 950px;
+    position: relative;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    z-index: 99;
+    position: fixed;
+}
+
+#menu a {
+    font-size: 2rem;
+    position: relative;
+    top: 100px;
+    background: -webkit-linear-gradient(#F9815B, #FFA571);
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+#menu a:hover {
+    color: #262626;
+}
+
+#menu.show {
+    visibility: visible;
+}
+
+.flex-container2 {
+    display: flex;
+    justify-content: flex-end;
+    height: 0px;
+}
+
+
 .accueil{
     display: flex;
     justify-content: space-around;
@@ -379,12 +465,15 @@ h2{
 
 .logoEmail{
     width: 3vw;
+
 }
 .logoTelephone{
     width: 3vw;
+
 }
 .logoLinkedin{
     width: 3vw;
+
 }
 
 footer{
@@ -411,6 +500,18 @@ footer{
             flex-direction: column-reverse;
             top: 5%;
             gap: 5vh;
+    }
+
+    nav{
+        display: flex;
+        justify-content: center;
+        background-color: transparent;
+        font-size: 22px;
+        color: white;
+        font-family: "Roboto", sans-serif;
+        padding-top: 5vh;
+        word-spacing: 2vw;
+        position: relative;
     }
 
 
@@ -459,6 +560,13 @@ footer{
          font-size: 2vw;
     }
 
+    .photoProfil{
+        border-radius: 50%;
+        box-shadow: 0px 0px 40px #87D8F5;
+        width: 30vw;
+        height: 40vh;
+    }
+
     .baniere{
         display: flex;
         align-items: center;
@@ -471,7 +579,7 @@ footer{
     .paraBanier {
         align-items: center;
         color: white;
-        font-size: 3vw;
+        font-size: 2.5vw;
     
     }
 
@@ -492,7 +600,7 @@ footer{
         font-size: 6vw;
         position: relative;
         top: 15vh;
-        padding-left: 7vw;
+        padding-left: 5vw;
     }
     
     .info{
@@ -532,7 +640,7 @@ footer{
     
     .experienceCompetence{
         display: flex;
-        gap: 10vw;
+        gap: 5vw;
         color: white;
     }
     
@@ -559,7 +667,7 @@ footer{
         padding-left: 5%;
         padding-right: 5%;
         width: 40vw;
-        height: 25vh;
+        height: 30vh;
     }
     
     .parcours{
@@ -577,9 +685,9 @@ footer{
         border: 2px solid black;
         padding: 2%;
         padding-left: 5%;
-        padding-right: 5%;
+        padding-right: 7%;
         width: 40vw;
-        height: 25vh;
+        height: 30vh;
     }
     
     .experience4{
@@ -630,25 +738,27 @@ footer{
     }
     
     .logo{
-        border: 2px solid black;
-        width: 40vw;
-        height: 57vh;
         display: flex;
-        flex-wrap: wrap;
-        gap: 1vw;
-        padding: 6%;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid black;
+        width: 45vw;
+        height: 67vh;
+        padding: 7%;
+        gap: 1vh;
     }
+
     
     .logoIn{
-        width: 10vw;
-        height: 10vw;
+        width: 12vw;
+        height: 14vw;
     }
     
     .projets{
        background-color: #030304; 
        color: white;
        width: 100vw;
-       height: 100vh;
+       height: 150vh;
        display: flex;
        flex-direction: column;
     
@@ -657,42 +767,42 @@ footer{
     .titreProjets{
         font-family: "Roboto", sans-serif;
         color: #9DE0F3;
-        font-size: 4vw;
+        font-size: 6vw;
         letter-spacing: 1px;
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 25vh;
+        height: 20vh;
     }
     
     .paraprojets{
         font-family: "Montserrat", sans-serif;
-        font-size: 1.1vw;
+        font-size: 2vw;
         display: flex;
         align-items: center;
         text-align: center;
         justify-content: center;
         height: 25vh;
-        width: 30vw;
+        width: 60vw;
         position: relative;
-        left: 35vw;
+        left: 20vw;
     }
     
     .photoprojet{
         height: 100vh;
         display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
+        flex-direction: column;
     
     }
     
     .imgprojet1{
-        width: 40vw;
+        width: 75vw;
+        height: 45vh;
         border: 1px solid #9DE0F3;
     }
     .imgprojet2{
-        width: 40vw;
+        width: 75vw;
+        height: 45vh;
         border: 1px solid #9DE0F3;
     }
     
@@ -710,7 +820,7 @@ footer{
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 25vh;
+        height: 20vh;
     }
     
     .infopersonnel{
@@ -740,16 +850,20 @@ footer{
         align-items: center;
         justify-content: center;
         gap: 1vw;
+
     }
     
     .logoEmail{
-        width: 3vw;
+        width: 5vw;
+
     }
     .logoTelephone{
-        width: 3vw;
+        width: 5vw;
+
     }
     .logoLinkedin{
-        width: 3vw;
+        width: 5vw;
+
     }
     
     footer{
@@ -766,4 +880,472 @@ footer{
         height: 10vh;
     }
 }
+
+/* -----------------------------------------------MEDIA QUERY TELEPHONE L---------------------------------------------------------- */
+
+@media screen and (max-width:426px) {
+
+    .accueil{
+        display: flex;
+        flex-direction: column-reverse;
+        top: 5%;
+        gap: 5vh;
+}
+
+    nav{
+        display: none;
+}
+
+#burgerContainer {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    visibility: visible;
+    margin-top: 3%;
+}
+
+#burgerContainer .flex-container {
+    align-self: flex-end;
+    z-index: 100;
+    position: fixed;
+    top: 20px;
+}
+
+#burgerContainer .container {
+    cursor: pointer;
+    z-index: 5;
+}
+
+#burgerContainer .bar1,
+#burgerContainer .bar2,
+#burgerContainer .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+    color: whitesmoke;
+}
+
+
+#burgerContainer .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+
+#burgerContainer .change .bar2 {
+    opacity: 0;
+}
+
+
+#burgerContainer .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+#menu {
+    visibility: hidden;
+    background-color: #212121;
+    width: 40vw;
+    height: 950px;
+    position: relative;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    z-index: 99;
+    position: fixed;
+}
+
+#menu a {
+    font-size: 2rem;
+    position: relative;
+    top: 100px;
+    background: -webkit-linear-gradient(#F9815B, #FFA571);
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+#menu a:hover {
+    color: #262626;
+}
+
+#menu.show {
+    visibility: visible;
+}
+
+.flex-container2 {
+    display: flex;
+    justify-content: flex-end;
+    height: 0px;
+}
+
+
+    h2{
+        font-family: "Roboto", sans-serif;
+        color: white;
+        font-size: 7vw;
+}
+    
+    .dev{
+        font-family: "Roboto", sans-serif;
+        color: white;
+        font-size: 4vw;
+}
+    
+    .details{
+        font-family: "Montserrat", sans-serif;
+        color: white;
+        width: 50vw;
+        font-size: 2.5vw;
+        font-weight: 300;
+        color: rgb(214, 213, 213);
+}
+
+    
+    .btnAccueil{
+     padding-top: 5%;
+}
+
+    .btnAccueil1{
+     width: 12vw;
+     height: 3vh;
+     border-radius: 50px;
+     background-color: transparent;
+     color: white;
+     border: 1px solid #87D8F5;
+     font-size: 2vw;
+}
+    .btnAccueil2{
+     width: 12vw;
+     height: 3vh;
+     border-radius: 50px;
+     background-color: #87D8F5 ;
+     color: black;
+     border: 1px solid #87D8F5;
+     font-size: 2vw;
+}
+
+.photoProfil{
+    border-radius: 50%;
+    box-shadow: 0px 0px 40px #87D8F5;
+    width: 50vw;
+    height: 40vh;
+}
+
+.baniere{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    width: 100vw;
+    background-color: #062F3A;
+}
+
+.paraBanier {
+    align-items: center;
+    color: white;
+    font-size: 2.5vw;
+
+}
+
+.Apropos{
+    background-color: #030304;
+    width: 100vw;
+    height: 100vh;
+}
+
+.photoDos{
+    width: 55vw;
+    height: 50vh;
+}
+
+.titreApropos{
+    font-family: "Montserrat", sans-serif;
+    color: #9de0f3;
+    font-size: 6vw;
+    position: relative;
+    top: 15vh;
+    padding-left: 5vw;
+}
+
+.info{
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+    height: 86vh;
+}
+
+.detailApropos{
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: 2vw;
+    width: 30vw;
+}
+
+.github{
+    width: 5vw;
+    height: 6vh;
+    margin-right: 2vw;
+}
+
+.linkedin{
+    width: 5vw;
+    height: 6vh;
+}
+
+.Apropos2{
+    width: 100vw;
+    height: 100vh;
+    background-color: #062F3A;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.experienceCompetence{
+    display: flex;
+    gap: 5vw;
+    color: white;
+}
+
+.experience{
+    display: flex;
+    flex-direction: column;
+    gap: 7vh;
+} 
+
+.titreExperience{
+    font-family: "Roboto", sans-serif;
+    color: #9DE0F3;
+    font-size: 5vw;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 2px black;
+}
+
+.englobe1{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    border: 2px solid black;
+    padding: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 40vw;
+    height: 30vh;
+}
+
+.parcours{
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2.5vw;
+}
+
+.englobe2{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    border: 2px solid black;
+    padding: 2%;
+    padding-left: 5%;
+    padding-right: 7%;
+    width: 40vw;
+    height: 30vh;
+}
+
+.experience4{
+    width: 25vw;
+}
+
+.annee4{
+    width: 5vw;
+}
+
+.experience3{
+    width: 25vw;
+}
+
+.annee3{
+    width: 5vw;
+}
+
+.experience2{
+    width: 25vw;
+}
+
+.annee2{
+    width: 5vw;
+}
+
+.experience1{
+    width: 25vw;
+}
+
+.annee1{
+    width: 5vw;
+}
+
+
+.competence{
+    display: flex;
+    flex-direction: column;
+    gap: 7vh;
+}
+
+.titreCompetence{
+    font-family: "Roboto", sans-serif;
+    color: #9DE0F3;
+    font-size: 5vw;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 2px black;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    width: 45vw;
+    height: 67vh;
+    padding: 7%;
+    gap: 1vh;
+}
+
+
+.logoIn{
+    width: 12vw;
+    height: 14vw;
+}
+
+.projets{
+   background-color: #030304; 
+   color: white;
+   width: 100vw;
+   height: 150vh;
+   display: flex;
+   flex-direction: column;
+
+}
+
+.titreProjets{
+    font-family: "Roboto", sans-serif;
+    color: #9DE0F3;
+    font-size: 6vw;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
+.paraprojets{
+    font-family: "Montserrat", sans-serif;
+    font-size: 2vw;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 25vh;
+    width: 60vw;
+    position: relative;
+    left: 20vw;
+}
+
+.photoprojet{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.imgprojet1{
+    width: 75vw;
+    height: 45vh;
+    border: 1px solid #9DE0F3;
+}
+.imgprojet2{
+    width: 75vw;
+    height: 45vh;
+    border: 1px solid #9DE0F3;
+}
+
+.contact{
+    background-color: #062F3A;
+    color: white;
+    height: 60vh;
+    width: 100vw;
+}
+
+.titreContact{
+    font-family: "Roboto", sans-serif;
+    font-size: 50px;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
+.infopersonnel{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.numero{
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+}
+
+.email{
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+}
+
+.adresse{
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+}
+
+.logofin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+
+}
+
+.logoEmail{
+    width: 5vw;
+
+}
+.logoTelephone{
+    width: 5vw;
+
+}
+.logoLinkedin{
+    width: 5vw;
+
+}
+
+footer{
+    width: 100vw;
+    background-color: #030304;
+    color: white;
+    height: 10vh;
+}
+
+.pfooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+}
+
 
