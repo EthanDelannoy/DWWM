@@ -222,6 +222,7 @@ h2{
     display: flex;
     align-items: center;
     height: 86vh;
+    gap: 0%;
 }
 
 .detailApropos{
@@ -608,6 +609,8 @@ footer{
         display: flex;
         align-items: center;
         height: 86vh;
+        gap: 0%;
+
     }
     
     .detailApropos{
@@ -888,12 +891,33 @@ footer{
     .accueil{
         display: flex;
         flex-direction: column-reverse;
-        top: 5%;
+        justify-content: center;
+        top: 10%;
         gap: 5vh;
+}
+
+.bienvenu {
+    background-image: url("./image/Fond-accueil.png");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+
 }
 
     nav{
         display: none;
+}
+
+.bienvenu::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7); 
+    z-index: 0; 
 }
 
 #burgerContainer {
@@ -901,7 +925,8 @@ footer{
     justify-content: flex-end;
     flex-direction: column;
     visibility: visible;
-    margin-top: 3%;
+    margin-top: 0;
+    padding-top: 3%;
 }
 
 #burgerContainer .flex-container {
@@ -981,57 +1006,56 @@ footer{
     height: 0px;
 }
 
-
     h2{
         font-family: "Roboto", sans-serif;
         color: white;
-        font-size: 7vw;
+        font-size: 10vw;
 }
     
     .dev{
         font-family: "Roboto", sans-serif;
         color: white;
-        font-size: 4vw;
+        font-size: 6vw;
 }
     
     .details{
         font-family: "Montserrat", sans-serif;
         color: white;
-        width: 50vw;
-        font-size: 2.5vw;
+        width: 55vw;
+        font-size: 4vw;
         font-weight: 300;
         color: rgb(214, 213, 213);
 }
 
     
     .btnAccueil{
-     padding-top: 5%;
+     padding-top: 6%;
 }
 
     .btnAccueil1{
-     width: 12vw;
-     height: 3vh;
+     width: 20vw;
+     height: 4vh;
      border-radius: 50px;
      background-color: transparent;
      color: white;
      border: 1px solid #87D8F5;
-     font-size: 2vw;
+     font-size: 3vw;
 }
     .btnAccueil2{
-     width: 12vw;
-     height: 3vh;
+     width: 20vw;
+     height: 4vh;
      border-radius: 50px;
      background-color: #87D8F5 ;
      color: black;
      border: 1px solid #87D8F5;
-     font-size: 2vw;
+     font-size: 3vw;
 }
 
 .photoProfil{
     border-radius: 50%;
     box-shadow: 0px 0px 40px #87D8F5;
-    width: 50vw;
-    height: 40vh;
+    width: 55vw;
+    height: 45vh;
 }
 
 .baniere{
@@ -1046,81 +1070,87 @@ footer{
 .paraBanier {
     align-items: center;
     color: white;
-    font-size: 2.5vw;
+    font-size: 4vw;
 
 }
 
 .Apropos{
     background-color: #030304;
     width: 100vw;
-    height: 100vh;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
 }
 
 .photoDos{
-    width: 55vw;
+    width: 80vw;
     height: 50vh;
 }
 
 .titreApropos{
     font-family: "Montserrat", sans-serif;
     color: #9de0f3;
-    font-size: 6vw;
-    position: relative;
-    top: 15vh;
-    padding-left: 5vw;
+    height: 15vh;
+    font-size: 10vw;
+    position: initial;
 }
 
 .info{
-    justify-content: space-evenly;
     display: flex;
-    align-items: center;
-    height: 86vh;
+    flex-direction: column;
+    gap: 3vh;
 }
 
 .detailApropos{
     font-family: "Roboto", sans-serif;
     color: white;
-    font-size: 2vw;
-    width: 30vw;
+    font-size: 4vw;
+    width: 80vw;
+    gap: 2%;
 }
 
 .github{
-    width: 5vw;
+    width: 10vw;
     height: 6vh;
     margin-right: 2vw;
 }
 
 .linkedin{
-    width: 5vw;
+    width: 10vw;
     height: 6vh;
 }
 
 .Apropos2{
     width: 100vw;
-    height: 100vh;
+    height: 160vh;
     background-color: #062F3A;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
 .experienceCompetence{
     display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
     gap: 5vw;
     color: white;
 }
 
 .experience{
     display: flex;
-    flex-direction: column;
-    gap: 7vh;
+    gap: 5vh;
 } 
 
 .titreExperience{
     font-family: "Roboto", sans-serif;
     color: #9DE0F3;
-    font-size: 5vw;
+    font-size: 10vw;
     letter-spacing: 4px;
     text-shadow: 2px 2px 2px black;
 }
@@ -1133,8 +1163,8 @@ footer{
     padding: 2%;
     padding-left: 5%;
     padding-right: 5%;
-    width: 40vw;
-    height: 30vh;
+    width: 85vw;
+    height: 32vh;
 }
 
 .parcours{
@@ -1142,7 +1172,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 2.5vw;
+    font-size: 5vw;
 }
 
 .englobe2{
@@ -1153,53 +1183,53 @@ footer{
     padding: 2%;
     padding-left: 5%;
     padding-right: 7%;
-    width: 40vw;
-    height: 30vh;
+    width: 85vw;
+    height: 32vh;
 }
 
 .experience4{
-    width: 25vw;
+    width: 50vw;
 }
 
 .annee4{
-    width: 5vw;
+    width: 10vw;
 }
 
 .experience3{
-    width: 25vw;
+    width: 50vw;
 }
 
 .annee3{
-    width: 5vw;
+    width: 10vw;
 }
 
 .experience2{
-    width: 25vw;
+    width: 50vw;
 }
 
 .annee2{
-    width: 5vw;
+    width: 10vw;
 }
 
 .experience1{
-    width: 25vw;
+    width: 50vw;
 }
 
 .annee1{
-    width: 5vw;
+    width: 10vw;
 }
 
 
 .competence{
     display: flex;
     flex-direction: column;
-    gap: 7vh;
+    gap: 5vh;
 }
 
 .titreCompetence{
     font-family: "Roboto", sans-serif;
     color: #9DE0F3;
-    font-size: 5vw;
+    font-size: 10vw;
     letter-spacing: 4px;
     text-shadow: 2px 2px 2px black;
 }
@@ -1209,23 +1239,23 @@ footer{
     align-items: center;
     justify-content: center;
     border: 2px solid black;
-    width: 45vw;
-    height: 67vh;
+    width: 85vw;
+    height: 50vh;
     padding: 7%;
     gap: 1vh;
 }
 
 
 .logoIn{
-    width: 12vw;
-    height: 14vw;
+    width: 23vw;
+    height: 19vw;
 }
 
 .projets{
    background-color: #030304; 
    color: white;
    width: 100vw;
-   height: 150vh;
+   height: 120vh;
    display: flex;
    flex-direction: column;
 
@@ -1234,7 +1264,7 @@ footer{
 .titreProjets{
     font-family: "Roboto", sans-serif;
     color: #9DE0F3;
-    font-size: 6vw;
+    font-size: 10vw;
     letter-spacing: 1px;
     display: flex;
     justify-content: center;
@@ -1244,7 +1274,7 @@ footer{
 
 .paraprojets{
     font-family: "Montserrat", sans-serif;
-    font-size: 2vw;
+    font-size: 4vw;
     display: flex;
     align-items: center;
     text-align: center;
@@ -1256,20 +1286,20 @@ footer{
 }
 
 .photoprojet{
-    height: 100vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
 
 }
 
 .imgprojet1{
-    width: 75vw;
-    height: 45vh;
+    width: 85vw;
+    height: 30vh;
     border: 1px solid #9DE0F3;
 }
 .imgprojet2{
-    width: 75vw;
-    height: 45vh;
+    width: 85vw;
+    height: 30vh;
     border: 1px solid #9DE0F3;
 }
 
@@ -1282,7 +1312,7 @@ footer{
 
 .titreContact{
     font-family: "Roboto", sans-serif;
-    font-size: 50px;
+    font-size: 10vw;
     letter-spacing: 1px;
     display: flex;
     justify-content: center;
@@ -1299,17 +1329,17 @@ footer{
 
 .numero{
     font-family: "Montserrat", sans-serif;
-    font-size: 30px;
+    font-size: 7vw;
 }
 
 .email{
     font-family: "Montserrat", sans-serif;
-    font-size: 30px;
+    font-size: 6vw;
 }
 
 .adresse{
     font-family: "Montserrat", sans-serif;
-    font-size: 22px;
+    font-size: 5vw;
 }
 
 .logofin{
@@ -1321,15 +1351,15 @@ footer{
 }
 
 .logoEmail{
-    width: 5vw;
+    width: 7vw;
 
 }
 .logoTelephone{
-    width: 5vw;
+    width: 7vw;
 
 }
 .logoLinkedin{
-    width: 5vw;
+    width: 7vw;
 
 }
 
@@ -1345,6 +1375,7 @@ footer{
     justify-content: center;
     align-items: center;
     height: 10vh;
+    font-size: 3vw;
 }
 }
 
