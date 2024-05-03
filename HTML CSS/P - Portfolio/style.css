@@ -1247,7 +1247,7 @@ footer{
 
 
 .logoIn{
-    width: 23vw;
+    width: 22vw;
     height: 19vw;
 }
 
@@ -1379,4 +1379,491 @@ footer{
 }
 }
 
+/* ----------------------------------------------------------------MEDIA QUERY TELEPHONE S----------------------------------------- */
+@media screen and (max-width:320px) {
 
+        .accueil{
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            top: 10%;
+            gap: 5vh;
+    }
+    
+    .bienvenu {
+        background-image: url("./image/Fond-accueil.png");
+        background-size: cover; 
+        background-repeat: no-repeat;
+        width: 100vw;
+        height: 100vh;
+    
+    }
+    
+        nav{
+            display: none;
+    }
+    
+    .bienvenu::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.7); 
+        z-index: 0; 
+    }
+    
+    #burgerContainer {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        visibility: visible;
+        margin-top: 0;
+        padding-top: 3%;
+    }
+    
+    #burgerContainer .flex-container {
+        align-self: flex-end;
+        z-index: 100;
+        position: fixed;
+        top: 20px;
+    }
+    
+    #burgerContainer .container {
+        cursor: pointer;
+        z-index: 5;
+    }
+    
+    #burgerContainer .bar1,
+    #burgerContainer .bar2,
+    #burgerContainer .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #fff;
+        margin: 6px 0;
+        transition: 0.4s;
+        color: whitesmoke;
+    }
+    
+    
+    #burgerContainer .change .bar1 {
+        transform: translate(0, 11px) rotate(-45deg);
+    }
+    
+    
+    #burgerContainer .change .bar2 {
+        opacity: 0;
+    }
+    
+    
+    #burgerContainer .change .bar3 {
+        transform: translate(0, -11px) rotate(45deg);
+    }
+    
+    #menu {
+        visibility: hidden;
+        background-color: rgba(135, 216, 245); 
+        width: 50vw;
+        height: 950px;
+        position: fixed;
+        top: 0px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        z-index: 99;
+    }
+    
+    #menu a {
+        font-size: 1.5rem;
+        position: relative;
+        z-index: 100;
+        top: 100px;
+        background: -webkit-linear-gradient( #87D8F5, #87D8F5);
+        text-decoration: none;
+        cursor: pointer;
+        height: 2rem;
+    }
+    #menu a:hover {
+        color: #262626;
+    }
+    
+    .flex-container2 {
+        display: flex;
+        justify-content: flex-end;
+        height: 0px;
+    }
+    
+        h2{
+            font-family: "Roboto", sans-serif;
+            color: white;
+            font-size: 12vw;
+    }
+        
+        .dev{
+            font-family: "Roboto", sans-serif;
+            color: white;
+            font-size: 7vw;
+    }
+        
+        .details{
+            font-family: "Montserrat", sans-serif;
+            color: white;
+            width: 67vw;
+            font-size: 5vw;
+            font-weight: 300;
+            color: rgb(214, 213, 213);
+    }
+    
+        
+        .btnAccueil{
+         padding-top: 6%;
+    }
+    
+        .btnAccueil1{
+         width: 30vw;
+         height: 4vh;
+         border-radius: 50px;
+         background-color: transparent;
+         color: white;
+         border: 1px solid #87D8F5;
+         font-size: 4vw;
+    }
+        .btnAccueil2{
+         width: 30vw;
+         height: 4vh;
+         border-radius: 50px;
+         background-color: #87D8F5 ;
+         color: black;
+         border: 1px solid #87D8F5;
+         font-size: 4vw;
+    }
+    
+    .photoProfil{
+        border-radius: 50%;
+        box-shadow: 0px 0px 40px #87D8F5;
+        width: 70vw;
+        height: 40vh;
+    }
+    
+    .baniere{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 10vh;
+        width: 100vw;
+        background-color: #062F3A;
+    }
+    
+    .paraBanier {
+        align-items: center;
+        color: white;
+        font-size: 4.9vw;
+    
+    }
+    
+    .Apropos{
+        background-color: #030304;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2%;
+    }
+    
+    .photoDos{
+        width: 80vw;
+        height: 30vh;
+    }
+    
+    .titreApropos{
+        font-family: "Montserrat", sans-serif;
+        color: #9de0f3;
+        height: 5vh;
+        font-size: 10vw;
+        position: initial;
+    }
+    
+    .info{
+        display: flex;
+        flex-direction: column;
+        gap: 3vh;
+    }
+    
+    .detailApropos{
+        font-family: "Roboto", sans-serif;
+        color: white;
+        font-size: 5vw;
+        width: 80vw;
+        gap: 2%;
+    }
+    
+    .github{
+        width: 12vw;
+        height: 6vh;
+        margin-right: 2vw;
+    }
+    
+    .linkedin{
+        width: 12vw;
+        height: 6vh;
+    }
+    
+    .Apropos2{
+        width: 100vw;
+        height: 160vh;
+        background-color: #062F3A;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    
+    .experienceCompetence{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 5vw;
+        color: white;
+    }
+    
+    .experience{
+        display: flex;
+        gap: 5vh;
+    } 
+    
+    .titreExperience{
+        font-family: "Roboto", sans-serif;
+        color: #9DE0F3;
+        font-size: 10vw;
+        letter-spacing: 4px;
+        text-shadow: 2px 2px 2px black;
+    }
+    
+    .englobe1{
+        display: flex;
+        flex-direction: column;
+        gap: 10vh;
+        border: 2px solid black;
+        padding: 2%;
+        padding-left: 5%;
+        padding-right: 8%;
+        width: 85vw;
+        height: 32vh;
+    }
+    
+    .parcours{
+        font-family: "Montserrat", sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 5.5vw;
+    }
+    
+    .englobe2{
+        display: flex;
+        flex-direction: column;
+        gap: 10vh;
+        border: 2px solid black;
+        padding: 2%;
+        padding-left: 5%;
+        padding-right: 8%;
+        width: 85vw;
+        height: 32vh;
+    }
+    
+    .experience4{
+        width: 55vw;
+    }
+    
+    .annee4{
+        width: 10vw;
+    }
+    
+    .experience3{
+        width: 55vw;
+    }
+    
+    .annee3{
+        width: 10vw;
+    }
+    
+    .experience2{
+        width: 55vw;
+    }
+    
+    .annee2{
+        width: 10vw;
+    }
+    
+    .experience1{
+        width: 55vw;
+    }
+    
+    .annee1{
+        width: 10vw;
+    }
+    
+    
+    .competence{
+        display: flex;
+        flex-direction: column;
+        gap: 5vh;
+    }
+    
+    .titreCompetence{
+        font-family: "Roboto", sans-serif;
+        color: #9DE0F3;
+        font-size: 10vw;
+        letter-spacing: 4px;
+        text-shadow: 2px 2px 2px black;
+    }
+    
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid black;
+        width: 85vw;
+        height: 50vh;
+        padding: 7%;
+        gap: 1vh;
+    }
+    
+    
+    .logoIn{
+        width: 22vw;
+        height: 23vw;
+    }
+    
+    .projets{
+       background-color: #030304; 
+       color: white;
+       width: 100vw;
+       height: 120vh;
+       display: flex;
+       flex-direction: column;
+    
+    }
+    
+    .titreProjets{
+        font-family: "Roboto", sans-serif;
+        color: #9DE0F3;
+        font-size: 12vw;
+        letter-spacing: 1px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 20vh;
+    }
+    
+    .paraprojets{
+        font-family: "Montserrat", sans-serif;
+        font-size: 4.5vw;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        height: 25vh;
+        width: 60vw;
+        position: relative;
+        left: 20vw;
+    }
+    
+    .photoprojet{
+        height: 75vh;
+        display: flex;
+        flex-direction: column;
+    
+    }
+    
+    .imgprojet1{
+        width: 85vw;
+        height: 25vh;
+        border: 1px solid #9DE0F3;
+    }
+    .imgprojet2{
+        width: 85vw;
+        height: 25vh;
+        border: 1px solid #9DE0F3;
+    }
+    
+    .contact{
+        background-color: #062F3A;
+        color: white;
+        height: 60vh;
+        width: 100vw;
+    }
+    
+    .titreContact{
+        font-family: "Roboto", sans-serif;
+        font-size: 10vw;
+        letter-spacing: 1px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 20vh;
+    }
+    
+    .infopersonnel{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 2vh;
+    }
+    
+    .numero{
+        font-family: "Montserrat", sans-serif;
+        font-size: 7vw;
+    }
+    
+    .email{
+        font-family: "Montserrat", sans-serif;
+        font-size: 6vw;
+    }
+    
+    .adresse{
+        font-family: "Montserrat", sans-serif;
+        font-size: 5vw;
+    }
+    
+    .logofin{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1vw;
+    
+    }
+    
+    .logoEmail{
+        width: 8vw;
+    
+    }
+    .logoTelephone{
+        width: 8vw;
+    
+    }
+    .logoLinkedin{
+        width: 8vw;
+    
+    }
+    
+    footer{
+        width: 100vw;
+        background-color: #030304;
+        color: white;
+        height: 10vh;
+    }
+    
+    .pfooter{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10vh;
+        font-size: 3vw;
+    }
+    }
