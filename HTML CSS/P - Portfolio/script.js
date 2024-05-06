@@ -51,3 +51,27 @@ document.querySelector('nav').addEventListener('mouseleave', () => {
     barre.style.width = '0';
     barre.classList.remove('active'); 
 });
+
+// --------------------------------------------------------------DETAILS PHOTO PROJET-----------------------------------------
+const imgProjet1 = document.getElementById('imgprojet1');
+
+// Création du texte superposé
+const texteSuperpose = document.createElement('div');
+texteSuperpose.id = 'texteSuperpose';
+texteSuperpose.textContent = 'HTML - CSS - JAVASCRIPT';
+texteSuperpose.style.zIndex = '5';
+texteSuperpose.style.display = 'none';
+
+// Ajout du texteSuperpose comme enfant de imgProjet1
+imgProjet1.appendChild(texteSuperpose);
+
+// Gestion des événements pour afficher et cacher le texte superposé
+imgProjet1.addEventListener('mouseenter', () => {
+    texteSuperpose.style.display = 'block';
+    imgProjet1.style.opacity = 0.3;
+});
+
+imgProjet1.addEventListener('mouseleave', () => {
+    texteSuperpose.style.display = 'none';
+    imgProjet1.style.opacity = 1;
+});
