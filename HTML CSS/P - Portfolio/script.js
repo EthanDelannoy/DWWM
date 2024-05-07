@@ -125,3 +125,6 @@ document.querySelector('#imgprojet2').addEventListener('click', function() {
         document.body.removeChild(modal); 
     });
 });
+
+// -------------------------------------------------------------STYLE MENU BURGER-----------------------------------------
+
