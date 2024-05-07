@@ -22,13 +22,13 @@
 
 
 
-    <section class="bienvenu">
+    <section id="bienvenu">
 
         <nav>
-            <a href="#" id="navAccueil">Accueil</a> 
-            <a href="#" id="navApropose">Apropos</a>
-            <a href="#" id="navProjets">Projets</a>
-            <a href="#" id="navContact">Contact</a>
+            <a href="#bienvenu" id="navAccueil">Accueil</a> 
+            <a href="#Apropos" id="navApropose">Apropos</a>
+            <a href="#projets" id="navProjets">Projets</a>
+            <a href="#contact" id="navContact">Contact</a>
             <div class="barre" id="barre"></div>
           </nav>
 
@@ -42,7 +42,7 @@
             </div>
             <div class="flex-container2">
                 <div id="menu" class="hidden">
-                    <a href="index.html">Accueil</a>
+                    <a href="#bienvenu">Accueil</a>
                     <a href="#Apropos2">Compétences</a>
                     <a href="#projets">Projets</a>
                     <a href="#contact">Contact</a>
@@ -60,8 +60,8 @@
                 <p class="details">Je suis à la recherche d'un stage non rémunéré du 29/07/24 au 25/10/24 en tant que
                     developpeur web.</p>
                 <div class="btnAccueil">
-                    <button id="btnAccueil1">Projets</button>
-                    <button id="btnAccueil2">Mon CV</button>
+                    <a id="btnAccueil1" href="#projets">Projets</a>
+                    <a id="btnAccueil2" href="./image/CV_2024-05-07_Ethan_Delannoy.pdf" download>Mon CV</a>
                 </div>
             </div>
 
@@ -74,7 +74,7 @@
 
     </section>
 
-    <section class="baniere">
+    <section id="baniere">
         <div class="paraBanier">🌌</div>
         <div class="paraBanier">Figma</div>
         <div class="paraBanier">🌌</div>
@@ -86,7 +86,7 @@
         <div class="paraBanier">🌌</div>
     </section>
 
-    <section class="Apropos">
+    <section id="Apropos">
 
         <h3 class="titreApropos">A propos</h3>
 
@@ -94,20 +94,20 @@
             <img class="photoDos" src="./image/photo-dos-Apropose.jpg" alt="dos">
 
             <div class="detailApropos">
-                Je m'appel Ethan j'ai 20 ans et j'habite à Saint-Omer.<br>Je suis actuellement en formation à l'AFCI de
+                Je m'appelle Ethan j'ai 20 ans et j'habite à Saint-Omer.<br>Je suis actuellement en formation à l'AFCI de
                 Dunkerque pour devenir Developpeur Web et web mobile.<br><br>Je souhaite pouvoir travailler dans ce
                 domaine et devenir un developpeur full stack.<br><br>Mon github est disponible et en public pour que
                 vous pouvez voir l'avancé de mon apprentissage et ma dévotion à apprendre.<br><br>
                 <a href="https://github.com/EthanDelannoy"><img class="github" src="./image/logo-github-3.png"
                         alt="github"></a>
-                <a href="#"><img class="linkedin" src="./image/logo-linkedin.png" alt="linkedin"></a>
+                <a href="https://www.linkedin.com/in/ethan-delannoy-a6a904307/"><img class="linkedin" src="./image/logo-linkedin.png" alt="linkedin"></a>
             </div>
 
 
         </div>
     </section>
 
-    <section class="Apropos2">
+    <section id="Apropos2">
 
         <div class="experienceCompetence">
 
@@ -147,7 +147,7 @@
                     <img class="logoIn" src="./image/Logo sql.png" alt="sql">
                     <img class="logoIn" src="./image/Logo docker.png" alt="docker">
                     <img class="logoIn" src="./image/Logo symfony.png" alt="sympfony">
-                    <img class="logoIn" src="./image/Logo trello.png" alt="trello">
+                    <img class="logoIn" src="./image/logo-mongoDB.png" alt="trello">
                     <img class="logoIn" src="./image/Logo github.png" alt="github">
                 </div>
             </div>
@@ -155,22 +155,26 @@
 
     </section>
 
-    <section class="projets">
+    <section id="projets">
 
         <h3 class="titreProjets">Projets</h3>
         <div class="paraprojets">Durant ma formation j'ai été amené à faire quelques projets différent avec plusieurs languages différent.<br><br> Vous pouvez retrouvez ici tout mes projets effectués. Tout mes projets seront ajoutés seront ajouté une fois finis. </div>
 
+        
         <div class="photoprojet">
 
-            <img id="imgprojet1" src="./image/photo-projets-portfolio.PNG" alt="portfolio">
+            
+            <img id="imgprojet1" src="./image/photo-projets-portfolio.PNG" alt="portfolio" >
+            <div id="textphoto1">HTML-CSS-JAVASCRIPT</div>
             <img id="imgprojet2" src="image/photo-projets-tourptour.PNG" alt="Tour par Tour">
+            <div id="textphoto2">HTML-CSS-JAVASCRIPT</div>
 
         </div>
 
 
     </section>
 
-    <section class="contact">
+    <section id="contact">
 
         <h3 class="titreContact">Contactez-moi</h3>
 
@@ -181,9 +185,13 @@
     </div>
 
     <div class="logofin">
-        <img class="logoEmail" src="./image/email-logo.png" alt="email">
-        <img class="logoTelephone" src="./image/telephone-logo.png" alt="telephone">
-        <img class="logoLinkedin" src="./image/linkedin-logo.svg" alt="linkedin">
+        <a href="mailto:ethan.delanoy28@gmail.com">
+            <img class="logoEmail" src="./image/email-logo.png" alt="email">
+        </a>
+        <a href="https://github.com/EthanDelannoy"><img class="logoTelephone" src="./image/Logo github.png"
+            alt="github"></a>
+            
+            <a href="https://www.linkedin.com/in/ethan-delannoy-a6a904307/"><img class="logoLinkedin" src="./image/linkedin-logo.svg" alt="linkedin"></a>
     </div>
 
     </section>

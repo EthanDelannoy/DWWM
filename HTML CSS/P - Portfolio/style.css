@@ -6,15 +6,15 @@
 }
 
 
-.bienvenu {
+#bienvenu {
     background-image: url("./image/Fond-accueil.png");
     background-size: cover; 
     background-repeat: no-repeat;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: center;
     background-color: transparent;
@@ -136,12 +136,12 @@ a{
     top: 20vh;
 }
 
-.bienvenu::before {
+#bienvenu::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.7); 
     z-index: 0; 
@@ -175,34 +175,49 @@ h2{
 
 .btnAccueil{
     padding-top: 5%;
+    display: flex;
+    gap: 2vw;
 }
 
 
 #btnAccueil1{
-    width: 12vw;
-    height: 4vh;
+    width: 8vw;
+    height: 3.5vh;
     border-radius: 50px;
     background-color: transparent;
     color: white;
+    font-family: "Roboto", sans-serif;
     border: 1px solid #87D8F5;
     font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 4vh;
 }
+
+
 #btnAccueil2{
-    width: 12vw;
-    height: 4vh;
+    width: 8vw;
+    height: 3.5vh;
     border-radius: 50px;
     background-color: #87D8F5 ;
     color: black;
+    font-family: "Roboto", sans-serif;
     border: 1px solid #87D8F5;
     font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 4vh;
+
 }
 
-.baniere{
+#baniere{
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 10vh;
-    width: 100vw;
+    width: 100%;
     background-color: #062F3A;
 }
 
@@ -213,9 +228,9 @@ h2{
 
 }
 
-.Apropos{
+#Apropos{
     background-color: #030304;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 }
 
@@ -244,7 +259,7 @@ h2{
 .detailApropos{
     font-family: "Roboto", sans-serif;
     color: white;
-    font-size: 1.3vw;
+    font-size: 1.2vw;
     width: 30vw;
 }
 
@@ -259,8 +274,8 @@ h2{
     height: 6vh;
 }
 
-.Apropos2{
-    width: 100vw;
+#Apropos2{
+    width: 100%;
     height: 100vh;
     background-color: #062F3A;
     display: flex;
@@ -382,10 +397,10 @@ h2{
     height: 7vw;
 }
 
-.projets{
+#projets{
    background-color: #030304; 
    color: white;
-   width: 100vw;
+   width: 100%;
    height: 100vh;
    display: flex;
    flex-direction: column;
@@ -428,17 +443,101 @@ h2{
 #imgprojet1{
     width: 40vw;
     border: 1px solid #9DE0F3;
+    cursor: pointer;
 }
+
+#textphoto1{
+    display: none;
+    position: absolute;
+    left: 18%;
+    font-size: 1.5vw;
+    color: #9DE0F3;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #030304;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    padding: 20px;
+    border: 1px solid #9DE0F3;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.closeBtn {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #062F3A;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.closeBtn:hover {
+    background-color: #0056b3;
+}
+
 #imgprojet2{
     width: 40vw;
     border: 1px solid #9DE0F3;
 }
 
-.contact{
+.modal2 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #030304;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    padding: 20px;
+    border: 1px solid #9DE0F3;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    line-height: 30px;
+
+}
+
+.closeBtn {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #062F3A;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.closeBtn:hover {
+    background-color: #0056b3;
+}
+
+#textphoto2{
+    display: none;
+    position: absolute;
+    right: 18%;
+    font-size: 1.5vw;
+    color: #9DE0F3;
+}
+
+
+#contact{
     background-color: #062F3A;
     color: white;
     height: 60vh;
-    width: 100vw;
+    width: 100%;
 }
 
 .titreContact{
@@ -486,6 +585,7 @@ h2{
 }
 .logoTelephone{
     width: 3vw;
+    cursor: pointer;
 
 }
 .logoLinkedin{
@@ -494,7 +594,7 @@ h2{
 }
 
 footer{
-    width: 100vw;
+    width: 100%;
     background-color: #030304;
     color: white;
     height: 10vh;
@@ -559,22 +659,31 @@ footer{
     }
 
         #btnAccueil1{
-         width: 12vw;
-         height: 3vh;
+         width: 10vw;
+         height: 4vh;
          border-radius: 50px;
          background-color: transparent;
          color: white;
          border: 1px solid #87D8F5;
          font-size: 2vw;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         line-height: 4vh;
     }
+
         #btnAccueil2{
-         width: 12vw;
-         height: 3vh;
+         width: 10vw;
+         height: 4vh;
          border-radius: 50px;
          background-color: #87D8F5 ;
          color: black;
          border: 1px solid #87D8F5;
          font-size: 2vw;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         line-height: 4vh;
     }
 
     .photoProfil{
@@ -584,7 +693,7 @@ footer{
         height: 40vh;
     }
 
-    .baniere{
+    #baniere{
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -600,7 +709,7 @@ footer{
     
     }
 
-    .Apropos{
+    #Apropos{
         background-color: #030304;
         width: 100vw;
         height: 100vh;
@@ -647,7 +756,7 @@ footer{
         height: 6vh;
     }
     
-    .Apropos2{
+    #Apropos2{
         width: 100vw;
         height: 100vh;
         background-color: #062F3A;
@@ -773,7 +882,7 @@ footer{
         height: 14vw;
     }
     
-    .projets{
+    #projets{
        background-color: #030304; 
        color: white;
        width: 100vw;
@@ -819,13 +928,32 @@ footer{
         height: 45vh;
         border: 1px solid #9DE0F3;
     }
+
+    #textphoto1{
+        display: none;
+        position: absolute;
+        left: 34%;
+        top: 378vh;
+        font-size: 3vw;
+        color: #9DE0F3;
+    }
+
     #imgprojet2{
         width: 75vw;
         height: 45vh;
         border: 1px solid #9DE0F3;
     }
+
+    #textphoto2{
+        display: none;
+        position: absolute;
+        left: 34%;
+        top: 427vh;
+        font-size: 3vw;
+        color: #9DE0F3;
+    }
     
-    .contact{
+    #contact{
         background-color: #062F3A;
         color: white;
         height: 60vh;
@@ -925,7 +1053,7 @@ footer{
         display: none;
 }
 
-.bienvenu::before {
+#bienvenu::before {
     content: "";
     position: absolute;
     top: 0;
@@ -943,6 +1071,7 @@ footer{
     visibility: visible;
     margin-top: 0;
     padding-top: 3%;
+
 }
 
 #burgerContainer .flex-container {
@@ -950,6 +1079,7 @@ footer{
     z-index: 100;
     position: fixed;
     top: 20px;
+    padding-right: 10%;
 }
 
 #burgerContainer .container {
@@ -1058,16 +1188,29 @@ footer{
      color: white;
      border: 1px solid #87D8F5;
      font-size: 3vw;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     line-height: 4vh;
 }
+
+
     #btnAccueil2{
      width: 20vw;
      height: 4vh;
      border-radius: 50px;
      background-color: #87D8F5 ;
+     text-decoration: none;
      color: black;
      border: 1px solid #87D8F5;
      font-size: 3vw;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     line-height: 4vh;
 }
+
+
 
 .photoProfil{
     border-radius: 50%;
@@ -1076,7 +1219,7 @@ footer{
     height: 45vh;
 }
 
-.baniere{
+#baniere{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1092,7 +1235,7 @@ footer{
 
 }
 
-.Apropos{
+#Apropos{
     background-color: #030304;
     width: 100vw;
     height: 120vh;
@@ -1141,7 +1284,7 @@ footer{
     height: 6vh;
 }
 
-.Apropos2{
+#Apropos2{
     width: 100vw;
     height: 160vh;
     background-color: #062F3A;
@@ -1269,7 +1412,7 @@ footer{
     height: 19vw;
 }
 
-.projets{
+#projets{
    background-color: #030304; 
    color: white;
    width: 100vw;
@@ -1315,13 +1458,32 @@ footer{
     height: 30vh;
     border: 1px solid #9DE0F3;
 }
+
+#textphoto1{
+    display: none;
+    position: absolute;
+    left: 22%;
+    top: 452vh;
+    font-size: 5vw;
+    color: #9DE0F3;
+}
+
 #imgprojet2{
     width: 85vw;
     height: 30vh;
     border: 1px solid #9DE0F3;
 }
 
-.contact{
+#textphoto2{
+    display: none;
+    position: absolute;
+    left: 22%;
+    top: 488vh;
+    font-size: 5vw;
+    color: #9DE0F3;
+}
+
+#contact{
     background-color: #062F3A;
     color: white;
     height: 60vh;
@@ -1400,6 +1562,7 @@ footer{
 /* ----------------------------------------------------------------MEDIA QUERY TELEPHONE S----------------------------------------- */
 @media screen and (max-width:320px) {
 
+
         .accueil{
             display: flex;
             flex-direction: column-reverse;
@@ -1408,11 +1571,11 @@ footer{
             gap: 5vh;
     }
     
-    .bienvenu {
+    #bienvenu {
         background-image: url("./image/Fond-accueil.png");
         background-size: cover; 
         background-repeat: no-repeat;
-        width: 100vw;
+        width: 100%;
         height: 100vh;
     
     }
@@ -1421,12 +1584,12 @@ footer{
             display: none;
     }
     
-    .bienvenu::before {
+    #bienvenu::before {
         content: "";
         position: absolute;
         top: 0;
         left: 0;
-        width: 100vw;
+        width: 100%;
         height: 100vh;
         background-color: rgba(0, 0, 0, 0.7); 
         z-index: 0; 
@@ -1439,6 +1602,8 @@ footer{
         visibility: visible;
         margin-top: 0;
         padding-top: 3%;
+
+
     }
     
     #burgerContainer .flex-container {
@@ -1446,6 +1611,7 @@ footer{
         z-index: 100;
         position: fixed;
         top: 20px;
+        padding-right: 10%;
     }
     
     #burgerContainer .container {
@@ -1462,6 +1628,7 @@ footer{
         margin: 6px 0;
         transition: 0.4s;
         color: whitesmoke;
+
     }
     
     
@@ -1483,8 +1650,8 @@ footer{
         visibility: hidden;
         background-color: black; 
         opacity: 0.8;
-        width: 100vw;
-        height: 950px;
+        width: 100%;
+        height: 100vh;
         position: fixed;
         top: 0px;
         display: flex;
@@ -1550,6 +1717,10 @@ footer{
          color: white;
          border: 1px solid #87D8F5;
          font-size: 4vw;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         line-height: 4vh;
     }
         #btnAccueil2{
          width: 30vw;
@@ -1559,6 +1730,10 @@ footer{
          color: black;
          border: 1px solid #87D8F5;
          font-size: 4vw;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         line-height: 4vh;
     }
     
     .photoProfil{
@@ -1568,25 +1743,25 @@ footer{
         height: 40vh;
     }
     
-    .baniere{
+    #baniere{
         display: flex;
         align-items: center;
         justify-content: space-between;
         height: 10vh;
-        width: 100vw;
+        width: 100%;
         background-color: #062F3A;
     }
     
     .paraBanier {
         align-items: center;
         color: white;
-        font-size: 4.9vw;
+        font-size: 4.6vw;
     
     }
     
-    .Apropos{
+    #Apropos{
         background-color: #030304;
-        width: 100vw;
+        width: 100%;
         height: 100vh;
         display: flex;
         flex-direction: column;
@@ -1633,8 +1808,8 @@ footer{
         height: 6vh;
     }
     
-    .Apropos2{
-        width: 100vw;
+    #Apropos2{
+        width: 100%;
         height: 160vh;
         background-color: #062F3A;
         display: flex;
@@ -1761,10 +1936,10 @@ footer{
         height: 23vw;
     }
     
-    .projets{
+    #projets{
        background-color: #030304; 
        color: white;
-       width: 100vw;
+       width: 100%;
        height: 120vh;
        display: flex;
        flex-direction: column;
@@ -1807,17 +1982,37 @@ footer{
         height: 25vh;
         border: 1px solid #9DE0F3;
     }
+
+    #textphoto1{
+        display: none;
+        position: absolute;
+        left: 18%;
+        top: 434vh;
+        font-size: 6vw;
+        color: #9DE0F3;
+    }
+
     #imgprojet2{
         width: 85vw;
         height: 25vh;
         border: 1px solid #9DE0F3;
     }
+
+    #textphoto2{
+        display: none;
+        position: absolute;
+        left: 18%;
+        top: 468vh;
+        font-size: 6vw;
+        color: #9DE0F3;
+        right: 0%;
+    }
     
-    .contact{
+    #contact{
         background-color: #062F3A;
         color: white;
         height: 60vh;
-        width: 100vw;
+        width: 100%;
     }
     
     .titreContact{
@@ -1844,7 +2039,7 @@ footer{
     
     .email{
         font-family: "Montserrat", sans-serif;
-        font-size: 6vw;
+        font-size: 5.8vw;
     }
     
     .adresse{
@@ -1874,7 +2069,7 @@ footer{
     }
     
     footer{
-        width: 100vw;
+        width: 100%;
         background-color: #030304;
         color: white;
         height: 10vh;
