@@ -35,6 +35,7 @@
 
 
 
+
 // $nbre1 = readline("Sélctionnez votre 1er nombre : ");
 // $nbre2 = readline("Sélctionnez votre 2ème nombre : ");
 
@@ -77,6 +78,7 @@
 // }
 
 
+
 // $age = readline("Rentrez votre âge : ");
 
 // switch ($age) {
@@ -99,6 +101,7 @@
 
 
 
+
 // $heure = readline("Sélectionnez l'heure : ");
 // $minute = readline("Sélectionnez les minutes : ");
 
@@ -115,6 +118,7 @@
 
 
 // echo "Dans une minute, il sera : ". $heure,"h" .$minute;
+
 
 
 // $heure = readline("Sélectionnez l'heure : ");
@@ -141,92 +145,43 @@
 // echo "Dans une seconde, il sera : ".$heure,"h". " ". $minute,"minutes"." ". "et"." ". $seconde,"seconde";
 
 
-// $copie = readline("Combien de reprograpgie voulez-vous ?");
-
-// switch ($copie) {
-//     case ($copie <= 10):
-//         echo "Le prix sera de 0.10€";
-//     break;
-//     case ($copie <= 20):
-//         echo "Le prix sera de 0.09€";
-//     break;
-//     case ($copie >= 30 || $copie <= 30):
-//         echo "Le prix sera de 0.08€";
-//     break;
-//     }
 
 
-// $sexe = readline("Indiquez votre sexe : ");
-// $age = readline("Indiquez votre age : ");
+// $nbPhotocopies = readline("Entrez le nombre de photocopies : ");
+// $prix;
+// switch(true){
+//     case ($nbPhotocopies <= 10):
+//         $prix = $nbPhotocopies * 0.10;
+//         break;
+    
+//     case ($nbPhotocopies <= 30):
+//         $prix = 10 * 0.10 + ($nbPhotocopies - 10) * 0.09 ;
+//         break;
 
-// if($sexe == "Homme" && $age >= 20){
-//     echo "Vous êtes imposable";
-// }elseif($sexe == "Femme" && $age >=18 && $age <=35 ){
-//     echo "Vous êtes imposable";
-// }else{
-//     echo "Vous ne payez pas d'impots !";
-// }
+//     case ($nbPhotocopies > 30):
+//         $prix = 10 * 0.10 + 20 * 0.09 + ($nbPhotocopies - 30) * 0.08;
+//         break;
 
-// $num = readline("Indique un mois de l'année : ");
-// $annee = readline("Indique une année : ");
-// switch ($num) {
-//     case "Janvier":
-//         echo $nbrDeJours = 31;
-//         break;
-//     case "Février":
-//         if (($annee % 4 == 0 && $annee % 100 != 0) || $annee % 400 == 0) { 
-//             echo $nbrDeJours = 29;
-//         } else {
-//             echo $nbrDeJours = 28;
-//         }
-//         break;
-//     case "Mars":
-//         echo $nbrDeJours = 31;
-//         break;
-//     case "Avril":
-//         echo $nbrDeJours = 30;
-//         break;
-//     case "Mai":
-//         echo $nbrDeJours = 31;
-//         break;
-//     case "Juin":
-//         echo $nbrDeJours = 30;
-//         break;
-//     case "Juillet":
-//         echo $nbrDeJours = 31;
-//         break;
-//     case "Aout":
-//         echo $nbrDeJours = 31;
-//         break;
-//     case "Septembre":
-//         echo $nbrDeJours = 30;
-//         break;
-//     case "Octobre":
-//         echo $nbrDeJours = 31;
-//         break;
-//     case "Novembre":
-//         echo $nbrDeJours = 30;
-//         break;
-//     case "Décembre":
-//         echo $nbrDeJours = 31;
-//         break;
 //     default:
-//         echo $nbrDeJours = "mois invalide";
+//         echo "Valeur incorrecte";
+//         break;   
 // }
+// echo "La facture des photocopies est de $prix €.\n\n";
 
-// $num = readline("Indique un mois de l'année : ");
-// $annee = readline("Indique une année : ");
 
-// $nbrDeJours = 31;
-// if ($num == 4 || $num == 6 || $num == 9 || $num == 11) {
-//     $nbrDeJours = 30;
-// } elseif ($num == 2) {
-//     $nbrDeJours = (($annee % 4 == 0 && $annee % 100 != 0) || $annee % 400 == 0) ? 29 : 28;
-// } elseif ($num < 1 || $num > 12) {
-//     $nbrDeJours = "mois invalide";
-// }
 
-// echo $nbrDeJours;
+$sexe = readline("Indiquez votre sexe : ");
+$age = readline("Indiquez votre age : ");
+
+if($sexe == "Homme" && $age >= 20){
+    echo "Vous êtes imposable";
+}elseif($sexe == "Femme" && $age >=18 && $age <=35 ){
+    echo "Vous êtes imposable";
+}else{
+    echo "Vous ne payez pas d'impots !";
+}
+
+
 
 
 // $annee = readline("Entrée une année : ");
