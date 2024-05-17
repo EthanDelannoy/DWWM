@@ -12,16 +12,17 @@
 
 // $nbre = readline("Entrez un nombre : ");
 // $nbreFin = $nbre-5;
-
+// echo "Les 5 nombres précédents sont :"."\n";
 // for ($i=$nbre; $i > $nbreFin; $i--) { 
-//     echo $i-1 . " ";
+//     echo $i-1 . " "."\n";
 // }
 
+// echo "\n**********************************\n\n";
 
 // $nbreFin = $nbre+4;
-
+// echo "Les 5 nombres suivants sont :"."\n";
 // for ($i=$nbre; $i <= $nbreFin; $i++) { 
-//     echo $i+1 ." ";
+//     echo $i+1 ." "."\n";
 // }
 
 // EXERCICE 3 -----------------------------------------------------
@@ -35,16 +36,20 @@
 
 // echo $resultat;
 
-// EXERCICE 3 -----------------------------------------------------
+// EXERCICE 4 -----------------------------------------------------
 
-$nbre = readline("Entrez un nombre :");
-$nbre = readline("Entrez un nombre :");
-$nbre = readline("Entrez un nombre :");
-$nbre = readline("Entrez un nombre :");
-$nbre = readline("Entrez un nombre :");
+// $min = readline("Entrez un nombre : ");
+// $max = $min; 
 
+// for ($i = 2; $i <= 5; $i++) {
+//     $nbre = readline("Entrez un nombre : ");
 
-for ($i= 1; $i <= $nbre ; $i++) { 
-    echo max($nbre)." ". min($nbre);
-}
+//     if ($nbre < $min) {
+//         $min = $nbre;
+//     }elseif ($nbre > $max) {
+//         $max = $nbre;
+//     }
+// }
 
+// echo "Le plus grand nombre est : $max\n";
+// echo "Le plus petit nombre est : $min";
