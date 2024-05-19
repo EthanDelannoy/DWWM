@@ -153,6 +153,11 @@ h2{
     font-size: 4vw;
 }
 
+.photoProfil{
+    width: 20vw;
+    height: 50vh;
+}
+
 .dev{
     font-family: "Roboto", sans-serif;
     color: white;
