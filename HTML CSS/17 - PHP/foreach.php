@@ -3,14 +3,20 @@
 // EXERCICE 1 ----------------------------------
 
 // $tab = [];
+// $somme = 0;
 
 // for ($i = 0; $i < 9; $i++) { 
 //     $tab[] = readline("Entrez un nombre : ");
 // }
 
 // foreach ($tab as $value) {
-//     echo $value . "\n";
+//     $somme += $value; 
 // }
+
+// $moyenne = $somme / count($tab); 
+
+// echo "La moyenne est de : " . $moyenne . "\n";
+
 
 // EXERCICE 2 ----------------------------------
 
@@ -37,7 +43,7 @@
 
 // EXERCICE 3 ----------------------------------
 
-// $tab = [10, 12, 14, 16, 18];
+// $tab = [1, 8, 3, 4, 5];
 // $total = 0;
 
 // for ($i = 0; $i < count($tab); $i++) { 
@@ -62,13 +68,65 @@
 
 // EXERCICE 5 ----------------------------------
 
-$tab = [];
-$longueur = readline("Entrez le nombre de valeurs : ");
+// $tab = [];
+// $longueur = readline("Entrez le nombre de valeurs : ");
 
-for ($i=0; $i < $longueur; $i++) { 
-    $nbre = readline("Entrez des valeurs : ");
-}
+// for ($i = 0; $i < $longueur; $i++) {
+//     $nbre = readline("Entrez une valeur : ");
+//     $tab[] = $nbre;
+// }
 
-foreach ($nbre as $value) {
-    
-}
+// $valeurMax = null;
+// $position = 0;
+
+// foreach ($tab as $index => $value) {
+//     if ($valeurMax === null || $value > $valeurMax) {
+//         $valeurMax = $value;
+//         $position = $index;
+//     }
+// }
+// echo "La plus grande valeur est $valeurMax à la position " . ($position + 1) . ".\n";
+
+// EXERCICE 6 ----------------------------------
+
+// $tab = [];
+// $longueur = readline("Combien de notes y a-t-il ? ");
+
+// for ($i = 0; $i < $longueur; $i++) {
+//     $nbre = readline("Rentrez une note : ");
+//     $tab[] = $nbre; 
+// }
+
+// $somme = 0;
+// foreach ($tab as $note) {
+//     $somme += $note;
+// }
+
+// $moyenne = $somme / $longueur;
+// echo "La moyenne de classe est : " . $moyenne . "\n";
+
+// echo "Les notes supérieures à la moyenne sont : ";
+// foreach ($tab as $note) {
+//     if ($note > $moyenne) {
+//         echo $note." ";
+//     }
+// }
+
+// EXERCICE 7 ----------------------------------
+
+// $prix = [5, 50, 23, 11];
+// $quantite = [10, 1, 4, 3];  
+// $tab3 = [];
+
+// for ($i = 0; $i < count($prix); $i++) {
+//     $tab3[] = $prix[$i] * $quantite[$i]; 
+// }
+
+// foreach ($tab3 as $value) {
+//     $value;
+// }
+
+// $total = array_sum($tab3);
+// echo "La somme totale est : " . $total;
+
+
