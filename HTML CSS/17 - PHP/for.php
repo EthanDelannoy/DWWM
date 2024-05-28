@@ -1,12 +1,15 @@
 <?php
 
 // EXERCICE 1 -----------------------------------------------------
+// $table = readline("Sélectionnez une table de multiplication : ");
 
-// $table = rand(1, 9);
-
-// for ($i = 1; $i <= 10; $i++) { 
-//     echo $i."x".$table."=".($i*$table)."\n";
-// }
+function table($table) {
+    $results = array(); 
+    for ($i = 1; $i <= 10; $i++) {
+        $results[] = $i . "x" . $table . "=" . ($i * $table); 
+    }
+    return $results; 
+}
 
 // EXERCICE 2 -----------------------------------------------------
 
@@ -28,13 +31,16 @@
 // EXERCICE 3 -----------------------------------------------------
 
 // $nbre = readline("Entrez un nombre : ");
-// $resultat = 1;
 
-//     for ($i = 1; $i <= $nbre; $i++) {
-//         $resultat *= $i;
-//     }
+function factorielle($nbre){
+$resultat = 1;
 
-// echo $resultat;
+    for ($i = 1; $i <= $nbre; $i++) {
+        $resultat *= $i;
+    }
+
+return $resultat;
+}
 
 // EXERCICE 4 -----------------------------------------------------
 

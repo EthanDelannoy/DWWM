@@ -10,16 +10,14 @@
 // echo "Bonjour " . $prenom;
 
 
-// $prixHT = "20€ ";
-// $article = 5;
-// $tva = "20% ";
-// $prixTTC = "25€";
+function prixTTC($prixHT, $article, $tva) {
 
-// $operation = (25/20) * 20;
-// $total = $article * $operation;
+    $montantTVA = $prixHT * ($tva / 100);
+    $prixTTCArticle = $prixHT + $montantTVA;
+    $prixTTC = $prixTTCArticle * $article;
 
-// echo "Prix Hors taxe : " .$prixHT ."TVA : ".$tva."Prix TTC : " .$operation,"€". " " ."Nombre d'article disponible : " .$article." ". "Prix total pour touts les articles : ". $total,"€";
-
+    return $prixTTC;
+}
 
 // --------------------------------------------------------------------------EXERCICE 2-----------------------------------------
 
@@ -170,16 +168,16 @@
 
 
 
-$sexe = readline("Indiquez votre sexe : ");
-$age = readline("Indiquez votre age : ");
+// $sexe = readline("Indiquez votre sexe : ");
+// $age = readline("Indiquez votre age : ");
 
-if($sexe == "Homme" && $age >= 20){
-    echo "Vous êtes imposable";
-}elseif($sexe == "Femme" && $age >=18 && $age <=35 ){
-    echo "Vous êtes imposable";
-}else{
-    echo "Vous ne payez pas d'impots !";
-}
+// if($sexe == "Homme" && $age >= 20){
+//     echo "Vous êtes imposable";
+// }elseif($sexe == "Femme" && $age >=18 && $age <=35 ){
+//     echo "Vous êtes imposable";
+// }else{
+//     echo "Vous ne payez pas d'impots !";
+// }
 
 
 

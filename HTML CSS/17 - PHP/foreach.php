@@ -43,14 +43,15 @@
 
 // EXERCICE 3 ----------------------------------
 
-// $tab = [1, 8, 3, 4, 5];
-// $total = 0;
-
-// for ($i = 0; $i < count($tab); $i++) { 
-//      $total += $tab[$i];
-// }
-
-// echo "Total : " . $total;
+function sommeTabl($tab) {
+     $total = 0;
+ 
+     foreach ($tab as $value) {
+         $total += $value;
+     }
+ 
+     return $total;
+ }
 
 // EXERCICE 4 ----------------------------------
 

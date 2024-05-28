@@ -39,44 +39,45 @@
 
 // EXERCICE 4 ---------------------------------------
 
-// $nbre = readline("Choissiez un 1er nombre : ");
-// $nbre2 = readline("Choissiez un 2ème nombre : ");
+// $nbre1 = readline("Choissiez un 1er nombre : ");
+// $nbre2 = readline("Choissiez un 2eme nombre : ");
 
-// function pgcd($nbre, $nbre2) {
-//     while ($nbre2 != 0) {
-//         $nbre3 = $nbre2;
-//         $nbre2 = $nbre % $nbre2;
-//         $nbre = $nbre3;
-//     }
-//     return $nbre;
-// }
+function pgcd($nbre, $nbre2) {
+    while ($nbre2 != 0) {
+        $nbre3 = $nbre2;
+        $nbre2 = $nbre % $nbre2;
+        $nbre = $nbre3;
+    }
+    return $nbre;
+}
 
 // echo pgcd($nbre, $nbre2);
 
 
 // EXERCICE 5 ---------------------------------------
 
-$nbre = readline("Choissiez un 1er nombre : ");
-$nbre2 = readline("Choissiez un 2ème nombre : ");
+
+// $nbre = readline("Choissiez un 1er nombre : ");
+// $nbre2 = readline("Choissiez un 2ème nombre : ");
 
 
-function gcd($nbre, $nbre2 ) {
+// function gcd1($nbre, $nbre2 ) {
 
-    while ($nbre2 != 0) {
-        $nbre3  = $nbre2 ;
-        $nbre2 = $nbre % $nbre2 ;
-        $nbre = $nbre3 ;
-    }
+//     while ($nbre2 != 0) {
+//         $nbre3  = $nbre2 ;
+//         $nbre2 = $nbre % $nbre2 ;
+//         $nbre = $nbre3 ;
+//     }
 
-    return $nbre;
-}
+//     return $nbre;
+// }
 
-function ppcm($nbre, $nbre2) {
-    $pgcd = gcd($nbre, $nbre2);
+// function ppcm($nbre, $nbre2) {
+//     $pgcd = gcd1($nbre, $nbre2);
     
-    $ppcm = ($nbre * $nbre2) / $pgcd;
+//     $ppcm = ($nbre * $nbre2) / $pgcd;
     
-    return $ppcm;
-}
+//     return $ppcm;
+// }
 
-echo ppcm($nbre, $nbre2);
+// echo ppcm($nbre, $nbre2);
