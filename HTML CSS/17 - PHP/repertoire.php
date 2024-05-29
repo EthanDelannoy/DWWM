@@ -28,9 +28,9 @@ function toutVoir() {
         echo "**********************************\n";
     } else {
         foreach ($repertoire as $contact) {
-            echo "**********************************\n";
-            echo $contact[0] . " " . $contact[1];
-            echo "**********************************\n";
+            
+            echo "\n".$contact[0] . " " . $contact[1]."\n";
+            
         }
     }
 }
@@ -68,7 +68,7 @@ $choix = readline("Que voulez-vous faire ? ");
         $nomRecherche = readline("Entrez le prénom de la personne à rechercher : ");
         $resultatRecherche = recherche($nomRecherche);
         echo "**********************************************************************\n";
-        echo "La personne que vous cherchez a ce numéro :". $resultatRecherche;
+        echo $nomRecherche." a ce numéro : ". $resultatRecherche. "\n";
         echo "**********************************************************************\n";
         
             break;
@@ -78,9 +78,11 @@ $choix = readline("Que voulez-vous faire ? ");
             break;
     
         default:
-        $choix = readline("Voulez-vous recommencer ? ");
+            echo "Merci de saisir un choix valide !";
             break;
     }
+
+    $choix = readline("Voulez-vous faire autre chose dans votre menu ? ");
 } while ($choix == "Oui");
 
 echo "Merci au revoir";
