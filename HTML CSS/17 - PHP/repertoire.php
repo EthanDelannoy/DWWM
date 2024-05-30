@@ -77,7 +77,6 @@ $choix = readline("Que voulez-vous faire ? ");
         echo "**********************************************************************\n";
         echo $nomRecherche." a ce numéro : ". $resultatRecherche. "\n";
         echo "**********************************************************************\n";
-        
             break;
     
         case $choix3:
@@ -94,7 +93,7 @@ $choix = readline("Que voulez-vous faire ? ");
     $choix = readline("Voulez-vous faire autre chose dans votre menu ? ");
     // Strtolower pour que même si il met en majuscule ca met en minuscule et valide la condition
     $choix = strtolower($choix);
-} while ($choix == "oui");
+} while ($choix == "oui" || $choix == "yes" || $choix == "y");
 
 // Fin de programme et de la boucle
 echo "Merci au revoir";
