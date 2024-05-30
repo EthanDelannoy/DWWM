@@ -30,7 +30,17 @@
                     $ordinateur = choixOrdinateur();
                     echo "Vous avez choisi : $joueur\n";
                     echo "L'ordinateur a choisi : $ordinateur\n";
-                    $gagnant = $joueur == $ordinateur ? "Égalité" : (($joueur == "Pierre" && $ordinateur == "Ciseaux") || ($joueur == "Feuille" && $ordinateur == "Pierre") || ($joueur == "Ciseaux" && $ordinateur == "Feuille") ? "Joueur" : "Ordinateur");
+                    if ($joueur == $ordinateur) {
+                        $gagnant = "Égalité";
+                    } else {
+                        if (($joueur == "Pierre" && $ordinateur == "Ciseaux") || 
+                            ($joueur == "Feuille" && $ordinateur == "Pierre") || 
+                            ($joueur == "Ciseaux" && $ordinateur == "Feuille")) {
+                            $gagnant = "Joueur";
+                        } else {
+                            $gagnant = "Ordinateur";
+                        }
+                    }
                     echo "Résultat : ";
                     if ($gagnant == "Égalité") {
                         echo "Égalité\n";
