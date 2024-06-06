@@ -1,7 +1,10 @@
 <?php  ob_start(); ?>
 
-
+<div class="form-container">
 <h2>Bonjour !</h2>
+</div>
+
+
 
 <?php
     $content = ob_get_clean();
