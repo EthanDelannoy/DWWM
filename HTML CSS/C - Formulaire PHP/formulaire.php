@@ -28,5 +28,6 @@
 <?php
 $content = ob_get_clean();
 $titre = "Exemple de formulaire";
+$title = "Formulaire";
 require "Template.php";
 ?>

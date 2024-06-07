@@ -9,5 +9,6 @@
 <?php
     $content = ob_get_clean();
     $titre = "Ma page d'accueil";
+    $title = "Accueil";
     require "Template.php";
 ?>

@@ -14,5 +14,6 @@ ob_start();
 <?php
 $content = ob_get_clean();
 $titre = "Calcul sur le cercle";
+$title = "Cercle";
 require "Template.php"; 
 ?>

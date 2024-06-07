@@ -22,5 +22,6 @@ ob_start();
 <?php
 $content = ob_get_clean();
 $titre = "Calculatrice";
+$title = "Calculatrice";
 require "template.php";
 ?>

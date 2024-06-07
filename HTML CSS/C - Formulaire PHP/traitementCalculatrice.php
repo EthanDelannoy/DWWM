@@ -14,12 +14,13 @@ ob_start(); ?>
 <div class="form-container">
 
     <?php if ($resultats) : ?>
-        <p>Le résultat de <?= $choix ?></p> : <?= $resultats; ?></p>
+        <p><?= $resultats; ?></p>
     <?php endif; ?>
 </div>
 
 <?php
 $content = ob_get_clean();
+$title = "Résultat de l'opération";
 $titre = "Calculatrice - Résultat";
 require "template.php";
 ?>

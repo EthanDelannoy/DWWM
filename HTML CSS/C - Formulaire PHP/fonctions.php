@@ -24,17 +24,17 @@ function operation($choix,$nombre1,$nombre2){
 switch($choix){
     case "Addition": 
         $resultat = $nombre1 + $nombre2;
-        return  $resultat;
+        return "Le résultat de l'addition est : $resultat";
         break;
     
     case "Soustraction": 
         $resultat = $nombre1 - $nombre2;
-        return $resultat;
+        return "Le résultat de la soustraction est : $resultat";
         break;
     
     case "Multiplication":
         $resultat = $nombre1 * $nombre2;
-        return $resultat;
+        return "Le résultat de la multiplication est : $resultat";
         break;
     
     case "Division":
@@ -42,7 +42,7 @@ switch($choix){
         //Vérification du deuxième nombre
         if($nombre2 != 0){
             $resultat = $nombre1 / $nombre2;
-            return $resultat;
+            return "Le résultat de la division est : $resultat";
         }else{
             return "erreur : division par zéro \n";
         }
