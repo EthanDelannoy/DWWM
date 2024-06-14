@@ -29,7 +29,7 @@ $validation = true;
     <label for="role">Rôle :</label>
     <select name="role" id="role">
     <option value="admin">Admin</option>
-    <option value="pasAdmin">Non-Admin</option>
+    <option value="non-Admin">Non-Admin</option>
     </select>
 
 

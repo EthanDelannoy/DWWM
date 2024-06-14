@@ -16,14 +16,10 @@ require_once "dbConnect.php";
     <?php
     function Afficher()
     {
-
         $pdo = getPDOConnexion();
-
         $stmt = $pdo->prepare('SELECT id, nom, prenom, email, telephone FROM Users');
         $stmt->execute();
-
         $users = $stmt->fetchAll();
-
 
         foreach ($users as $user) {
             echo "<tr>";
@@ -33,8 +29,8 @@ require_once "dbConnect.php";
             echo "<td>" . htmlspecialchars($user["email"]) . "</td>";
             echo "<td>" . htmlspecialchars($user["telephone"]) . "</td>";
             echo "<td>";
-            echo '<a href="update.php">Modifier</a> | ';
-            echo '<a href="delete.php">Supprimer</a>';
+            echo '<a href="update.php?id=' . htmlspecialchars($user["id"]) . '">Modifier</a> | ';
+            echo '<a href="delete.php?id=' . htmlspecialchars($user["id"]) . '">Supprimer</a>';
             echo "</td>";
             echo "</tr>";
         }
@@ -44,8 +40,6 @@ require_once "dbConnect.php";
     ?>
 
 </table>
-
-
 
 <?php
 $content = ob_get_clean();
