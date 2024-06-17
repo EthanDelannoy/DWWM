@@ -9,6 +9,7 @@ require_once "dbConnect.php";
         <th>Nom</th>
         <th>Prénom</th>
         <th>Email</th>
+        <th>Mot de passe</th>
         <th>Téléphone</th>
         <th>Action</th>
     </tr>
@@ -17,7 +18,7 @@ require_once "dbConnect.php";
     function Afficher()
     {
         $pdo = getPDOConnexion();
-        $stmt = $pdo->prepare('SELECT id, nom, prenom, email, telephone FROM Users');
+        $stmt = $pdo->prepare('SELECT id, nom, prenom, email, mdp, telephone FROM Users');
         $stmt->execute();
         $users = $stmt->fetchAll();
 
@@ -27,6 +28,7 @@ require_once "dbConnect.php";
             echo "<td>" . htmlspecialchars($user["nom"]) . "</td>";
             echo "<td>" . htmlspecialchars($user["prenom"]) . "</td>";
             echo "<td>" . htmlspecialchars($user["email"]) . "</td>";
+            echo "<td>" . htmlspecialchars($user["mdp"]) . "</td>";
             echo "<td>" . htmlspecialchars($user["telephone"]) . "</td>";
             echo "<td>";
             echo '<a href="update.php?id=' . htmlspecialchars($user["id"]) . '">Modifier</a> | ';

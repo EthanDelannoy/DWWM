@@ -6,6 +6,7 @@ require_once "dbConnect.php";
 $nom = "";
 $prenom = "";
 $email = "";
+$mdp = "";
 $number = "";
 $validation = true;
 
@@ -22,6 +23,9 @@ $validation = true;
 
     <label for="email">Email :</label>
     <input type="email" name="email" id="email" value="<?= htmlspecialchars($email) ?>" required>
+
+    <label for="email">Mot de passe :</label>
+    <input type="password" name="mdp" id="mdp" value="<?= htmlspecialchars($mdp) ?>" required>
 
     <label for="email">télephone :</label>
     <input type="number" name="number" id="number" value="<?= htmlspecialchars($number) ?>" required>
@@ -61,10 +65,21 @@ if (isset($_POST['prenom'])) {
 if (isset($_POST['email'])) {
     $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
 
-    // Verifier si l'email est valide
 
     if (!$email) {
         echo "<p>L'adresse email non valide</p>";
+        $validation = false;
+    }
+}
+
+//----------------------------------------------------------VERFIFICATION MDP--------------------------------------------------
+
+if (isset($_POST['mdp'])) {
+    $mdp = filter_input(INPUT_POST, 'mdp', FILTER_DEFAULT);
+
+    $longueur = 8;
+    if (strlen($mdp) < $longueur) {
+        echo "<p>Votre mot de passe est trop court ! Veuillez avoir 8 caractéres minimum</p>";
         $validation = false;
     }
 }
@@ -80,15 +95,16 @@ if (isset($_POST['number'])) {
     }
 }
 
-if(isset($_POST['nom'], $_POST['prenom'], $_POST['email'],  $_POST['number'])) {
+if(isset($_POST['nom'], $_POST['prenom'], $_POST['email'], $_POST['mdp'],  $_POST['number'])) {
     $nom = $_POST['nom'];
     $prenom = $_POST['prenom'];
     $email = $_POST['email'];
+    $mdp = password_hash($_POST['mdp'], PASSWORD_DEFAULT);
     $number = $_POST['number'];
     $role = $_POST['role'];
     $pdo = getPDOConnexion();
-    $stmt = $pdo->prepare('INSERT INTO Users (nom, prenom, email, telephone) VALUES (?, ?, ?, ?)');
-    $stmt->execute([$prenom, $nom, $email, $number]);
+    $stmt = $pdo->prepare('INSERT INTO Users (nom, prenom, email, mdp, telephone) VALUES (?, ?, ?, ?, ?)');
+    $stmt->execute([$prenom, $nom, $email, $mdp, $number]);
     $user = $stmt->fetch();
 
 
