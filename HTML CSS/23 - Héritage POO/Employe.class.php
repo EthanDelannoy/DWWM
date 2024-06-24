@@ -14,3 +14,4 @@ class Employe {
         echo "$this->salaire €<br>";
     }
 }
+?>

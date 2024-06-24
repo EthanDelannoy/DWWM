@@ -9,10 +9,6 @@ class Manager extends Employe {
         $this->employesGeres = $employesGeres;
     }
 
-    public function ajouterEmploye(){
-        
-    }
-
     public function afficherDetails() {
         parent::afficherDetails();
         echo "*********************<br>";
@@ -22,5 +18,4 @@ class Manager extends Employe {
         }
     }
 }
-
 ?>
