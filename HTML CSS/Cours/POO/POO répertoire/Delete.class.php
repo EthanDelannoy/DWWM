@@ -2,15 +2,19 @@
 ob_start();
 require_once 'Auth.class.php';
 require_once 'User.class.php';
-Auth::verifyAdmin();
+
+$auth = new Auth();
+$auth->verifierAdmin();
+
+$user = new User();
 
 if (isset($_POST['id'])) {
     $id = $_POST['id'];
-    $message = User::deleteUser($id);
+    $message = $user->deleteUser($id);
     echo $message;
 }
 
-$users = User::getAllUsers();
+$users = $user->getAllUsers();
 ?>
 
 <form class="form-container" method="POST">

@@ -3,7 +3,8 @@ ob_start();
 require_once 'Auth.class.php';
 require_once 'MyDbConnection.php';
 
-Auth::startSession();
+$auth = new Auth();
+$auth->startSession();
 
 if (isset($_POST['email'], $_POST['password'])) {
     $email = $_POST['email'];

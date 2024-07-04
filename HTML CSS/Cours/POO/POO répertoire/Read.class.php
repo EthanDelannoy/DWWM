@@ -3,9 +3,11 @@ ob_start();
 require_once 'Auth.class.php';
 require_once 'User.class.php';
 
-Auth::verifyAdmin();
+$auth = new Auth();
+$auth->verifierAdmin();
 
-$users = User::getAllUsersWithRoles();
+$user = new User();
+$users = $user->getAllUsersRole();
 ?>
 
 <table border="1">

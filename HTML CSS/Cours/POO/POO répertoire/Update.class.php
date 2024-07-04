@@ -2,7 +2,11 @@
 ob_start();
 require_once 'Auth.class.php';
 require_once 'User.class.php';
-Auth::verifyAdmin();
+
+$auth = new Auth();
+$auth->verifierAdmin();
+
+$user = new User();
 
 if(isset($_POST['id'], $_POST['nom'], $_POST['prenom'], $_POST['email'], $_POST['telephone'], $_POST['role'])) {
     $id = $_POST['id'];
@@ -12,14 +16,14 @@ if(isset($_POST['id'], $_POST['nom'], $_POST['prenom'], $_POST['email'], $_POST[
     $telephone = $_POST['telephone'];
     $role = $_POST['role'];
 
-    $message = User::updateUser($id, $nom, $prenom, $email, $telephone, $role);
+    $message = $user->updateUser($id, $nom, $prenom, $email, $telephone, $role);
     echo $message;
 }
 
 if (isset($_GET['id'])) {
-    $user = User::getUserById($_GET['id']);
+    $utilisateur = $user->getUserById($_GET['id']);
 
-    if (!$user) {
+    if (!$utilisateur) {
         echo "Utilisateur non trouvé.";
         exit();
     }
@@ -30,21 +34,21 @@ if (isset($_GET['id'])) {
 ?>
 
 <div class="form-container">
-    <?php if ($user) : ?>
+    <?php if ($utilisateur) : ?>
         <form method="POST">
-            <input type="hidden" name="id" value="<?php echo htmlspecialchars($user['id']); ?>">
+            <input type="hidden" name="id" value="<?php echo htmlspecialchars($utilisateur['id']); ?>">
             <label for="nom">Nom:</label>
-            <input type="text" name="nom" value="<?php echo htmlspecialchars($user['nom']); ?>" required><br>
+            <input type="text" name="nom" value="<?php echo htmlspecialchars($utilisateur['nom']); ?>" required><br>
             <label for="prenom">Prénom:</label>
-            <input type="text" name="prenom" value="<?php echo htmlspecialchars($user['prenom']); ?>" required><br>
+            <input type="text" name="prenom" value="<?php echo htmlspecialchars($utilisateur['prenom']); ?>" required><br>
             <label for="email">Email:</label>
-            <input type="email" name="email" value="<?php echo htmlspecialchars($user['email']); ?>" required><br>
+            <input type="email" name="email" value="<?php echo htmlspecialchars($utilisateur['email']); ?>" required><br>
             <label for="telephone">Téléphone:</label>
-            <input type="text" name="telephone" value="<?php echo htmlspecialchars($user['telephone']); ?>" required><br>
+            <input type="text" name="telephone" value="<?php echo htmlspecialchars($utilisateur['telephone']); ?>" required><br>
             <label for="role">Rôle:</label>
             <select name="role" required>
-                <option value="admin" <?php if ($user['role'] == 'admin') echo 'selected'; ?>>Admin</option>
-                <option value="non-admin" <?php if ($user['role'] == 'non-admin') echo 'selected'; ?>>Non-Admin</option>
+                <option value="admin" <?php if ($utilisateur['role'] == 'admin') echo 'selected'; ?>>Admin</option>
+                <option value="non-admin" <?php if ($utilisateur['role'] == 'non-admin') echo 'selected'; ?>>Non-Admin</option>
             </select><br>
             <input type="submit" value="Mettre à jour">
         </form>

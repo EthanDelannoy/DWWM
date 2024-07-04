@@ -4,7 +4,8 @@ require_once 'Auth.class.php';
 require_once 'MyDbConnection.php';
 require_once 'User.class.php';
 
-Auth::verifyAdmin();
+$auth = new Auth();
+$auth->verifierAdmin();
 
 if (isset($_POST['nom'], $_POST['prenom'], $_POST['email'], $_POST['telephone'], $_POST['password'], $_POST['role'])) {
     $nom = $_POST['nom'];
@@ -14,7 +15,8 @@ if (isset($_POST['nom'], $_POST['prenom'], $_POST['email'], $_POST['telephone'],
     $password = $_POST['password'];
     $role = $_POST['role'];
 
-    $message = User::createUser($nom, $prenom, $email, $telephone, $password, $role);
+    $user = new User();
+    $message = $user->createUser($nom, $prenom, $email, $telephone, $password, $role);
     echo $message;
 } else {
     echo "Tous les champs du formulaire doivent être remplis.";

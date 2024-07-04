@@ -1,7 +1,9 @@
 <?php
 require_once "Auth.class.php";
 ob_start();
-Auth::startSession();
+
+$auth = new Auth();
+$auth->startSession();
 ?>
 
 <div class="welcome-text">
