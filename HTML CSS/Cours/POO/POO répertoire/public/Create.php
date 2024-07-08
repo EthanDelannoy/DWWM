@@ -1,8 +1,8 @@
 <?php
 ob_start();
-require_once 'Auth.class.php';
-require_once 'MyDbConnection.php';
-require_once 'User.class.php';
+require_once __DIR__ . '/../entites/Auth.class.php';
+require_once __DIR__ . '/../dbConnect/MyDbConnection.php';
+require_once __DIR__ . '/../entites/User.class.php';
 
 $auth = new Auth();
 $auth->verifierAdmin();

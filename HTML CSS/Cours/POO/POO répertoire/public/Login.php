@@ -1,7 +1,7 @@
 <?php
 ob_start();
-require_once 'Auth.class.php';
-require_once 'MyDbConnection.php';
+require_once __DIR__ . '/../entites/Auth.class.php';
+require_once __DIR__ . '/../dbConnect/MyDbConnection.php';
 
 $auth = new Auth();
 $auth->startSession();
@@ -16,7 +16,7 @@ if (isset($_POST['email'], $_POST['password'])) {
 
     if ($user && password_verify($password, $user['mdp'])) {
         $_SESSION['user_id'] = $user['id'];
-        header('Location: index.php');
+        header('Location: ../index.php');
         exit();
     } else {
         $error = "Email ou mot de passe incorrect.";

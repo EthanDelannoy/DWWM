@@ -1,6 +1,6 @@
 <?php
 
-require_once 'MyDbConnection.php';
+require_once __DIR__ . '/../dbConnect/MyDbConnection.php';
 
 class Auth {
     private $pdo;

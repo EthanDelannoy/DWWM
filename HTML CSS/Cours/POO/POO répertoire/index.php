@@ -1,5 +1,6 @@
 <?php
-require_once "Auth.class.php";
+require_once __DIR__ . '../entites/Auth.class.php';
+
 ob_start();
 
 $auth = new Auth();
@@ -14,5 +15,5 @@ $auth->startSession();
 <?php
 $content = ob_get_clean();
 $titre = "Accueil";
-require "template.php";
+require "./public/template.php";
 ?>

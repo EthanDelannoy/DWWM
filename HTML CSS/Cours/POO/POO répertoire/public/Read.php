@@ -1,7 +1,7 @@
 <?php
 ob_start();
-require_once 'Auth.class.php';
-require_once 'User.class.php';
+require_once __DIR__ . '/../entites/Auth.class.php';
+require_once __DIR__ . '/../entites/User.class.php';
 
 $auth = new Auth();
 $auth->verifierAdmin();
@@ -28,7 +28,7 @@ $users = $user->getAllUsersRole();
         <td><?php echo htmlspecialchars($user['email']); ?></td>
         <td><?php echo htmlspecialchars($user['telephone']); ?></td>
         <td><?php echo htmlspecialchars($user['role']); ?></td>
-        <td><a href="Update.class.php?id=<?php echo $user['id']; ?>">Modifier</a></td>
+        <td><a href="Update.php?id=<?php echo $user['id']; ?>">Modifier</a></td>
     </tr>
     <?php endforeach; ?>
 </table>
