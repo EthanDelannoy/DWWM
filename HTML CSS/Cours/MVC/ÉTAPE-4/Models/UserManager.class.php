@@ -10,7 +10,7 @@ class UserManager {
 
     public function getAllUsers() {
         $sql = '
-            SELECT users.id, users.nom, users.prenom, users.email, users.telephone, userroles.role, users.nomImage
+            SELECT users.id, users.nom, users.prenom, users.email, users.telephone, userroles.role, users.image_name
             FROM users
             LEFT JOIN userroles ON users.id = userroles.user_id
         ';
@@ -21,7 +21,7 @@ class UserManager {
 
     public function getUserById($id) {
         $sql = '
-            SELECT users.id, users.nom, users.prenom, users.email, users.telephone, userroles.role, users.nomImage
+            SELECT users.id, users.nom, users.prenom, users.email, users.telephone, userroles.role, users.image_name
             FROM users
             LEFT JOIN userroles ON users.id = userroles.user_id
             WHERE users.id = ?
@@ -33,13 +33,41 @@ class UserManager {
 
     public function updateUser($id, $nom, $prenom, $email, $telephone, $role, $nomImage) {
         try {
-            $stmt = $this->pdo->prepare('UPDATE users SET nom = ?, prenom = ?, email = ?, telephone = ?, nomImage = ? WHERE id = ?');
+            $stmt = $this->pdo->prepare('UPDATE users SET nom = ?, prenom = ?, email = ?, telephone = ?, image_name = ? WHERE id = ?');
             $stmt->execute([$nom, $prenom, $email, $telephone, $nomImage, $id]);
 
             $stmt = $this->pdo->prepare('UPDATE userroles SET role = ? WHERE user_id = ?');
             $stmt->execute([$role, $id]);
 
             return "Utilisateur mis à jour avec succès.";
+        } catch (PDOException $e) {
+            return "Erreur : " . $e->getMessage();
+        }
+    }
+
+    public function deleteUser($id) {
+        try {
+            $stmt = $this->pdo->prepare('DELETE FROM users WHERE id = ?');
+            $stmt->execute([$id]);
+            return "Utilisateur supprimé avec succès.";
+        } catch (PDOException $e) {
+            return "Erreur : " . $e->getMessage();
+        }
+    }
+
+    public function createUser($nom, $prenom, $email, $telephone, $password, $image, $role) {
+        $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+    
+        try {
+            $stmt = $this->pdo->prepare('INSERT INTO users (nom, prenom, email, telephone, password, image_name) VALUES (?, ?, ?, ?, ?, ?)');
+            $stmt->execute([$nom, $prenom, $email, $telephone, $hashedPassword, $image]);
+    
+            $userId = $this->pdo->lastInsertId();
+    
+            $stmt = $this->pdo->prepare('INSERT INTO userroles (user_id, role) VALUES (?, ?)');
+            $stmt->execute([$userId, $role]);
+    
+            return "Utilisateur ajouté avec succès.";
         } catch (PDOException $e) {
             return "Erreur : " . $e->getMessage();
         }

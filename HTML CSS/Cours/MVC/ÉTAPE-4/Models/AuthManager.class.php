@@ -14,11 +14,11 @@ class AuthManager {
     }
 
     public function authenticate($email, $password) {
-        $stmt = $this->pdo->prepare('SELECT id, pwd FROM users WHERE email = ?');
+        $stmt = $this->pdo->prepare('SELECT id, password FROM users WHERE email = ?');
         $stmt->execute([$email]);
         $user = $stmt->fetch();
 
-        if ($user && password_verify($password, $user['pwd'])) {
+        if ($user && password_verify($password, $user['password'])) {
             return $user['id'];
         } else {
             return false;

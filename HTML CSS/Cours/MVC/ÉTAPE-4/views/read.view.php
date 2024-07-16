@@ -13,18 +13,13 @@
     </tr>
     <?php foreach ($users as $user): ?>
     <tr>
-        <td><?php echo htmlspecialchars($user['id']); ?></td>
-        <td>
-            <?php 
-            $imagePath = '../public/images/' . (isset($user['nomImage']) ? htmlspecialchars($user['nomImage']) : 'default.png');
-            ?>
-            <img src="<?php echo $imagePath; ?>" alt="Image de <?php echo htmlspecialchars(isset($user['nom']) ? $user['nom'] : 'Nom inconnu'); ?>" width="40">
-        </td>
-        <td><?php echo htmlspecialchars(isset($user['nom']) ? $user['nom'] : 'Nom inconnu'); ?></td>
-        <td><?php echo htmlspecialchars(isset($user['prenom']) ? $user['prenom'] : 'Prénom inconnu'); ?></td>
-        <td><?php echo htmlspecialchars($user['email']); ?></td>
-        <td><?php echo htmlspecialchars(isset($user['telephone']) ? $user['telephone'] : 'Téléphone inconnu'); ?></td>
-        <td><?php echo htmlspecialchars(isset($user['role']) ? $user['role'] : 'Rôle inconnu'); ?></td>
+        <td><?= htmlspecialchars($user['id']) ?></td>
+        <td><img src="public/images/<?= htmlspecialchars($user['image_name']) ?>" alt="ImageProfil" width="80" height="80"></td>
+        <td><?= htmlspecialchars($user['nom']) ?></td>
+        <td><?= htmlspecialchars($user['prenom']) ?></td>
+        <td><?= htmlspecialchars($user['email']) ?></td>
+        <td><?= htmlspecialchars($user['telephone']) ?></td>
+        <td><?= htmlspecialchars($user['role']) ?></td>
         <td><a href="<?= URL ?>update/<?php echo $user['id']; ?>">Modifier</a></td>
     </tr>
     <?php endforeach; ?>
@@ -32,5 +27,6 @@
 
 <?php
 $content = ob_get_clean();
-$titre = "Voir les utilisateurs";
+$titre = "Read Crud";
 require "template.php";
+?>

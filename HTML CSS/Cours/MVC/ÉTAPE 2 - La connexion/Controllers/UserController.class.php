@@ -42,7 +42,7 @@ class UserController {
     }
 
     public function delete(){
-        $delet = $this->userManager->deleteUser($id);
+        // $delet = $this->userManager->deleteUser();
         require './views/delete.view.php';
     }
 
