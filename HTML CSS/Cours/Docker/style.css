@@ -1,0 +1,609 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ------------------------------------------------------ECRAN DE DEBUT--------------------------------------------------------------- */
+/* Opacité du fond */
+.opacite::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+
+}
+
+/* Fond */
+#accueil {
+    display: block;
+    background-image: url("./image/fond-accueil.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Logo */
+.logo {
+position: relative;
+bottom: 20vh;
+}
+
+.button-debut {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 20vh;
+    gap: 3vh;
+}
+
+#jouer {
+    background: linear-gradient(to right, #996B31, #E7D88A);
+    width: 10vw;
+    height: 5vh;
+    font-size: 1.2vw;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#tutoriel {
+    background: linear-gradient(to right, #996B31, #E7D88A);
+    width: 10vw;
+    height: 5vh;
+    font-size: 1.2vw;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#ouvertureModal{
+    display: none
+}
+
+#ouvertureModal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1vw 1vh;
+  background: linear-gradient(to right, #996B31, #E7D88A);
+  color: #300E4C;
+  font-size: 1.3vw;
+  border-radius: 10px;
+  line-height: 5vh;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 70vw;
+  height: 50vh;
+}
+
+#modalEnd {
+  padding: 0.5vw;
+  background-color: #300E4C;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 8vw;
+  height: 5vh;
+  font-size: 0.9vw;
+}
+
+span{
+    font-weight: 600;
+}
+
+#personnage{
+    display: none;
+}
+
+/* ---------------------------------------------------SECTION PERSONNAGES------------------------------------------------------------ */
+.fondPersonnage::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1; 
+}
+
+
+.fondPersonnage{
+    display: block;
+    background-image: url("./image/fond-personnage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: auto;
+    height: 100vh;
+    width: 100vw;
+}
+
+h2{
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+    color: white;
+    font-size: 3.5vw;
+    padding-top: 5vh;
+}
+
+.joueur{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2vw;
+    padding-top: 5vh;
+    width: 100vw;
+}
+
+.inputlabel1{
+  display: flex;
+  align-items: center;
+  gap: 0.8vw;
+  color: #E7D88A;
+}
+
+.inputlabel2{
+  display: flex;
+  align-items: center;
+  gap: 0.8vw;
+  color: purple;
+}
+
+#pseudo1{
+    height: 3vh;
+    width: 10vw;
+  }
+
+  #pseudo2{
+    height: 3vh;
+    width: 10vw;
+  }
+
+.valider1{
+  background-color: #E7D88A;
+  height: 2.5vh;
+  width: 3vw;
+  cursor: pointer;
+}
+
+.valider2{
+  background-color: purple;
+  height: 2.5vh;
+  width: 3vw;
+  cursor: pointer;
+}
+
+.joueur1{
+    position: relative;
+    z-index: 2;
+    color: #996B31;
+}
+
+.joueur2{
+    position: relative;
+    z-index: 2;
+    color: purple;
+}
+
+#croco {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  top: 50vh; 
+  left: -20vw; 
+  transform: translateY(-50%) rotate(-90deg); 
+  height: 15vh; 
+  width: 7vw;
+  animation: crocoArrival 1.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  animation-play-state: paused; 
+}
+
+@keyframes crocoArrival {
+  0% {
+    left: -20vw;
+    transform: translateY(-50%) rotate(-90deg); 
+  }
+  100% {
+    left: 50vw; 
+    transform: translate(-50%, -50%) rotate(0); 
+  }
+}
+
+#shushu {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: 50vh; 
+  left: -20vw; 
+  transform: translateY(-50%) rotate(-90deg); 
+  height: 20vh; 
+  width: 9vw;
+  animation: shushuArrival 1.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  animation-play-state: paused; 
+}
+
+@keyframes shushuArrival {
+  0% {
+    left: -20vw;
+    transform: translateY(-50%) rotate(-90deg);
+  }
+  100% {
+    left: 50vw; 
+    transform: translate(-50%, -50%) rotate(0); 
+  }
+}
+
+#game {
+  display: none;
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  z-index: 3;
+  top: calc(50vh + 15vh);
+  left: 50vw;
+  transform: translate(-50%, 0); 
+  width: 12vw; 
+  height: 4vh; 
+  background: linear-gradient(to right, #E7D88A, hwb(300 17% 42%));
+  font-size: 1vw;
+  cursor: pointer;
+}
+
+/* -----------------------------------------------------------CARROUSEL----------------------------------------------------------- */
+.carouselDeux {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 0.5vh;
+  position: relative;
+  z-index: 2;
+}
+
+.carousel, .carousel2 {
+  position: relative;
+  overflow: hidden;
+  width: 50vw; 
+}
+
+.carousel-container, .carousel-container2 {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide, .slide2 {
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgPersoCaroussel{
+  width: 20vw;
+}
+
+.flech, .flech2 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-around;
+  width: 95%;
+}
+
+.prev, .next, .prev2, .next2 {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2vw;
+  cursor: pointer;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.prev2 {
+  left: 10px;
+}
+
+.next2 {
+  right: 10px;
+}
+
+.doublvalid{
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+}
+
+#validPerso1{
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  z-index: 2;
+  background-color: #E7D88A;
+  cursor: pointer;
+  width: 15vw;
+  height: 5vh;
+  font-size: 1vw;
+}
+
+#validPerso2{
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  z-index: 2;
+  background-color: purple;
+  cursor: pointer;
+  width: 15vw;
+  height: 5vh;
+  font-size: 1vw;
+}
+/* -----------------------------------------------------------SECTION COMBAT ----------------------------------------------------- */
+#combat::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1; 
+}
+
+#combat{
+  display: none;
+  background-image: url("./image/fond-combat.jpg");
+  background-repeat: no-repeat;
+  width: auto;
+  height: 100vh;
+}
+
+.combatjouer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 2vh;
+}
+
+span{
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.j1pseudo{
+  font-family: "Poppins", sans-serif;
+  color: #E7D88A;
+  font-size: 2vw;
+}
+
+.j2pseudo{
+  font-family: "Poppins", sans-serif;
+  color: purple;
+  font-size: 2vw;
+}
+
+#barreHp{
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: transparent;
+  height: 3vh;
+  margin-top: 1vh;
+  border: 1px solid white;
+}
+
+#barreHp2{
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: transparent;
+  height: 3vh;
+  margin-top: 1vh;
+  border: 1px solid white;
+}
+
+#hptransparent{
+  position: relative;
+  z-index: 1;
+  bottom: 3.9vh;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: red;
+  height: 2.9vh;
+  margin-top: 1vh;
+}
+
+#hptransparent2{
+  position: relative;
+  z-index: 1;
+  bottom: 3.9vh;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: red;
+  height: 2.9vh;
+  margin-top: 1vh;
+}
+
+#imgjoueur1, #imgjoueur2 {
+  position: relative;
+  z-index: 2;
+  bottom: 3vh;
+  background-image: url("./image/iop 1.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center; 
+  height: 60vh; 
+  width: 20vw; 
+  margin-top: 1vh; 
+}
+
+.bouton1{
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  gap: 2.5vw;
+  
+}
+
+.bouton2{
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  gap: 2.5vw;
+}
+
+#btnAtk{
+  position: relative;
+  bottom: 2vh;
+  width: 10vw;
+  height: 5vh;
+  font-size: 1.1vw;
+  background-color: #E7D88A;
+}
+
+#btnSoin{
+  position: relative;
+  bottom: 2vh;
+  width: 10vw;
+  height: 5vh;
+  font-size: 1.1vw;
+  background-color: #E7D88A;
+}
+
+#btnAtk2{
+  position: relative;
+  bottom: 2vh;
+  width: 10vw;
+  height: 5vh;
+  font-size: 1.1vw;
+  background-color: purple;
+}
+
+#btnSoin2{
+  position: relative;
+  bottom: 2vh;
+  width: 10vw;
+  height: 5vh;
+  font-size: 1.1vw;
+  background-color: purple;
+}
+
+
+/* ------------------------------------------------------MODAL DE FIN -------------------------------------------------------------- */
+#ouvertureModalFin{
+  display: none;
+}
+#ouvertureModalFin {
+  position: fixed; 
+  z-index: 2; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  width: 90vw; 
+  height: 92vh; 
+  padding: 1vw; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  background: linear-gradient(to right, #996B31, #E7D88A); 
+  color: #300E4C; 
+  font-size: 1.2vw;
+  line-height: 5vh; 
+  border-radius: 10px;
+  text-align: center; 
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.titreModalFin{
+  padding-top: 11vh;
+  margin-bottom: 11vh;
+  font-size: 4vw;
+}
+
+#pModalFin{
+  font-size: 2.1vw;
+  line-height: 7vh;
+}
+
+.boutonModalFin{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#modalFinAccueil{
+  margin-top: 20vh;
+  padding: 1vh 2vw;
+  background-color: #300E4C;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 27vw;
+  height: 7vh;
+  font-size: 0.9vw;
+
+}
+
+#modalFinPersonnage{
+  margin-top: 1vh;
+  padding: 1vh 2vw;
+  background-color: #300E4C;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 27vw;
+  height: 7vh;
+  font-size: 0.9vw;
+
+}
+
+#modalFinRecommencer{
+  margin-top: 1vh;
+  padding: 1vh 2vw;
+  background-color: #300E4C;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 27vw;
+  height: 7vh;
+  font-size: 0.9vw;
+
+}
